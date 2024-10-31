@@ -1,11 +1,9 @@
-import page1 from "./pages/home/page1";
-
+import Home1 from './Pages/Home1/Home1';
 
 export default function Home() {
   return (
     <>
-    <page1/>
-      
+      <Home1 />
     </>
   );
 }
