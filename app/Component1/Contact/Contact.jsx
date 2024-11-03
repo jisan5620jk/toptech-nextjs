@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import { FaPhoneAlt } from "react-icons/fa";
 import ContactCard from "./ContactCard";
 import { HiOutlineMail } from "react-icons/hi";

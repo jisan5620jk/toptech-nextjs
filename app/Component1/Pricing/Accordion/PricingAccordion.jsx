@@ -1,13 +1,14 @@
+"use client"
+
 import { useState, useEffect } from "react";
 import { FaAngleDown } from "react-icons/fa6";
 
-/* eslint-disable react/prop-types */
 const PricingAccordion = ({ children, title, id, active = false }) => {
   const [accordionOpen, setAccordionOpen] = useState(false);
 
   useEffect(() => {
     setAccordionOpen(active);
-  }, []);
+  }, [active]);
 
   return (
     <div className="rounded-md overflow-hidden">

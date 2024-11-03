@@ -1,3 +1,5 @@
+"use client"
+
 import { useState } from "react";
 import FsLightbox from "fslightbox-react";
 import { IoMdPlay } from "react-icons/io";

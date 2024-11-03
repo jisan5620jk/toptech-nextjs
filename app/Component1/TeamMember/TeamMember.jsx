@@ -1,7 +1,7 @@
-import teamThumb from "/images/team-1.png";
-import teamThumb2 from "/images/team-2.png";
-import teamThumb3 from "/images/team-4.png";
-import teamThumb4 from "/images/team-3.png";
+import teamThumb from "../../../public/images/team-1.png";
+import teamThumb2 from "../../../public/images/team-2.png";
+import teamThumb3 from "../../../public/images/team-4.png";
+import teamThumb4 from "../../../public/images/team-3.png";
 import TeamCard from "./TeamCard";
 import {
   FaFacebookF,
@@ -10,8 +10,8 @@ import {
   FaXTwitter,
 } from "react-icons/fa6";
 import { IoShareSocialOutline } from "react-icons/io5";
-import { Link } from "react-router-dom";
 import { GoArrowRight } from "react-icons/go";
+import Link from "next/link";
 
 const teamData = [
   {
@@ -75,7 +75,7 @@ const TeamMember = () => {
             </h1>
           </div>
           <div className="flex lg:justify-end">
-            <Link to={"/team_inner"}>
+            <Link href={"/team_inner"}>
               <button className="primary-btn">
                 {`All Member`}
                 <GoArrowRight size={"22"} />

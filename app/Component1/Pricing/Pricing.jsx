@@ -1,8 +1,10 @@
-import { Link } from "react-router-dom";
+"use client"
+
 import PricingAccordion from "./Accordion/PricingAccordion";
 import { FaCheck } from "react-icons/fa6";
 import CountUp from "react-countup";
 import { useEffect } from "react";
+import Link from "next/link";
 
 const Pricing = () => {
   //  All Faqs and  answers.
@@ -120,7 +122,7 @@ const Pricing = () => {
                     <br className="hidden sm:block lg:hidden 2xl:block" />{" "}
                     superior scenarios my coordinate
                   </p>
-                  <Link to={"/"}>
+                  <Link href={"/"}>
                     <button className="pricing-btn font-Rajdhani font-medium text-lg text-HeadingColor-0 border border-PrimaryColor-0 rounded px-7 py-2 transition-all duration-500">
                       Purchaces
                     </button>
@@ -160,7 +162,7 @@ const Pricing = () => {
                     <br className="hidden sm:block lg:hidden 2xl:block" />{" "}
                     superior scenarios my coordinate
                   </p>
-                  <Link to={"/"}>
+                  <Link href={"/"}>
                     <button className="pricing-btn font-Rajdhani font-medium text-lg text-HeadingColor-0 border border-PrimaryColor-0 rounded px-7 py-2 transition-all duration-500">
                       Purchaces
                     </button>

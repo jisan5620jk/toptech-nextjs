@@ -1,4 +1,5 @@
-/* eslint-disable react/prop-types */
+import Image from "next/image";
+
 const ProcessCard = ({
   processImg,
   boxNumber1,
@@ -9,10 +10,11 @@ const ProcessCard = ({
   return (
     <div className="text-center group relative">
       <div className="inline-block m-auto relative z-10 before:absolute before:-top-[13px] before:-left-[13px] before:w-[242px] before:h-[242px] before:border-[2px] before:border-dashed before:border-PrimaryColor-0 before:rounded-full before:animate-rotate">
-        <img src={processImg} draggable="false" />
-        <img
+        <Image src={processImg} alt="Process Image" draggable="false" />
+        <image
           src={boxShape}
           draggable="false"
+          alt="Process Shape"
           className="absolute top-1/2 -translate-y-1/2 -right-[150px] 2xl:-right-[180px] hidden xl:block"
         />
         <h6 className="w-[48px] h-[48px] rounded-full bg-PrimaryColor-0 text-white font-Rajdhani font-medium text-[22px] flex justify-center items-center absolute top-0 left-0">

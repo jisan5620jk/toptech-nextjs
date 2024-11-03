@@ -17,7 +17,7 @@ const counterData = [
     id: 3,
     counterNumber: 99,
     counterDesc: "EXPERT MEMBERS",
-    counterSuffex: "",
+    counterSuffex: "+",
   },
   {
     id: 4,

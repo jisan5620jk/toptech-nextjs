@@ -1,5 +1,5 @@
-/* eslint-disable react/prop-types */
-import { Link } from "react-router-dom";
+import Image from "next/image";
+import Link from "next/link";
 
 const TeamCard = ({
   teamThumb,
@@ -14,7 +14,7 @@ const TeamCard = ({
   return (
     <div className="group relative">
       <div className="relative overflow-hidden before:absolute before:bottom-0 before:left-0 before:bg-[#f5f8ed] before:w-full before:h-1/2 before:rounded-t-md before:-z-10">
-        <img src={teamThumb} className="w-full xl:w-[inherit] m-auto" />
+        <Image src={teamThumb} alt="Team Image" className="w-full xl:w-[inherit] m-auto" />
       </div>
       <div className="bg-white relative transition-all duration-500 [clip-path:polygon(0_0,_100%_0%,_100%_100%,_50%_84%,_0_100%)] rounded-md text-center pt-[22px] pb-10 rounded-b-md before:absolute before:bottom-0 before:left-0 before:w-full before:h-1/2 before:bg-[url('/images/team-shape.png')] before:bg-no-repeat before:bg-cover before:-z-10 before:rounded-md group-hover:bg-PrimaryColor-0 group-hover:-mt-9">
         <h5 className="font-Rajdhani font-semibold text-[26px] text-HeadingColor-0 transition-all duration-500 group-hover:text-white pb-[2px]">
@@ -25,28 +25,28 @@ const TeamCard = ({
         </p>
         <ul className="flex gap-4 justify-center mb-[6px]  transition-all duration-500 group-hover:mb-7 group-hover:mt-[14px]">
           <li>
-            <Link to={"/"}>
+            <Link href={"/"}>
               <button className="text-base text-white transition-all duration-500 hover:text-white">
                 {socialIcon}
               </button>
             </Link>
           </li>
           <li>
-            <Link to={"/"}>
+            <Link href={"/"}>
               <button className="text-base text-white transition-all duration-500 hover:text-white">
                 {socialIcon2}
               </button>
             </Link>
           </li>
           <li>
-            <Link to={"/"}>
+            <Link href={"/"}>
               <button className="text-base text-white transition-all duration-500 hover:text-white">
                 {socialIcon3}
               </button>
             </Link>
           </li>
           <li>
-            <Link to={"/"}>
+            <Link href={"/"}>
               <button className="text-base text-white transition-all duration-500 hover:text-white">
                 {socialIcon4}
               </button>

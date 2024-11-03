@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 const ContactCard = ({ contactIcon, contactSubTitle, contactTitle }) => {
   return (
     <div className="group flex items-center gap-4 sm:gap-6 bg-white p-4 sm:p-8 lg:p-4 xl:p-8 border border-PrimaryColor-0 rounded overflow-hidden relative z-10 before:absolute before:top-0 before:right-0 before:-z-10 before:w-0 before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 hover:before:left-0 hover:before:w-full">

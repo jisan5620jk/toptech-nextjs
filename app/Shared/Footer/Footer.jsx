@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
-import footerLogo from "/images/logo-2.png";
+import footerLogo from "../../../public/images/logo-2.png";
+import Link from "next/link";
 import {
   FaFacebookF,
   FaLinkedinIn,
@@ -9,6 +9,7 @@ import {
 import { GoArrowRight } from "react-icons/go";
 import { LuArrowRightCircle } from "react-icons/lu";
 import { HiOutlineMail } from "react-icons/hi";
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -16,8 +17,8 @@ const Footer = () => {
       <div className="Container">
         <div className="grid gap-y-7 grid-cols-12">
           <div className="col-span-12 md:col-span-6 lg:col-span-4">
-            <Link to={"/"}>
-              <img src={footerLogo} draggable={false} />
+            <Link href={"/"}>
+              <Image src={footerLogo} draggable={false} alt="Footer Logo" />
             </Link>
             <p className="font-Nunito text-white opacity-80 mt-6 mb-8 w-10/12">
               Monotonectally synergize granular top{" "}
@@ -27,7 +28,7 @@ const Footer = () => {
               digital agency in north
             </p>
             <div>
-              <Link to={"/about"}>
+              <Link href={"/about"}>
                 <button className="primary-btn">
                   {`Discover More`}
                   <GoArrowRight size={"22"} />
@@ -41,7 +42,7 @@ const Footer = () => {
             </h4>
             <ul>
               <li>
-                <Link to={"/"}>
+                <Link href={"/"}>
                   <button className="flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5">
                     <LuArrowRightCircle className="text-base text-PrimaryColor-0" />
                     About Us
@@ -49,7 +50,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to={"/"}>
+                <Link href={"/"}>
                   <button className="flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5">
                     <LuArrowRightCircle className="text-base text-PrimaryColor-0" />
                     Our Team
@@ -57,7 +58,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to={"/"}>
+                <Link href={"/"}>
                   <button className="flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5">
                     <LuArrowRightCircle className="text-base text-PrimaryColor-0" />
                     Pricing Plan
@@ -65,7 +66,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to={"/"}>
+                <Link href={"/"}>
                   <button className="flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5">
                     <LuArrowRightCircle className="text-base text-PrimaryColor-0" />
                     Latest Blog
@@ -73,7 +74,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to={"/"}>
+                <Link href={"/"}>
                   <button className="flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1">
                     <LuArrowRightCircle className="text-base text-PrimaryColor-0" />
                     Careers
@@ -88,7 +89,7 @@ const Footer = () => {
             </h4>
             <ul>
               <li>
-                <Link to={"/"}>
+                <Link href={"/"}>
                   <button className="flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5">
                     <LuArrowRightCircle className="text-base text-PrimaryColor-0" />
                     IT Solutions
@@ -96,7 +97,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to={"/"}>
+                <Link href={"/"}>
                   <button className="flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5">
                     <LuArrowRightCircle className="text-base text-PrimaryColor-0" />
                     Cyber Security
@@ -104,7 +105,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to={"/"}>
+                <Link href={"/"}>
                   <button className="flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5">
                     <LuArrowRightCircle className="text-base text-PrimaryColor-0" />
                     Digital Marketing
@@ -112,7 +113,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to={"/"}>
+                <Link href={"/"}>
                   <button className="flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5">
                     <LuArrowRightCircle className="text-base text-PrimaryColor-0" />
                     Brand Identity
@@ -120,7 +121,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to={"/"}>
+                <Link href={"/"}>
                   <button className="flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1">
                     <LuArrowRightCircle className="text-base text-PrimaryColor-0" />
                     SEO Marketing

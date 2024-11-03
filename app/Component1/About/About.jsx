@@ -1,3 +1,5 @@
+"use client"
+
 import aboutThumb from "../../../public/images/about-thumb.png";
 import aboutIcon from "../../../public/images/about-icon1.png";
 import aboutIcon2 from "../../../public/images/about-icon2.png";
