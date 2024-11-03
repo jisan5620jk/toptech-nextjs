@@ -1,7 +1,9 @@
+"use client"
+
+import Image from "next/image";
 import { useState, useEffect } from "react";
 import { FaAngleDown } from "react-icons/fa6";
 
-/* eslint-disable react/prop-types */
 const PricingAccordion = ({ children, faqIcon, title, id, active = false }) => {
   const [accordionOpen, setAccordionOpen] = useState(false);
 
@@ -26,7 +28,7 @@ const PricingAccordion = ({ children, faqIcon, title, id, active = false }) => {
               accordionOpen && "text-white"
             }`}
           >
-            <img src={faqIcon} className="size-5 transition-all duration-500" />
+            <Image src={faqIcon} alt="Faq Icon" className="size-5 transition-all duration-500" />
             <span className="">{title}</span>
           </span>
           <FaAngleDown

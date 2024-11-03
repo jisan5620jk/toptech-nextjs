@@ -11,7 +11,7 @@ const ProcessCard = ({
     <div className="text-center group relative">
       <div className="inline-block m-auto relative z-10 before:absolute before:-top-[13px] before:-left-[13px] before:w-[242px] before:h-[242px] before:border-[2px] before:border-dashed before:border-PrimaryColor-0 before:rounded-full before:animate-rotate">
         <Image src={processImg} alt="Process Image" draggable="false" />
-        <image
+        <Image
           src={boxShape}
           draggable="false"
           alt="Process Shape"

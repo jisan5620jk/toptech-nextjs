@@ -1,246 +1,201 @@
+import footerLogo from '../../../public/images/logo-2.png';
 import Link from 'next/link';
-import footerLogo from '/images/logo.png';
-import footerShape3 from '/images/footer-shape.png';
-import footerLine from '/images/footer-line.png';
-import footerImg from '/images/blog-thumb2.jpg';
-import footerImg2 from '/images/blog-thumb3.jpg';
 import {
-  FaChevronRight,
   FaFacebookF,
   FaLinkedinIn,
   FaPinterestP,
   FaXTwitter,
 } from 'react-icons/fa6';
+import { GoArrowRight } from 'react-icons/go';
+import { LuArrowRightCircle } from 'react-icons/lu';
+import { HiOutlineMail } from 'react-icons/hi';
+import Image from 'next/image';
 
 const Footer3 = () => {
   return (
-    <footer className="bg-[url('/images/footer4-bg.jpg')] bg-no-repeat bg-center bg-cover relative z-10 pt-28 overflow-hidden">
-      <img
-        src={footerLine}
-        draggable='false'
-        className='absolute -z-10 right-0 -bottom-20 opacity-70'
-      />
-      <img
-        src={footerShape3}
-        draggable='false'
-        className='absolute -z-10 top-0 left-0 animate-dance2'
-      />
+    <footer className="bg-[url('/images/footer-bg.jpg')] bg-no-repeat bg-center bg-cover relative z-10 pt-28 overflow-hidden">
       <div className='Container'>
-        <div className='grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-4'>
-          <div>
+        <div className='grid gap-y-7 grid-cols-12'>
+          <div className='col-span-12 md:col-span-6 lg:col-span-4'>
             <Link href={'/'}>
-              <img
+              <Image
                 src={footerLogo}
                 draggable={false}
+                alt='Footer Logo'
               />
             </Link>
-            <p className='font-Nunito text-white opacity-60 mt-10 mb-9'>
-              Sometimes goods can arrive early when creative designneed place to
-              stored for desig space your needs.
+            <p className='font-Nunito text-white opacity-80 mt-6 mb-8 w-10/12'>
+              Monotonectally synergize granular top{' '}
+              <br className='hidden xl:block' /> visualize strategic
+              infomediaries afters <br className='hidden xl:block' /> task state
+              of the art infrastructures <br className='hidden xl:block' />{' '}
+              digital agency in north
             </p>
+            <div>
+              <Link href={'/about'}>
+                <button className='primary-btn'>
+                  {`Discover More`}
+                  <GoArrowRight size={'22'} />
+                </button>
+              </Link>
+            </div>
+          </div>
+          <div className='col-span-12 md:col-span-6 lg:col-span-2'>
+            <h4 className='font-Rajdhani text-[28px] text-white font-semibold mb-[33px]'>
+              Company
+            </h4>
+            <ul>
+              <li>
+                <Link href={'/'}>
+                  <button className='flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5'>
+                    <LuArrowRightCircle className='text-base text-PrimaryColor-0' />
+                    About Us
+                  </button>
+                </Link>
+              </li>
+              <li>
+                <Link href={'/'}>
+                  <button className='flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5'>
+                    <LuArrowRightCircle className='text-base text-PrimaryColor-0' />
+                    Our Team
+                  </button>
+                </Link>
+              </li>
+              <li>
+                <Link href={'/'}>
+                  <button className='flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5'>
+                    <LuArrowRightCircle className='text-base text-PrimaryColor-0' />
+                    Pricing Plan
+                  </button>
+                </Link>
+              </li>
+              <li>
+                <Link href={'/'}>
+                  <button className='flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5'>
+                    <LuArrowRightCircle className='text-base text-PrimaryColor-0' />
+                    Latest Blog
+                  </button>
+                </Link>
+              </li>
+              <li>
+                <Link href={'/'}>
+                  <button className='flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1'>
+                    <LuArrowRightCircle className='text-base text-PrimaryColor-0' />
+                    Careers
+                  </button>
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <div className='col-span-12 md:col-span-6 lg:col-span-3'>
+            <h4 className='font-Rajdhani text-[28px] text-white font-semibold mb-[33px]'>
+              Our Services
+            </h4>
+            <ul>
+              <li>
+                <Link href={'/'}>
+                  <button className='flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5'>
+                    <LuArrowRightCircle className='text-base text-PrimaryColor-0' />
+                    IT Solutions
+                  </button>
+                </Link>
+              </li>
+              <li>
+                <Link href={'/'}>
+                  <button className='flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5'>
+                    <LuArrowRightCircle className='text-base text-PrimaryColor-0' />
+                    Cyber Security
+                  </button>
+                </Link>
+              </li>
+              <li>
+                <Link href={'/'}>
+                  <button className='flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5'>
+                    <LuArrowRightCircle className='text-base text-PrimaryColor-0' />
+                    Digital Marketing
+                  </button>
+                </Link>
+              </li>
+              <li>
+                <Link href={'/'}>
+                  <button className='flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5'>
+                    <LuArrowRightCircle className='text-base text-PrimaryColor-0' />
+                    Brand Identity
+                  </button>
+                </Link>
+              </li>
+              <li>
+                <Link href={'/'}>
+                  <button className='flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1'>
+                    <LuArrowRightCircle className='text-base text-PrimaryColor-0' />
+                    SEO Marketing
+                  </button>
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <div className='col-span-12 md:col-span-6 lg:col-span-3'>
+            <h4 className='font-Rajdhani text-[28px] text-white font-semibold mb-[30px]'>
+              Newsletter
+            </h4>
+            <p className='font-Nunito text-white opacity-80 font-medium mb-[26px]'>
+              Subscribe Our Latest Newsletter
+            </p>
+            <form
+              action='#'
+              method='post'
+            >
+              <label
+                htmlFor='email'
+                className='relative'
+              >
+                <input
+                  type='email'
+                  name='email'
+                  id='email'
+                  placeholder='Enter Your E-Mail*'
+                  required
+                  className='w-full h-[56px] font-Nunito outline-none focus:outline-none border border-BorderColor-0 bg-transparent px-6 py-2 text-white placeholder:text-white placeholder:opacity-50 mb-4'
+                />
+                <HiOutlineMail className='absolute top-1/2 -translate-y-1/2 right-6 text-white opacity-50 text-xl' />
+              </label>
+              <button
+                type='submit'
+                className='h-[50px] rounded border border-PrimaryColor-0 bg-PrimaryColor-0 gap-2 px-[30px] py-2 text-white font-Nunito flex items-center justify-center relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:rounded before:bg-SecondaryColor-0 before:-z-10 before:scale-0 before:transition-all before:duration-500 hover:before:scale-100'
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+        <div className='flex flex-col md:flex-row gap-y-7 md: md:col-span-6 justify-between md:items-center py-6 mt-[108px] border-t border-BorderColor-0'>
+          <div>
+            <p className='font-Nunito text-white'>
+              © 2024 Toptech. Designed By Dream IT Solution
+              <span className='text-PrimaryColor-0'> Dream IT</span>
+            </p>
+          </div>
+          <div>
             <ul className='flex gap-3'>
               <li>
-                <button className='size-9 rounded-full bg-[#0b2f21] flex items-center justify-center text-white overflow-hidden transition-all duration-500 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100'>
+                <button className='size-9 rounded-full text-sm bg-[#ffffff2f] flex items-center justify-center text-white overflow-hidden transition-all duration-500 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100'>
                   <FaFacebookF />
                 </button>
               </li>
               <li>
-                <button className='size-9 rounded-full bg-[#0b2f21] flex items-center justify-center text-white overflow-hidden transition-all duration-500 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100'>
+                <button className='size-9 rounded-full text-sm bg-[#ffffff2f] flex items-center justify-center text-white overflow-hidden transition-all duration-500 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100'>
                   <FaXTwitter />
                 </button>
               </li>
               <li>
-                <button className='size-9 rounded-full bg-[#0b2f21] flex items-center justify-center text-white overflow-hidden transition-all duration-500 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100'>
+                <button className='size-9 rounded-full text-sm bg-[#ffffff2f] flex items-center justify-center text-white overflow-hidden transition-all duration-500 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100'>
                   <FaLinkedinIn />
                 </button>
               </li>
               <li>
-                <button className='size-9 rounded-full bg-[#0b2f21] flex items-center justify-center text-white overflow-hidden transition-all duration-500 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100'>
+                <button className='size-9 rounded-full text-sm bg-[#ffffff2f] flex items-center justify-center text-white overflow-hidden transition-all duration-500 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100'>
                   <FaPinterestP />
                 </button>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h4 className='font-Nunito text-2xl text-white font-semibold mb-[30px]'>
-              Company
-            </h4>
-            <p className='font-Nunito text-white opacity-60 mb-6'>
-              4175 Anderson Road, Carlsbad Springs, Ontario
-            </p>
-            <h6 className='font-Nunito flex items-center'>
-              <span className='text-white opacity-60'>Phone</span>
-              <span className='px-5 text-white opacity-60'>:</span>
-              <Link
-                href={'/'}
-                className=' text-white opacity-60 transition-all duration-500 hover:opacity-100'
-              >
-                613-822-9644
-              </Link>
-            </h6>
-            <h6 className='font-Nunito flex items-center my-4'>
-              <span className='text-white opacity-60'>E-Mail</span>
-              <span className='px-5 text-white opacity-60'>:</span>
-              <Link
-                href={'/'}
-                className=' text-white opacity-60 transition-all duration-500 hover:opacity-100'
-              >
-                info@example.com
-              </Link>
-            </h6>
-            <h6 className='font-Nunito flex items-center'>
-              <span className='text-white opacity-60'>
-                Mon - Sat: 09.00 to 06.30
-              </span>
-            </h6>
-          </div>
-          <div>
-            <h4 className='font-Nunito text-2xl text-white font-semibold mb-[30px]'>
-              Useful Links
-            </h4>
-            <div className='grid grid-cols-2 justify-start text-left'>
-              <ul>
-                <li>
-                  <Link href={'/'}>
-                    <button className='flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:gap-1 mb-[26px] opacity-60 hover:!opacity-100'>
-                      <FaChevronRight className='text-xs opacity-60 ' />
-                      About Us
-                    </button>
-                  </Link>
-                </li>
-                <li>
-                  <Link href={'/'}>
-                    <button className='flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:gap-1 mb-[26px] opacity-60 hover:!opacity-100'>
-                      <FaChevronRight className='text-xs opacity-60 ' />
-                      Projects
-                    </button>
-                  </Link>
-                </li>
-                <li>
-                  <Link href={'/'}>
-                    <button className='flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:gap-1 mb-[26px] opacity-60 hover:!opacity-100'>
-                      <FaChevronRight className='text-xs opacity-60 ' />
-                      Energy
-                    </button>
-                  </Link>
-                </li>
-                <li>
-                  <Link href={'/'}>
-                    <button className='flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:gap-1 mb-[26px] opacity-60 hover:!opacity-100'>
-                      <FaChevronRight className='text-xs opacity-60 ' />
-                      Controllers
-                    </button>
-                  </Link>
-                </li>
-              </ul>
-              <ul>
-                <li>
-                  <Link href={'/'}>
-                    <button className='flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:gap-1 mb-[26px] opacity-60 hover:!opacity-100'>
-                      <FaChevronRight className='text-xs opacity-60 ' />
-                      Services
-                    </button>
-                  </Link>
-                </li>
-                <li>
-                  <Link href={'/'}>
-                    <button className='flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:gap-1 mb-[26px] opacity-60 hover:!opacity-100'>
-                      <FaChevronRight className='text-xs opacity-60 ' />
-                      Ressources
-                    </button>
-                  </Link>
-                </li>
-                <li>
-                  <Link href={'/'}>
-                    <button className='flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:gap-1 mb-[26px] opacity-60 hover:!opacity-100'>
-                      <FaChevronRight className='text-xs opacity-60 ' />
-                      Plants
-                    </button>
-                  </Link>
-                </li>
-                <li>
-                  <Link href={'/'}>
-                    <button className='flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:gap-1 mb-[26px] opacity-60 hover:!opacity-100'>
-                      <FaChevronRight className='text-xs opacity-60 ' />
-                      Solar Plants
-                    </button>
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div>
-            <h4 className='font-Nunito text-2xl text-white font-semibold mb-8'>
-              Recent News
-            </h4>
-            <Link
-              href={'/'}
-              className='flex items-center gap-[18px] group'
-            >
-              <div>
-                <img
-                  src={footerImg}
-                  className='w-[80px] h-[80px] rounded'
-                />
-              </div>
-              <div className='flex-1'>
-                <h6 className='font-Nunito text-sm sm:text-base lg:text-sm text-white opacity-60 transition-all duration-500 group-hover:opacity-100'>
-                  How to add battery backup...
-                </h6>
-                <p className='font-Nunito text-sm text-PrimaryColor-0 mt-1'>
-                  Date: Nov 16, 2024
-                </p>
-              </div>
-            </Link>
-            <Link
-              href={'/'}
-              className='flex items-center gap-[18px] group mt-5'
-            >
-              <div>
-                <img
-                  src={footerImg2}
-                  className='w-[80px] h-[80px] rounded'
-                />
-              </div>
-              <div className='flex-1'>
-                <h6 className='font-Nunito text-sm sm:text-base lg:text-sm text-white opacity-60 transition-all duration-500 group-hover:opacity-100'>
-                  How to clean forest properly...
-                </h6>
-                <p className='font-Nunito text-sm text-PrimaryColor-0 mt-1'>
-                  Date: Nov 16, 2024
-                </p>
-              </div>
-            </Link>
-          </div>
-        </div>
-      </div>
-      <div className='text-left py-6 bg-[#78b9003b] mt-24'>
-        <div className='Container flex flex-col gap-5 md:flex-row md:gap-0 justify-between'>
-          <p className='font-Nunito text-white opacity-60'>
-            Echofy © 2024 All rights reserved.
-          </p>
-          <div>
-            <ul className='flex gap-7'>
-              <li>
-                <Link href={'/'}>
-                  <button className='font-Nunito text-white opacity-60 transition-all duration-500 hover:opacity-100'>
-                    Privacy & Terms
-                  </button>
-                </Link>
-              </li>
-              <li>
-                <Link href={'/'}>
-                  <button className='font-Nunito text-white opacity-60 transition-all duration-500 hover:opacity-100'>
-                    FAQ
-                  </button>
-                </Link>
-              </li>
-              <li>
-                <Link href={'/'}>
-                  <button className='font-Nunito text-white opacity-60 transition-all duration-500 hover:opacity-100'>
-                    Contact Us
-                  </button>
-                </Link>
               </li>
             </ul>
           </div>

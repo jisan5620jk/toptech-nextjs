@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+import Image from 'next/image';
 import Link from 'next/link';
 
 const TeamCard = ({
@@ -12,9 +12,10 @@ const TeamCard = ({
   return (
     <div className='group relative'>
       <div className='relative z-10 overflow-hidden'>
-        <img
+        <Image
           src={teamThumb}
           draggable='false'
+          alt='Team Image'
           className='w-full -z-10 rounded-md'
         />
         <div className='text-center rounded-t-md pt-[22px] pb-[26px bg-PrimaryColor-0 w-10/12 transition-all duration-500 pb-5 absolute z-10 -bottom-[76px] opacity-0 left-1/2 -translate-x-1/2 group-hover:bottom-0 group-hover:opacity-100'>

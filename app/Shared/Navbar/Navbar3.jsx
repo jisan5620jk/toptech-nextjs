@@ -93,8 +93,7 @@ const Navbar3 = () => {
                 } text-right lg:w-fit ease-in-out flex-1 lg:flex space-y-2 lg:space-y-0 space-x-0 flex flex-col lg:flex-row capitalize text-sm lg:bg-transparent py-3 lg:py-0 font-Nunito font-medium sm:text-base text-HeadingColor-0 transition-all duration-500
                 `}
               >
-                <Link
-                  href='/'
+                <div
                   className={`${({ isActive, isPending }) =>
                     isPending
                       ? 'pending'
@@ -102,10 +101,13 @@ const Navbar3 = () => {
                       ? 'active'
                       : ''} text-white text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 xl:px-5 w-full block transition-all duration-300 group relative`}
                 >
-                  <span className='flex items-center'>
+                  <Link
+                    href='/'
+                    className='flex items-center'
+                  >
                     Home
                     <BiChevronDown className='ml-1' />
-                  </span>
+                  </Link>
                   <div className='absolute pt-5 lg:pt-8 z-20'>
                     <ul className='shadow-lg hidden group-hover:block rounded-sm text-white w-[240px] text-left transition-all duration-500 text-sm sm:text-base py-4 bg-SecondaryColor-0'>
                       <div className='px-5 group hover:bg-PrimaryColor-0 '>
@@ -197,20 +199,22 @@ const Navbar3 = () => {
                       </div>
                     </ul>
                   </div>
-                </Link>
-                <Link
+                </div>
+                <div
                   className={`${({ isActive, isPending }) =>
                     isPending
                       ? 'pending'
                       : isActive
                       ? 'active'
                       : ''} text-white text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 xl:px-5 w-full block transition-all duration-300 group relative `}
-                  href='#'
                 >
-                  <span className='flex items-center'>
+                  <Link
+                    href='#'
+                    className='flex items-center'
+                  >
                     About
                     <BiChevronDown className='ml-1' />
-                  </span>
+                  </Link>
                   <div className='absolute pt-5 lg:pt-8 z-20'>
                     <ul className='shadow-lg hidden group-hover:block rounded-sm text-white w-[240px] text-left transition-all duration-500 text-sm sm:text-base py-4 bg-SecondaryColor-0'>
                       <div className='px-5 group hover:bg-PrimaryColor-0 '>
@@ -235,20 +239,22 @@ const Navbar3 = () => {
                       </div>
                     </ul>
                   </div>
-                </Link>
-                <Link
+                </div>
+                <div
                   className={`${({ isActive, isPending }) =>
                     isPending
                       ? 'pending'
                       : isActive
                       ? 'active'
                       : ''} text-white text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 xl:px-5 w-full block transition-all duration-300 group relative `}
-                  href='#'
                 >
-                  <span className='flex items-center'>
+                  <Link
+                    href='#'
+                    className='flex items-center'
+                  >
                     Service
                     <BiChevronDown className='ml-1' />
-                  </span>
+                  </Link>
                   <div className='absolute pt-5 lg:pt-8 z-20'>
                     <ul className='shadow-lg hidden group-hover:block rounded-sm text-white w-[240px] text-left transition-all duration-500 text-sm sm:text-base py-4 bg-SecondaryColor-0'>
                       <div className='px-5 group hover:bg-PrimaryColor-0 '>
@@ -273,20 +279,22 @@ const Navbar3 = () => {
                       </div>
                     </ul>
                   </div>
-                </Link>
-                <Link
+                </div>
+                <div
                   className={`${({ isActive, isPending }) =>
                     isPending
                       ? 'pending'
                       : isActive
                       ? 'active'
                       : ''} text-white text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 xl:px-5 w-full block transition-all duration-300 group relative `}
-                  href='#'
                 >
-                  <span className='flex items-center'>
+                  <Link
+                    href='#'
+                    className='flex items-center'
+                  >
                     Pages
                     <BiChevronDown className='ml-1' />
-                  </span>
+                  </Link>
                   <div className='absolute pt-5 lg:pt-8 z-20'>
                     <ul className='shadow-lg hidden group-hover:block rounded-sm text-white w-[240px] text-left transition-all duration-500 text-sm sm:text-base py-4 bg-SecondaryColor-0 '>
                       <div className='px-5 group hover:bg-PrimaryColor-0'>
@@ -391,21 +399,23 @@ const Navbar3 = () => {
                       </div>
                     </ul>
                   </div>
-                </Link>
+                </div>
                 {/* blog sub menu link */}
-                <Link
+                <div
                   className={`${({ isActive, isPending }) =>
                     isPending
                       ? 'pending'
                       : isActive
                       ? 'active'
                       : ''} text-white text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 xl:px-5 w-full block transition-all duration-300 group relative `}
-                  href='#'
                 >
-                  <span className='flex items-center'>
+                  <Link
+                    href='#'
+                    className='flex items-center'
+                  >
                     Blog
                     <BiChevronDown className='ml-1' />
-                  </span>
+                  </Link>
                   <div className='absolute pt-5 lg:pt-8 z-20'>
                     <ul className='shadow-lg hidden group-hover:block rounded-sm text-white w-[240px] text-left transition-all duration-500 text-sm sm:text-base py-4 bg-SecondaryColor-0'>
                       <div className='px-5 group hover:bg-PrimaryColor-0'>
@@ -450,7 +460,7 @@ const Navbar3 = () => {
                       </div>
                     </ul>
                   </div>
-                </Link>
+                </div>
                 <Link
                   className={`${({ isActive, isPending }) =>
                     isPending

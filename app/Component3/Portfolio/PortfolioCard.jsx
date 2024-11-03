@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+import Image from 'next/image';
 import Link from 'next/link';
 
 const PortfolioCard = ({
@@ -12,9 +12,10 @@ const PortfolioCard = ({
     <div>
       <div className='portfolio-box relative z-10 group overflow-hidden'>
         <div className='portfolio-box-thumb rounded-md relative overflow-hidden before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-full before:bg-SecondaryColor-0 before:transition-all before:duration-500 group-hover:before:w-full group-hover:before:left-0 before:z-10 group-hover:before:opacity-60'>
-          <img
+          <Image
             src={portfolioThumb}
             draggable={false}
+            alt='Portfolio Image'
             className='w-full'
           />
         </div>

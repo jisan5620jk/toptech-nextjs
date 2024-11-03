@@ -1,9 +1,10 @@
-/* eslint-disable no-unused-vars */
+"use client"
+
 import { FaPlus } from "react-icons/fa6";
-import portfolioThumb from "/images/portfolio4-1.jpg";
-import portfolioThumb2 from "/images/portfolio4-2.jpg";
-import portfolioThumb3 from "/images/portfolio4-3.jpg";
-import portfolioThumb4 from "/images/portfolio4-4.jpg";
+import portfolioThumb from "../../../public/images/portfolio4-1.jpg";
+import portfolioThumb2 from "../../../public/images/portfolio4-2.jpg";
+import portfolioThumb3 from "../../../public/images/portfolio4-3.jpg";
+import portfolioThumb4 from "../../../public/images/portfolio4-4.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import PortfolioCard from "./PortfolioCard";
@@ -44,6 +45,14 @@ const portfolioData = [
   {
     id: 5,
     portfolioThumb: portfolioThumb2,
+    portfolioSubTilte: "IT Solution",
+    portfolioTitle: "Website Development",
+    portfolioUrl: "/project_details",
+    portfolioBtn: <FaPlus />,
+  },
+  {
+    id: 6,
+    portfolioThumb: portfolioThumb,
     portfolioSubTilte: "IT Solution",
     portfolioTitle: "Website Development",
     portfolioUrl: "/project_details",

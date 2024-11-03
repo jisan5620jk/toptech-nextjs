@@ -1,5 +1,5 @@
 import FaqAccordion from "./FaqAccordion";
-import faqIcon from "/images/faq-icon.png";
+import faqIcon from "../../../public/images/faq-icon.png";
 import { MdCall } from "react-icons/md";
 import { HiOutlineMailOpen } from "react-icons/hi";
 import { FaUser } from "react-icons/fa6";

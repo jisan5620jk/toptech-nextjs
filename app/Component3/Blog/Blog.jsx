@@ -1,7 +1,7 @@
 import { FaRegCalendarCheck } from "react-icons/fa6";
-import blogThumb from "/images/blog1.png";
-import blogThumb2 from "/images/blog2.png";
-import blogThumb3 from "/images/blog3.png";
+import blogThumb from "../../../public/images/blog1.png";
+import blogThumb2 from "../../../public/images/blog2.png";
+import blogThumb3 from "../../../public/images/blog3.png";
 import BlogCard from "./BlogCard";
 import { GoArrowRight } from "react-icons/go";
 import { PiUserCircleFill } from "react-icons/pi";
