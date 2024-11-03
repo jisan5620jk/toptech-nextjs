@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import { FaRegCalendarCheck } from "react-icons/fa6";
 import blogThumb from "/images/blog1.png";
 import blogThumb2 from "/images/blog2.png";

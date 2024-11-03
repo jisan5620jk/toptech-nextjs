@@ -1,25 +1,28 @@
-import aboutThumb from '/images/about3-thumb.png';
+import aboutThumb from '../../../public/images/about3-thumb.png';
 import Link from 'next/link';
-import aboutShape from '/images/about-shape.jpg';
-import aboutIcon from '/images/about3-icon1.png';
-import aboutIcon2 from '/images/about3-icon2.png';
+import aboutShape from '../../../public/images/about-shape.jpg';
+import aboutIcon from '../../../public/images/about3-icon1.png';
+import aboutIcon2 from '../../../public/images/about3-icon2.png';
 import { BsArrowRightCircleFill } from 'react-icons/bs';
-import aboutAuthor from '/images/about-author.jpg';
+import aboutAuthor from '../../../public/images/about-author.jpg';
+import Image from 'next/image';
 
 const About = () => {
   return (
     <section className='pb-[120px] bg-white bg-no-repeat bg-center bg-cover relative'>
-      <img
+      <Image
         src={aboutShape}
         draggable={false}
+        alt='About Shape'
         className='absolute top-0 right-0'
       />
       <div className='Container'>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-[92px] lg:gap-14 2xl:gap-[150px] items-center'>
           <div className='relative z-10'>
-            <img
+            <Image
               src={aboutThumb}
               draggable='false'
+              alt='About image'
             />
           </div>
           <div className='relative'>
@@ -38,7 +41,7 @@ const About = () => {
             </p>
             <div className='flex items-center gap-5'>
               <div className='w-[74px] h-[74px] rounded bg-[#d4e1f7] flex items-center justify-center'>
-                <img src={aboutIcon} />
+                <Image alt='About Icon' src={aboutIcon} />
               </div>
               <div className='flex-1'>
                 <h6 className='font-Rajdhani font-bold text-[22px] text-HeadingColor-0'>
@@ -53,7 +56,7 @@ const About = () => {
             </div>
             <div className='flex items-center gap-5 mt-9'>
               <div className='w-[74px] h-[74px] rounded bg-[#d4e1f7] flex items-center justify-center'>
-                <img src={aboutIcon2} />
+                <Image alt='About Icon' src={aboutIcon2} />
               </div>
               <div className='flex-1'>
                 <h6 className='font-Rajdhani font-bold text-[22px] text-HeadingColor-0'>
@@ -78,7 +81,7 @@ const About = () => {
               </Link>
               <div className='flex items-center gap-5'>
                 <div className='inline-block rounded-full overflow-hidden'>
-                  <img src={aboutAuthor} />
+                  <Image alt='About Author' src={aboutAuthor} />
                 </div>
                 <div className='flex-1'>
                   <h6 className='font-Rajdhani font-semibold text-xl text-HeadingColor-0'>

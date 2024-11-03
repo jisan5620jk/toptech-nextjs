@@ -1,10 +1,9 @@
-/* eslint-disable no-unused-vars */
-import serviceIcon from "/images/service3-icon1.png";
-import serviceIcon2 from "/images/service3-icon2.png";
-import serviceIcon3 from "/images/service3-icon3.png";
-import serviceIcon4 from "/images/service3-icon4.png";
-import serviceIcon5 from "/images/service3-icon5.png";
-import serviceIcon6 from "/images/service3-icon6.png";
+import serviceIcon from "../../../public/images/service3-icon1.png";
+import serviceIcon2 from "../../../public/images/service3-icon2.png";
+import serviceIcon3 from "../../../public/images/service3-icon3.png";
+import serviceIcon4 from "../../../public/images/service3-icon4.png";
+import serviceIcon5 from "../../../public/images/service3-icon5.png";
+import serviceIcon6 from "../../../public/images/service3-icon6.png";
 import ServiceCard from "./ServiceCard";
 import { FaAnglesRight } from "react-icons/fa6";
 

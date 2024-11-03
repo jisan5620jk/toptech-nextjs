@@ -1,8 +1,7 @@
-/* eslint-disable no-unused-vars */
-import featureIcon from "/images/feature3-icon.png";
-import featureIcon2 from "/images/feature3-icon-2.png";
-import featureIcon3 from "/images/feature3-icon-3.png";
-import featureIcon4 from "/images/feature3-icon-4.png";
+import featureIcon from '../../../public/images/feature3-icon.png';
+import featureIcon2 from '../../../public/images/feature3-icon-2.png';
+import featureIcon3 from '../../../public/images/feature3-icon-3.png';
+import featureIcon4 from "../../../public/images/feature3-icon-4.png";
 import FeatureCard from "./FeatureCard";
 import { FaAnglesRight } from "react-icons/fa6";
 
