@@ -1,14 +1,17 @@
-import aboutThumb from "/images/about-thumb2.png";
-import aboutAward from "/images/about-award-icon.png";
-import aboutShape from "/images/about-shape1.png";
-import aboutShape2 from "/images/about-shape-2.png";
-import phoneIcon from "/images/about-call-icon.png";
-import { Link } from "react-router-dom";
+"use client"
+
+import aboutThumb from "../../../public/images/about-thumb2.png";
+import aboutAward from "../../../public/images/about-award-icon.png";
+import aboutShape from "../../../public/images/about-shape1.png";
+import aboutShape2 from "../../../public/images/about-shape-2.png";
+import phoneIcon from "../../../public/images/about-call-icon.png";
 import { RiCheckFill } from "react-icons/ri";
 import { IoMdPlay } from "react-icons/io";
 import { useState } from "react";
 import FsLightbox from "fslightbox-react";
 import { BiRightTopArrowCircle } from "react-icons/bi";
+import Image from "next/image";
+import Link from "next/link";
 
 const About = () => {
   const [toggler, setToggler] = useState(false);
@@ -17,8 +20,9 @@ const About = () => {
       <div className="Container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-[92px] lg:gap-10 2xl:gap-[92px] items-center">
           <div className="relative z-10">
-            <img
+            <Image
               src={aboutThumb}
+              alt="About Image"
               draggable="false"
               className="md:w-full lg:w 2xl:-ml-[38px] 2xl:max-w-[inherit]"
             />
@@ -39,7 +43,7 @@ const About = () => {
             </div>
             <div className="absolute top-0 right-0 sm:flex gap-5 items-center animate-dance3 hidden">
               <div>
-                <img src={aboutAward} draggable={false} />
+                <Image alt="About Award" src={aboutAward} draggable={false} />
               </div>
               <div>
                 <h5 className="font-Rajdhani font-semibold text-xl leading-8 text-HeadingColor-0">
@@ -50,8 +54,9 @@ const About = () => {
                 </h5>
               </div>
             </div>
-            <img
+            <Image
               src={aboutShape}
+              alt="About Shape"
               draggable="false"
               className="absolute bottom-10 left-10 -z-10 animate-movebtn hidden sm:block"
             />
@@ -92,21 +97,21 @@ const About = () => {
                 </li>
               </ul>
               <div className="bg-[#eff6fe] rounded-lg inline-block px-7 py-8 w-[300px]">
-                <Link to={"/"} className="inline-block">
+                <Link href={"/"} className="inline-block">
                   <button className="text-2xl font-Rajdhani font-semibold text-HeadingColor-0 flex items-center gap-3">
-                    <img src={phoneIcon} draggable={false} />
+                    <Image alt="About Icon" src={phoneIcon} draggable={false} />
                     +980 123 (456) 780
                   </button>
                 </Link>
               </div>
             </div>
-            <Link to={"/about"} className="mt-7 inline-block">
+            <Link href={"/about"} className="mt-7 inline-block">
               <button className="primary-btn3">
                 {`More About`}
                 <BiRightTopArrowCircle size={"20"} />
               </button>
             </Link>
-            <img
+            <Image alt="About Shape"
               src={aboutShape2}
               draggable="false"
               className="absolute -bottom-0 left-1/2 animate-swing hidden sm:block"

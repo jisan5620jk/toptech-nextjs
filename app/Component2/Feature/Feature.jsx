@@ -1,8 +1,7 @@
-/* eslint-disable no-unused-vars */
-import featureIcon from "/images/feature-icon-1.png";
-import featureIcon2 from "/images/feature-icon-2.png";
-import featureIcon3 from "/images/feature-icon-3.png";
-import featureIcon4 from "/images/feature-icon-4.png";
+import featureIcon from "../../../public/images/feature-icon-1.png";
+import featureIcon2 from "../../../public/images/feature-icon-2.png";
+import featureIcon3 from "../../../public/images/feature-icon-3.png";
+import featureIcon4 from "../../../public/images/feature-icon-4.png";
 import FeatureCard from "./FeatureCard";
 
 const processData = [

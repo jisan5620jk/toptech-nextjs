@@ -1,10 +1,13 @@
-import { Link } from "react-router-dom";
+"use client"
+
 import CountUp from "react-countup";
 import { useEffect } from "react";
 import ProgressBar from "react-animated-progress-bar";
 import { BiRightTopArrowCircle } from "react-icons/bi";
 import { IoDiamondOutline } from "react-icons/io5";
-import chooseShape from "/images/about-shape2.png";
+import chooseShape from "../../../public/images/about-shape2.png";
+import Image from "next/image";
+import Link from "next/link";
 
 const WhyChoose = () => {
   useEffect(() => {
@@ -105,13 +108,14 @@ const WhyChoose = () => {
                 trackPathBorderRadius="0"
               />
             </div>
-            <Link to={"/about"} className="mt-[50px] inline-block">
+            <Link href={"/about"} className="mt-[50px] inline-block">
               <button className="primary-btn3">
                 {`More About`}
                 <BiRightTopArrowCircle size={"20"} />
               </button>
             </Link>
-            <img
+            <Image
+            alt="Choose Shape"
               src={chooseShape}
               draggable="false"
               className="absolute -bottom-0 left-1/2 animate-swing hidden sm:block"
@@ -159,7 +163,7 @@ const WhyChoose = () => {
                   24/7 Supports
                 </li>
               </ul>
-              <Link to={"/"}>
+              <Link href={"/"}>
                 <button className="choose-btn font-Rajdhani font-medium bg-[#e6eefb] text-lg text-HeadingColor-0 rounded px-8 py-[10px] transition-all duration-500">
                   Purchaces
                 </button>
@@ -206,7 +210,7 @@ const WhyChoose = () => {
                   24/7 Supports
                 </li>
               </ul>
-              <Link to={"/"}>
+              <Link href={"/"}>
                 <button className="choose-btn font-Rajdhani font-medium bg-[#e6eefb] text-lg text-HeadingColor-0 rounded px-8 py-[10px] transition-all duration-500">
                   Purchaces
                 </button>

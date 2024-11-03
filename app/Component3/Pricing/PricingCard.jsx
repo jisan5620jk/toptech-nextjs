@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
-import CountUp from "react-countup";
-import { FaArrowRightLong } from "react-icons/fa6";
-import { Link } from "react-router-dom";
+import CountUp from 'react-countup';
+import { FaArrowRightLong } from 'react-icons/fa6';
+import Link from 'next/link';
 
 const PricingCard = ({
   currency,
@@ -20,54 +20,60 @@ const PricingCard = ({
   pricingShape2,
 }) => {
   return (
-    <div className="group bg-white rounded-xl relative z-10 before:absolute before:bottom-0 before:left-0 before:w-full before:h-0 before:opacity-0 before:bg-SecondaryColor-0 before:rounded-xl before:-z-10 before:transition-all before:duration-500 hover:before:h-full hover:before:opacity-100 hover:before:top-0">
-      <div className="absolute top-10 right-10 animate-pulse -z-10">
-        <img src={pricingShape1} draggable="false" />
+    <div className='group bg-white rounded-xl relative z-10 before:absolute before:bottom-0 before:left-0 before:w-full before:h-0 before:opacity-0 before:bg-SecondaryColor-0 before:rounded-xl before:-z-10 before:transition-all before:duration-500 hover:before:h-full hover:before:opacity-100 hover:before:top-0'>
+      <div className='absolute top-10 right-10 animate-pulse -z-10'>
+        <img
+          src={pricingShape1}
+          draggable='false'
+        />
       </div>
-      <div className="absolute bottom-10 right-10 animate-zoomInOut -z-10">
-        <img src={pricingShape2} draggable="false" />
+      <div className='absolute bottom-10 right-10 animate-zoomInOut -z-10'>
+        <img
+          src={pricingShape2}
+          draggable='false'
+        />
       </div>
-      <h4 className="font-Nunito font-medium text-lg text-PrimaryColor-0 pl-8 pr-10 py-2 bg-[#f5f8ed] rounded-r-full inline-block transition-all duration-500 mt-10">
+      <h4 className='font-Nunito font-medium text-lg text-PrimaryColor-0 pl-8 pr-10 py-2 bg-[#f5f8ed] rounded-r-full inline-block transition-all duration-500 mt-10'>
         {pricingTitle}
       </h4>
-      <div className="font-Nunito flex items-baseline gap-3 px-[30px] mt-6 pb-4">
-        <div className="flex items-center gap-1">
-          <h6 className="font-Nunito font-bold text-[50px] text-HeadingColor-0 transition-all duration-500 group-hover:text-white">
+      <div className='font-Nunito flex items-baseline gap-3 px-[30px] mt-6 pb-4'>
+        <div className='flex items-center gap-1'>
+          <h6 className='font-Nunito font-bold text-[50px] text-HeadingColor-0 transition-all duration-500 group-hover:text-white'>
             {currency}
           </h6>
           <CountUp
             start={-11}
             end={price}
-            suffix=""
-            className="text-[50px] font-bold font-Nunito text-HeadingColor-0 transition-all duration-500 group-hover:text-white"
+            suffix=''
+            className='text-[50px] font-bold font-Nunito text-HeadingColor-0 transition-all duration-500 group-hover:text-white'
           />
         </div>
-        <p className="text-TextColor-0 font-Nunito">{pricingDateLine}</p>
+        <p className='text-TextColor-0 font-Nunito'>{pricingDateLine}</p>
       </div>
-      <p className="font-Nunito text-TextColor-0 px-[30px]">{pricingDesc}</p>
+      <p className='font-Nunito text-TextColor-0 px-[30px]'>{pricingDesc}</p>
       <ul>
-        <li className="flex gap-2 items-center font-Nunito text-TextColor-0 transition-all duration-500 group-hover:text-white px-[30px] mb-3 mt-9">
-          <div className="text-[10px] text-PrimaryColor-0">{pricingIcon}</div>
+        <li className='flex gap-2 items-center font-Nunito text-TextColor-0 transition-all duration-500 group-hover:text-white px-[30px] mb-3 mt-9'>
+          <div className='text-[10px] text-PrimaryColor-0'>{pricingIcon}</div>
           {pricingContent1}
         </li>
-        <li className="flex gap-2 items-center font-Nunito text-TextColor-0 transition-all duration-500 group-hover:text-white px-[30px] mb-3">
-          <div className="text-[10px] text-PrimaryColor-0">{pricingIcon}</div>
+        <li className='flex gap-2 items-center font-Nunito text-TextColor-0 transition-all duration-500 group-hover:text-white px-[30px] mb-3'>
+          <div className='text-[10px] text-PrimaryColor-0'>{pricingIcon}</div>
           {pricingContent2}
         </li>
-        <li className="flex gap-2 items-center font-Nunito text-TextColor-0 transition-all duration-500 group-hover:text-white px-[30px] mb-3">
-          <div className="text-[10px] text-PrimaryColor-0">{pricingIcon}</div>
+        <li className='flex gap-2 items-center font-Nunito text-TextColor-0 transition-all duration-500 group-hover:text-white px-[30px] mb-3'>
+          <div className='text-[10px] text-PrimaryColor-0'>{pricingIcon}</div>
           {pricingContent3}
         </li>
-        <li className="flex gap-2 items-center font-Nunito text-TextColor-0 transition-all duration-500 group-hover:text-white px-[30px] mb-1">
-          <div className="text-[10px] text-PrimaryColor-0">{pricingIcon}</div>
+        <li className='flex gap-2 items-center font-Nunito text-TextColor-0 transition-all duration-500 group-hover:text-white px-[30px] mb-1'>
+          <div className='text-[10px] text-PrimaryColor-0'>{pricingIcon}</div>
           {pricingContent4}
         </li>
       </ul>
-      <div className="px-[30px] pb-10 flex justify-center">
-        <Link to={pricingUrl}>
-          <button className="primary-btn2 mt-9 group-hover:before:w-full group-hover:before:left-0">
+      <div className='px-[30px] pb-10 flex justify-center'>
+        <Link href={pricingUrl}>
+          <button className='primary-btn2 mt-9 group-hover:before:w-full group-hover:before:left-0'>
             {pricingBtn}
-            <FaArrowRightLong size={"20"} />
+            <FaArrowRightLong size={'20'} />
           </button>
         </Link>
       </div>

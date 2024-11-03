@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import CountUp from "react-countup";
 
 const CounterCard = ({

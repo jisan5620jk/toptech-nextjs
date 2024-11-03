@@ -1,5 +1,5 @@
-/* eslint-disable react/prop-types */
-import { Link } from "react-router-dom";
+import Image from "next/image";
+import Link from "next/link";
 
 const BlogCard = ({
   blogThumb,
@@ -15,7 +15,8 @@ const BlogCard = ({
   return (
     <div className="group p-5 transition-all duration-500 bg-white rounded-md">
       <div className="relative rounded-md overflow-hidden before:absolute before:top-0 before:left-1/2 before:w-0 before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 group-hover:before:w-full group-hover:before:left-0 before:z-10 group-hover:before:opacity-0">
-        <img
+        <Image
+        alt="Blog Image"
           src={blogThumb}
           className="transition-all duration-500 scale-100 group-hover:scale-110 w-full"
         />
@@ -32,12 +33,12 @@ const BlogCard = ({
               {blogTag}
             </p>
           </div>
-          <Link to={blogUrl}>
+          <Link href={blogUrl}>
             <button className="font-Rajdhani text-left font-semibold text-lg sm:text-[22px] md:text-xl lg:text-base xl:text-xl 2xl:text-[23px] text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor-0 mt-2 mb-5">
               {blogTitle}
             </button>
           </Link>
-          <Link to={blogUrl} className="inline-block">
+          <Link href={blogUrl} className="inline-block">
             <button className="flex items-center gap-2 text-HeadingColor-0 text-lg font-Rajdhani font-medium transition-all duration-500 group-hover:text-PrimaryColor-0">
               {blogBtn}
               {blogBtnIcon}

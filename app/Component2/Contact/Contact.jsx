@@ -1,8 +1,9 @@
 import { BiRightTopArrowCircle } from "react-icons/bi";
 import { FaPhoneAlt } from "react-icons/fa";
-import { Link } from "react-router-dom";
-import contactThumb from "/images/contact-thumb.png";
-import contactShape from "/images/contact-shape.png";
+import contactThumb from "../../../public/images/contact-thumb.png";
+import contactShape from "../../../public/images/contact-shape.png";
+import Link from "next/link";
+import Image from "next/image";
 
 const Contact = () => {
   return (
@@ -24,7 +25,7 @@ const Contact = () => {
               <br className="hidden sm:block lg:hidden xl:block" />
               best practices. Progressively fabricate
             </p>
-            <Link to={"/about"} className="mt-7 inline-block">
+            <Link href={"/about"} className="mt-7 inline-block">
               <button className="primary-btn3">
                 {`More About`}
                 <BiRightTopArrowCircle size={"20"} />
@@ -32,8 +33,8 @@ const Contact = () => {
             </Link>
           </div>
           <div className="flex lg:justify-end 2xl:justify-center 2xl:ml-20 relative">
-            <img src={contactThumb} draggable={false} />
-            <img
+            <Image alt="Contact Image" src={contactThumb} draggable={false} />
+            <Image alt="Contact Shape"
               src={contactShape}
               draggable={false}
               className="absolute lg:top-32 2xl:top-48 left-0 lg:-left-20 2xl:-left-28 animate-swing hidden md:block"

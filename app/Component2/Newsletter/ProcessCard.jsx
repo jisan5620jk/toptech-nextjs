@@ -1,10 +1,11 @@
-/* eslint-disable react/prop-types */
+import Image from "next/image";
+
 const ProcessCard = ({ processImg, processTitle, processDesc }) => {
   return (
     <div className="text-center group relative">
       <div className="inline-block m-auto relative">
         <div className="w-20 h-20 rounded-full bg-PrimaryColor-0 flex justify-center items-center relative z-10 before:absolute before:-top-[10px] before:-left-[10px] before:w-[100px] before:h-[100px] before:border-[2px] before:border-dashed before:border-PrimaryColor-0 before:rounded-full before:animate-rotate">
-          <img src={processImg} draggable="false" />
+          <Image alt="Process Image" src={processImg} draggable="false" />
         </div>
       </div>
       <h5 className="font-Rajdhani font-semibold text-HeadingColor-0 text-2xl mt-9 mb-4">

@@ -1,7 +1,8 @@
-import { Link } from "react-router-dom";
-import bannerImg from "/images/hero-thumb.png";
-import bannerShape from "/images/hero-shape2.png";
+import bannerImg from "../../../public/images/hero-thumb.png";
+import bannerShape from "../../../public/images/hero-shape2.png";
 import { BiRightTopArrowCircle } from "react-icons/bi";
+import Link from "next/link";
+import Image from "next/image";
 
 const Banner = () => {
   return (
@@ -23,20 +24,20 @@ const Banner = () => {
               Progressively fabricate done
             </p>
             <div className="flex flex-col sm:flex-row gap-5">
-              <Link to={"/contact"}>
+              <Link href={"/contact"}>
                 <button className="primary-btn2">
                   {`Let's Talk`}
                   <BiRightTopArrowCircle size={"20"} />
                 </button>
               </Link>
-              <Link to={"/about"}>
+              <Link href={"/about"}>
                 <button className="primary-btn2 !border-[#262664] hover:!border-PrimaryColor-0 !bg-[#262664] before:!bg-PrimaryColor-0">{`Read More`}</button>
               </Link>
             </div>
           </div>
           <div className="sm:flex justify-center lg:justify-end -mb-[132px] lg:-mb-12 relative z-10 hidden">
-            <img src={bannerImg} draggable="false" className="w-[inherit]" />
-            <img
+            <Image alt="Banner Image" src={bannerImg} draggable="false" className="w-[inherit]" />
+            <Image alt="Banner Shape"
               src={bannerShape}
               draggable={false}
               className="absolute -z-10 top-40 right-0 md:right-10 lg:-right-10 2xl:-right-[4rem] animate-dance3 hidden block"

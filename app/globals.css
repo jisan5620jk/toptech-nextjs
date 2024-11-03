@@ -44,6 +44,10 @@ body {
   @apply flex items-center gap-2 overflow-hidden border uppercase border-PrimaryColor-0 bg-PrimaryColor-0 transition-all z-10 hover:text-white duration-500 px-9 py-[13px] relative rounded-full text-lg text-white font-semibold font-Rajdhani before:bg-SecondaryColor-0 before:h-full before:w-0 before:absolute before:top-0 before:right-0 before:-z-10 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0;
 }
 
+.primary-btn6 {
+  @apply flex items-center gap-2 overflow-hidden capitalize bg-[linear-gradient(90deg,_rgba(12,89,219,1)_41%,_rgba(46,34,206,1)_88%)] transition-all z-10 hover:text-white duration-500 px-10 py-[14px] relative rounded-full text-white font-medium font-Nunito before:bg-[linear-gradient(-90deg,_rgba(12,89,219,1)_41%,_rgba(46,34,206,1)_88%)] before:h-full before:w-0 before:absolute before:top-0 before:right-0 before:-z-10 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0;
+}
+
 .is-sticky {
   @apply fixed top-0 left-0 w-full z-[99999] shadow-lg bg-white backdrop-blur-md animate-headerSlideDown;
 }
@@ -73,6 +77,16 @@ body {
 
 .rect-progress-bar-percent {
   @apply !m-0 leading-[10px] !text-HeadingColor-0 font-Rajdhani;
+}
+
+
+.why-choose .progress-bar-rect-wrap-container {
+  position: relative;
+  z-index: 999;
+}
+
+.why-choose .rect-progress-bar-percent {
+  @apply !m-0 leading-[10px] !text-TextColor2-0 font-medium font-Nunito absolute -top-6 right-0;
 }
 
 /* React Tab */
@@ -184,6 +198,76 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
   scale: 0;
 }
 
+.app-screen .swiper-pagination {
+  bottom: 0 !important;
+  top: inherit !important;
+  left: 50% !important;
+  transform: translatex(-50%) !important;
+  width: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 8px !important;
+  flex-direction: row !important;
+}
+
+.app-screen .swiper-pagination-bullet {
+  background: transparent !important;
+  opacity: 1 !important;
+  background: #dfe1e4 !important;
+  border: none !important;
+  border-radius: 50%;
+  height: 12px !important;
+  width: 12px !important;
+  position: relative;
+}
+
+.app-screen .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  opacity: 1 !important;
+  height: 12px !important;
+  width: 12px !important;
+  background: #0c59db !important;
+}
+
+.app-screen span.swiper-pagination-bullet::before {
+  scale: 0;
+}
+
+.testimonial5 .swiper-pagination {
+  bottom: 0 !important;
+  top: inherit !important;
+  left: 50% !important;
+  transform: translatex(-50%) !important;
+  width: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 8px !important;
+  flex-direction: row !important;
+}
+
+.testimonial5 .swiper-pagination-bullet {
+  background: transparent !important;
+  opacity: 1 !important;
+  background: #dae7f8 !important;
+  border: none !important;
+  border-radius: 50%;
+  height: 10px !important;
+  width: 10px !important;
+  position: relative;
+}
+
+.testimonial5 .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  opacity: 1 !important;
+  height: 12px !important;
+  width: 12px !important;
+  background: #0c59db !important;
+}
+
+.testimonial5 span.swiper-pagination-bullet::before {
+  scale: 0;
+}
+
 /* Testimonial */
 
 .testimonial .swiper-pagination {
@@ -203,7 +287,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
 }
 
 .testimonial span.swiper-pagination-bullet:nth-of-type(1) {
-  background: url(../public/images/testi-1.png) no-repeat center/cover !important;
+  background: url(../public/images/testi-5.png) no-repeat center/cover !important;
 }
 
 .testimonial span.swiper-pagination-bullet:nth-of-type(2) {
@@ -317,6 +401,14 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
 .faq-button2[aria-expanded="true"] img {
   filter: brightness(0) invert(1);
 }
+
+.faq-button7[aria-expanded="true"],
+.faq-button7:hover {
+  border-radius: 8px 8px 0 0;
+  background: #f2f7fd;
+  border-bottom: transparent;
+}
+
 
 /* Pricing */
 
@@ -448,4 +540,10 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
 
 .team-member-box:nth-child(2n + 2) {
   margin-top: 50px;
+}
+
+/* Team Member */
+
+.feature-box:nth-child(2n + 2) {
+  margin-top: 30px;
 }

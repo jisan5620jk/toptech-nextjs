@@ -12,10 +12,10 @@ const Analytics = () => {
       <img
         src={analyticsShape}
         draggable="false"
-        className="absolute -top-14 right-0 -z-10 animate-wiggle"
+        className="absolute -top-14 right-0 2xl:right-44 -z-10 animate-wiggle hidden lg:block"
       />
       <div className="Container">
-        <div className="grid grid-cols-2">
+        <div className="grid lg:grid-cols-2 gap-14 lg:gap-0">
           <div>
             <h5 className="font-Rajdhani font-semibold bg-white bg-opacity-20 inline-block px-7 py-[6px] rounded-full border text-PrimaryColor-0 text-lg mb-5">
               Tracking
@@ -33,7 +33,7 @@ const Analytics = () => {
                   Super Fast Speed
                 </h5>
                 <p className="font-Nunito text-TextColor2-0 pt-2">
-                  Conveniently provide access to leading-edge <br /> interfaces.
+                  Conveniently provide access to leading-edge <br className="hidden md:block"/> interfaces.
                   Uniquely network
                 </p>
               </div>
@@ -47,12 +47,12 @@ const Analytics = () => {
                   Admin Dashboard
                 </h5>
                 <p className="font-Nunito text-TextColor2-0 pt-2">
-                  Conveniently provide access to leading-edge <br /> interfaces.
+                  Conveniently provide access to leading-edge <br className="hidden md:block"/> interfaces.
                   Uniquely network
                 </p>
               </div>
             </div>
-            <div className="pt-8 border-t flex items-center gap-5 w-8/12">
+            <div className="pt-8 border-t flex items-center gap-5 md:w-8/12 lg:w-10/12 xl:w-8/12">
               <div className="border-r pr-5">
                 <CountUp
                   start={-9}
@@ -63,28 +63,28 @@ const Analytics = () => {
               </div>
               <div>
                 <p className="font-Nunito text-TextColor2-0 -mt-1">
-                  Conveniently provide access <br /> interfaces network
+                  Conveniently provide access <br className="hidden sm:block"/> interfaces network
                 </p>
               </div>
             </div>
           </div>
           <div>
-            <div className="grid grid-cols-2 gap-8">
-              <div className="col-span-2">
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="md:col-span-2">
                 <img
                   src={analyticsThumb}
                   draggable="false"
                   className="rounded-3xl shadow-shade"
                 />
               </div>
-              <div className="col-span-1">
+              <div className="md:col-span-1">
                 <img
                   src={analyticsThumb2}
                   draggable="false"
                   className="rounded-3xl"
                 />
               </div>
-              <div className="col-span-1">
+              <div className="md:col-span-1">
                 <img
                   src={analyticsThumb3}
                   draggable="false"

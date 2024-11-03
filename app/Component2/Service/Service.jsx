@@ -1,12 +1,10 @@
-/* eslint-disable no-unused-vars */
-import serviceIcon from "/images/service-icon-1.png";
-import serviceIcon2 from "/images/service-icon-2.png";
-import serviceIcon3 from "/images/service-icon-3.png";
-import serviceIcon4 from "/images/service-icon-4.png";
-import serviceIcon5 from "/images/service-icon-5.png";
-import serviceIcon6 from "/images/service-icon-6.png";
+import serviceIcon from "../../../public/images/service-icon-1.png";
+import serviceIcon2 from "../../../public/images/service-icon-2.png";
+import serviceIcon3 from "../../../public/images/service-icon-3.png";
+import serviceIcon4 from "../../../public/images/service-icon-4.png";
+import serviceIcon5 from "../../../public/images/service-icon-5.png";
+import serviceIcon6 from "../../../public/images/service-icon-6.png";
 import ServiceCard from "./ServiceCard";
-import { HiMiniArrowLongRight } from "react-icons/hi2";
 
 const ServiceData = [
   {

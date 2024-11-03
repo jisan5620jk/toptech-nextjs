@@ -9,7 +9,7 @@ const Achivement = () => {
         <img
           src={achivementShape}
           draggable="false"
-          className="animate-bounce absolute top-20 -left-5"
+          className="animate-swing absolute top-20 -left-5 hidden lg:block"
         />
         <img
           src={achivementShape2}
@@ -26,8 +26,8 @@ const Achivement = () => {
           </h1>
           <p className="font-Nunito text-TextColor2-0">
             Conveniently provide access to leading-edge imperatives whereas
-            interfaces. <br /> Uniquely network cutting-edge niche markets
-            whereas
+            interfaces. <br className="hidden md:block" /> Uniquely network
+            cutting-edge niche markets whereas
           </p>
         </div>
         <div className="border-t mt-11 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
@@ -36,7 +36,7 @@ const Achivement = () => {
               start={-9}
               end={36}
               suffix="M"
-              className="text-3xl sm:text-[70px] sm:leading-[40px] font-Rajdhani font-semibold text-HeadingColor-0"
+              className="text-3xl sm:text-4xl lg:text-6xl sm:leading-[40px] font-Rajdhani font-semibold text-HeadingColor-0"
             />
             <p className="font-Nunito text-TextColor2-0 mt-4">
               Conveniently provide access <br /> interfaces network
@@ -47,7 +47,7 @@ const Achivement = () => {
               start={-9}
               end={68}
               suffix="K+"
-              className="text-3xl sm:text-[70px] sm:leading-[40px] font-Rajdhani font-semibold text-HeadingColor-0"
+              className="text-3xl sm:text-4xl lg:text-6xl sm:leading-[40px] font-Rajdhani font-semibold text-HeadingColor-0"
             />
             <p className="font-Nunito text-TextColor2-0 mt-4">
               Conveniently provide access <br /> interfaces network
@@ -58,7 +58,7 @@ const Achivement = () => {
               start={-9}
               end={12}
               suffix="K"
-              className="text-3xl sm:text-[70px] sm:leading-[40px] font-Rajdhani font-semibold text-HeadingColor-0"
+              className="text-3xl sm:text-4xl lg:text-6xl sm:leading-[40px] font-Rajdhani font-semibold text-HeadingColor-0"
             />
             <p className="font-Nunito text-TextColor2-0 mt-4">
               Conveniently provide access <br /> interfaces network
@@ -69,7 +69,7 @@ const Achivement = () => {
               start={-9}
               end={93}
               suffix="%"
-              className="text-3xl sm:text-[70px] sm:leading-[40px] font-Rajdhani font-semibold text-HeadingColor-0"
+              className="text-3xl sm:text-4xl lg:text-6xl sm:leading-[40px] font-Rajdhani font-semibold text-HeadingColor-0"
             />
             <p className="font-Nunito text-TextColor2-0 mt-4">
               Conveniently provide access <br /> interfaces network
