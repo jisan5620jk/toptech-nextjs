@@ -75,7 +75,7 @@ const Project = () => {
     },
   };
   return (
-    <section className='project relative z-10 py-28 bg-white before:absolute before:top-0 before:left-0 before:h-[72%] before:w-full before:bg-SecondaryColor-0 before:-z-10 before:bg-center before:bg-cover before:bg-no-repeat -mb-[1px]'>
+    <section className='project relative z-10 py-28 bg-white before:absolute before:top-0 before:left-0 before:h-[72%] before:w-full before:bg-SecondaryColor-0 before:-z-10 before:bg-center before:bg-cover before:bg-no-repeat'>
       <div className='Container'>
         <div className='text-center'>
           <h5 className='font-Rajdhani text-lg font-semibold text-PrimaryColor-0'>
