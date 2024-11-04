@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
 const BlogCard = ({
   blogThumb,

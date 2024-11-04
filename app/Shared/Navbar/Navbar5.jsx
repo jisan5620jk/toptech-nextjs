@@ -5,9 +5,9 @@ import { BiSearch } from 'react-icons/bi';
 import Logo from '../../../public/images/logo.png';
 import { useState, useEffect } from 'react';
 import { IoMdClose } from 'react-icons/io';
-import { MdOutlineFileDownload } from 'react-icons/md';
-import Image from 'next/image';
 import Link from 'next/link';
+import Image from 'next/image';
+import { MdOutlineFileDownload } from 'react-icons/md';
 
 const Navbar5 = () => {
   //sticky
@@ -41,11 +41,7 @@ const Navbar5 = () => {
     <nav
       className={`w-full transition-all duration-300 bg-transparent relative z-[99999]`}
     >
-      <header
-        className='header-section bg-transparent absolute w-full z-10'
-        data-aos='zoom-in'
-        data-aos-duration='1000'
-      >
+      <header className='header-section bg-transparent absolute w-full z-10'>
         <div className='Container'>
           {/* main Navbar */}
           <div className='flex flex-col lg:flex-row items-center justify-between lg:h-[100px] '>
@@ -98,11 +94,11 @@ const Navbar5 = () => {
                     ? 'pending'
                     : isActive
                     ? 'active'
-                    : ''} text-HeadingColor-0 text-lg font-medium px-3 lg:px-2 xl:px-[22px] w-full block transition-all duration-300 group relative `}
+                    : ''} text-HeadingColor-0 text-lg font-medium pl-3 lg:pl-2 xl:pl-[22px] 2xl:py-[13px] w-full block transition-all duration-300 group relative `}
               >
                 <Link
                   href='/'
-                  className='flex items-center relative z-10 transition-all duration-300 pl-3'
+                  className='inline-block relative z-10 transition-all duration-300 pl-3'
                 >
                   <FaRegCircle
                     size={'7'}
@@ -208,7 +204,7 @@ const Navbar5 = () => {
                     ? 'pending'
                     : isActive
                     ? 'active'
-                    : ''} text-HeadingColor-0 text-lg font-medium px-3 lg:px-2 xl:px-[22px] w-full block transition-all duration-300 group relative `}
+                    : ''} text-HeadingColor-0 text-lg font-medium pl-3 lg:pl-2 xl:pl-[22px] 2xl:py-[13px] w-full block transition-all duration-300 group relative `}
               >
                 <Link
                   href='/about'
@@ -251,7 +247,7 @@ const Navbar5 = () => {
                     ? 'pending'
                     : isActive
                     ? 'active'
-                    : ''} text-HeadingColor-0 text-lg font-medium px-3 lg:px-2 xl:px-[22px] w-full block transition-all duration-300 group relative `}
+                    : ''} text-HeadingColor-0 text-lg font-medium pl-3 lg:pl-2 xl:pl-[22px] 2xl:py-[13px] w-full block transition-all duration-300 group relative `}
               >
                 <Link
                   href='#'
@@ -294,7 +290,7 @@ const Navbar5 = () => {
                     ? 'pending'
                     : isActive
                     ? 'active'
-                    : ''} text-HeadingColor-0 text-lg font-medium px-3 lg:px-2 xl:px-[22px] w-full block transition-all duration-300 group relative `}
+                    : ''} text-HeadingColor-0 text-lg font-medium pl-3 lg:pl-2 xl:pl-[22px] 2xl:py-[13px] w-full block transition-all duration-300 group relative `}
               >
                 <Link
                   href='#'
@@ -418,7 +414,7 @@ const Navbar5 = () => {
                     ? 'pending'
                     : isActive
                     ? 'active'
-                    : ''} text-HeadingColor-0 text-lg font-medium px-3 lg:px-2 xl:px-[22px] w-full block transition-all duration-300 group relative `}
+                    : ''} text-HeadingColor-0 text-lg font-medium pl-3 lg:pl-2 xl:pl-[22px] 2xl:py-[13px] w-full block transition-all duration-300 group relative `}
               >
                 <Link
                   href='#'
@@ -481,7 +477,7 @@ const Navbar5 = () => {
                     ? 'pending'
                     : isActive
                     ? 'active'
-                    : ''} text-HeadingColor-0 text-lg font-medium px-3 lg:px-2 xl:px-[22px] w-full block transition-all duration-300 group`}
+                    : ''} text-HeadingColor-0 text-lg font-medium pl-3 lg:pl-2 xl:pl-[22px] 2xl:py-[13px] w-full block transition-all duration-300 group`}
                 href='/contact'
               >
                 <span className='flex items-center relative z-10 transition-all duration-300 group-hover:pl-3'>

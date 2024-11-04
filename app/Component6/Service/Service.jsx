@@ -1,5 +1,5 @@
 import { FaPlus } from 'react-icons/fa6';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import serviceBoxShape from '/images/feat-icon1.png';
 
 const Service = () => {

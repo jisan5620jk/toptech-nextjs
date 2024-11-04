@@ -1,7 +1,7 @@
 import PricingCard from './PricingCard';
 import pricingIcon from '/images/mobile-app-price-icon.png';
 import { HiOutlineArrowRight } from 'react-icons/hi';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import CountUp from 'react-countup';
 import { GiCheckMark } from 'react-icons/gi';
 

@@ -1,5 +1,5 @@
 import benifitsThumb from '/images/mobile-app-chart.png';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import { HiOutlineArrowRight } from 'react-icons/hi';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import { FaCheck } from 'react-icons/fa6';

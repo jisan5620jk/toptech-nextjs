@@ -1,14 +1,17 @@
-import { Link } from 'react-router-dom';
-import portfolioThumb from '/images/portfolio-thumb.png';
-import portfolioThumb2 from '/images/portfolio-thumb2.png';
-import portfolioThumb3 from '/images/portfolio-thumb3.png';
-import bannerShape2 from '/images/banner-shape.png';
-import bannerShape from '/images/banner-shape2.png';
-import bannerShape3 from '/images/banner-shape3.png';
+"use client"
+
+import Link from 'next/link';
+import portfolioThumb from '../../../public/images/portfolio-thumb.png';
+import portfolioThumb2 from '../../../public/images/portfolio-thumb2.png';
+import portfolioThumb3 from '../../../public/images/portfolio-thumb3.png';
+import bannerShape2 from '../../../public/images/banner-shape.png';
+import bannerShape from '../../../public/images/banner-shape2.png';
+import bannerShape3 from '../../../public/images/banner-shape3.png';
 import { HiOutlineArrowRight } from 'react-icons/hi';
 import { useState } from 'react';
 import FsLightbox from 'fslightbox-react';
 import { PiPlay } from 'react-icons/pi';
+import Image from 'next/image';
 
 const Banner = () => {
   const [toggler, setToggler] = useState(false);
@@ -16,14 +19,16 @@ const Banner = () => {
     <div className='bg-[url(/images/banner5-bg.jpg)] bg-no-repeat bg-cover bg-center'>
       <section className='bg-transparent pt-[190px] pb-[82px] relative z-10 overflow-hidden'>
         <div className='Container relative'>
-          <img
+          <Image
             src={bannerShape2}
             draggable='false'
+            alt='Banner Shape'
             className='absolute -left-10 top-28 animate-dance3 hidden lg:block'
           />
-          <img
+          <Image
             src={bannerShape}
             draggable='false'
+            alt='Banner Shape'
             className='absolute right-10 top-28 animate-swing hidden lg:block'
           />
           <div className='text-center'>
@@ -72,30 +77,34 @@ const Banner = () => {
       </section>
       <section className='pb-[120px]'>
         <div className='Container relative z-10'>
-          <img
+          <Image
             src={bannerShape3}
             draggable='false'
+            alt='Banner Shape'
             className='absolute -left-24 -top-20 animate-wiggle -z-10 hidden md:block'
           />
           <div className='grid md:col-span-2 lg:grid-cols-3 gap-8'>
             <div className='md:col-span-2 lg:row-span-2'>
-              <img
+              <Image
                 src={portfolioThumb}
                 draggable='false'
+                alt='Portfolio Image'
                 className='rounded-3xl'
               />
             </div>
             <div className='md:col-span-1 md:row-span-1'>
-              <img
+              <Image
                 src={portfolioThumb2}
                 draggable='false'
+                alt='Portfolio Image'
                 className='rounded-3xl'
               />
             </div>
             <div className='lg:col-span-1 lg:row-span-1'>
-              <img
+              <Image
                 src={portfolioThumb3}
                 draggable='false'
+                alt='Portfolio Image'
                 className='rounded-3xl'
               />
             </div>

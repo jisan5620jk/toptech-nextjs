@@ -3,7 +3,7 @@ import appStore from '/images/app-store.png';
 import downloadThumb from '/images/mobile-app-app-img.png';
 import shape1 from '/images/mobile-app-app-notice.png';
 import shape2 from '/images/mobile-app-app-mail.png';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import { FaCheck } from 'react-icons/fa6';
 
 const Download = () => {

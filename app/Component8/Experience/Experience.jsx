@@ -1,5 +1,5 @@
 import { FaApple, FaGooglePlay } from 'react-icons/fa6';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import experienceThumb from '/images/call-thumb.png';
 import experienceThumb2 from '/images/call-thumb2.png';
 import experienceShape from '/images/ball1.png';

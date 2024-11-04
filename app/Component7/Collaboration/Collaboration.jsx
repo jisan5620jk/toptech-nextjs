@@ -1,6 +1,6 @@
 import collaborationThumb from '/images/mobil-app-colaboration-img-1.png';
 import icon from '/images/mobil-app-download.png';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import { HiBadgeCheck, HiOutlineArrowRight } from 'react-icons/hi';
 
 const Collaboration = () => {

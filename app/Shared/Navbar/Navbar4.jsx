@@ -47,8 +47,6 @@ const Navbar4 = () => {
     >
       <header
         className='header-section bg-transparent w-full z-10'
-        data-aos='zoom-in'
-        data-aos-duration='1000'
       >
         <div className='Container'>
           {/* main Navbar */}

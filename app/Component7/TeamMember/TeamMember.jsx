@@ -11,7 +11,7 @@ import {
   FaXTwitter,
 } from 'react-icons/fa6';
 import { IoShareSocialOutline } from 'react-icons/io5';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
 const teamData = [
   {

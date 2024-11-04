@@ -1,5 +1,5 @@
 import aboutThumb from '/images/about6-thumb.png';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import { FaSquareFull } from 'react-icons/fa6';
 
 const About = () => {

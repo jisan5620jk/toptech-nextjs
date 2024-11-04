@@ -1,42 +1,43 @@
-import aboutThumb from '/images/about5-thumb.png';
-import aboutShape from '/images/about5-shape.png';
-import aboutShape2 from '/images/about5-shape2.png';
-import aboutCounter from '/images/about-counter.jpg';
-import aboutMainShape from '/images/about-main-shape.png';
-import { Link } from 'react-router-dom';
+import aboutThumb from '../../../public/images/about5-thumb.png';
+import aboutShape from '../../../public/images/about5-shape.png';
+import aboutShape2 from '../../../public/images/about5-shape2.png';
+import aboutCounter from '../../../public/images/about-counter.jpg';
+import aboutMainShape from '../../../public/images/about-main-shape.png';
+import Link from 'next/link';
 import { LuCheck } from 'react-icons/lu';
 import { HiOutlineArrowRight } from 'react-icons/hi';
+import Image from 'next/image';
 
 const About = () => {
   return (
     <section className='pt-[80px] pb-[120px] bg-no-repeat bg-center bg-cover relative'>
       <div className='Container relative'>
-        <img
+        <Image alt="About Image"
           src={aboutMainShape}
           draggable='false'
           className='animate-rotational absolute top-0 -right-20'
         />
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-[92px] lg:gap-10 2xl:gap-[92px] items-center'>
           <div className='relative z-10 sm:flex justify-between hidden'>
-            <img
+            <Image alt="About Image"
               src={aboutThumb}
               draggable='false'
               className='2xl:max-w-[inherit] 2xl:-ml-36'
             />
             <div className='absolute top-20 sm:top-10 md:top-20 lg:top-5 2xl:top-28 left-24 animate-rotational'>
-              <img
+              <Image alt="About Image"
                 src={aboutShape}
                 draggable='false'
               />
             </div>
             <div className='absolute -z-10 top-0 md:top-14 2xl:top-20 left-10 animate-wiggle'>
-              <img
+              <Image alt="About Image"
                 src={aboutShape2}
                 draggable='false'
               />
             </div>
             <div className='absolute -z-10 bottom-16 right-10 md:bottom-36 lg:bottom-10 xl:bottom-24 2xl:bottom-44 2xl:right-0 animate-dance3'>
-              <img
+              <Image alt="About Image"
                 src={aboutCounter}
                 draggable='false'
               />

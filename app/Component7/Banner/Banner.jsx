@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import bannerImg from '/images/mobile-app-banner-img.png';
 import profileImg from '/images/mobil-app-banner-img.png';
 import profileImg2 from '/images/mobil-app-banner-img3.png';

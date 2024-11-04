@@ -117,8 +117,6 @@ const Navbar2 = () => {
       {/* top Navbar */}
       <header
         className='header-section navbar2 bg-transparent absolute w-full z-10'
-        data-aos='zoom-in'
-        data-aos-duration='1000'
       >
         <div className='Container'>
           {/* main Navbar */}

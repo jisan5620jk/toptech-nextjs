@@ -3,7 +3,7 @@ import serviceImg from '/images/service5-icon.png';
 import serviceImg2 from '/images/service5-icon2.png';
 import serviceImg3 from '/images/service5-icon3.png';
 import serviceImg4 from '/images/service5-icon4.png';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import { HiOutlineArrowRight } from 'react-icons/hi';
 import { RxDotsHorizontal } from 'react-icons/rx';
 

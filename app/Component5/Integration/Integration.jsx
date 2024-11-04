@@ -1,7 +1,7 @@
 import { GiCheckMark } from 'react-icons/gi';
 import integrationThumb from '/images/integration-thumb.png';
 import integrationShape from '/images/integration-thumb-shape.png';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import { HiOutlineArrowRight } from 'react-icons/hi';
 
 const Integration = () => {

@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import bannerImg from '/images/hero6-thumb.png';
 import bannerShape from '/images/ban-shape1.png';
 import bannerShape2 from '/images/ban-shape2.png';

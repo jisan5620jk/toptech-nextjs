@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import CountUp from 'react-countup';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
 const PricingCard = ({
   pricingIcon,
