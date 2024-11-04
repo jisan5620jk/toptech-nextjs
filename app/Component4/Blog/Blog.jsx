@@ -1,9 +1,7 @@
-/* eslint-disable no-unused-vars */
-import { FaArrowRightLong, FaStarOfLife } from "react-icons/fa6";
-import blogThumb from "/images/projects-img.png";
-import blogThumb2 from "/images/projects-img2.png";
-import blogThumb3 from "/images/projects-img3.png";
-import blogThumb4 from "/images/projects-img4.png";
+import blogThumb from "../../../public/images/projects-img.png";
+import blogThumb2 from "../../../public/images/projects-img2.png";
+import blogThumb3 from "../../../public/images/projects-img3.png";
+import blogThumb4 from "../../../public/images/projects-img4.png";
 import BlogCard from "./BlogCard";
 import { PiStarFourFill } from "react-icons/pi";
 import { RxArrowRight } from "react-icons/rx";

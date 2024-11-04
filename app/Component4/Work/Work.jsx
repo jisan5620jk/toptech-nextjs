@@ -1,11 +1,9 @@
-/* eslint-disable no-unused-vars */
-import workThumb from "/images/work1.png";
-import workThumb2 from "/images/work2.png";
-import workThumb3 from "/images/work3.png";
-import workThumb4 from "/images/work4.png";
+import workThumb from "../../../public/images/work1.png";
+import workThumb2 from "../../../public/images/work2.png";
+import workThumb3 from "../../../public/images/work3.png";
+import workThumb4 from "../../../public/images/work4.png";
 import WorkCard from "./WorkCard";
 import { PiStarFourFill } from "react-icons/pi";
-import { Link } from "react-router-dom";
 import { HiOutlineArrowRight } from "react-icons/hi";
 
 const WorkData = [

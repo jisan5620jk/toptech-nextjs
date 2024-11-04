@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+import Image from 'next/image';
 import Link from 'next/link';
 
 const ServiceCard = ({
@@ -11,9 +11,10 @@ const ServiceCard = ({
   return (
     <div className='px-[30px] lg:px-7 xl:px-[30px] pt-9 pb-[34px] rounded-lg bg-transparent group overflow-hidden border border-BorderColor-0 transition-all duration-500 hover:border-PrimaryColor-0 relative z-10 before:absolute before:left-1/2 before:top-0 before:h-full before:w-0 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:-z-10 after:absolute after:-right-28 after:-top-28 after:h-[224px] after:w-[225px] after:bg-white after:scale-0 after:opacity-10 after:rounded-full after:transition-all after:duration-500 after:-z-10 hover:before:w-full hover:after:scale-100 hover:before:left-0'>
       <div className='relative pb-8 z-10'>
-        <img
+        <Image
           src={serviceIcon}
           draggable='false'
+          alt='Service Icon'
           className='transition-all duration-500 group-hover:brightness-0 group-hover:invert-[1]'
         />
       </div>

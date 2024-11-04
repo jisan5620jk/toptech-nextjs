@@ -3,7 +3,8 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination } from "swiper/modules";
+import 'swiper/css/effect-fade';
+import { EffectFade, Pagination } from "swiper/modules";
 import { MdOutlineStarPurple500 } from "react-icons/md";
 import TestimonialCard from "./TestimonialCard";
 import TestimonialNavigation from "./TestimonialNavigation";
@@ -57,6 +58,8 @@ const Testimonial = () => {
     spaceBetween: 30,
     speed: 1500,
     autoplay: true,
+    effect: 'fade',
+    modules: [EffectFade],
     breakpoints: {
       320: {
         slidesPerView: 1,

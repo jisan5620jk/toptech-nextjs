@@ -1,11 +1,10 @@
-/* eslint-disable no-unused-vars */
 import { FaArrowRightLong } from "react-icons/fa6";
-import featureIcon from "/images/service1.png";
-import featureIcon2 from "/images/service2.png";
-import featureIcon3 from "/images/service3.png";
-import featureIcon4 from "/images/service4.png";
-import featureIcon5 from "/images/service5.png";
-import featureIcon6 from "/images/service6.png";
+import featureIcon from "../../../public/images/service1.png";
+import featureIcon2 from "../../../public/images/service2.png";
+import featureIcon3 from "../../../public/images/service3.png";
+import featureIcon4 from "../../../public/images/service4.png";
+import featureIcon5 from "../../../public/images/service5.png";
+import featureIcon6 from "../../../public/images/service6.png";
 import FeatureCard from "./FeatureCard";
 import { PiStarFourFill } from "react-icons/pi";
 

@@ -1,9 +1,12 @@
+"use client"
+
 import Link from 'next/link';
-import processThumb from '/images/process-thumb.png';
+import processThumb from '../../../public/images/process-thumb.png';
 import { PiStarFourFill } from 'react-icons/pi';
 import { useState } from 'react';
 import FsLightbox from 'fslightbox-react';
 import { HiOutlineArrowRight } from 'react-icons/hi';
+import Image from 'next/image';
 
 const Process = () => {
   const [toggler, setToggler] = useState(false);
@@ -12,9 +15,10 @@ const Process = () => {
       <div className='Container'>
         <div className='grid lg:grid-cols-2 lg:items-center gap-10 xl:gap-20 2xl:gap-9'>
           <div className='relative'>
-            <img
+            <Image
               src={processThumb}
               draggable='false'
+              alt='Porcess Image'
               className='w-full lg:w-[inherit]'
             />
             <div className='absolute top-1/2 right-[65px] sm:right-[155px] md:right-[230px] lg:right-[128px] xl:right-[154px] 2xl:right-[266px] -translate-y-1/2'>

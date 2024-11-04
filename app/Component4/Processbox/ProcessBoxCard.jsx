@@ -1,6 +1,5 @@
 import Link from 'next/link';
 
-/* eslint-disable react/prop-types */
 const processBoxCard = ({
   processBoxTitle,
   boxNumber,

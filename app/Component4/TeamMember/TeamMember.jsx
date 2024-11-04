@@ -1,7 +1,7 @@
-import teamThumb from '/images/team1.png';
-import teamThumb2 from '/images/team2.png';
-import teamThumb3 from '/images/team3.png';
-import teamThumb4 from '/images/team4.png';
+import teamThumb from '../../../public/images/team1.png';
+import teamThumb2 from '../../../public/images/team2.png';
+import teamThumb3 from '../../../public/images/team3.png';
+import teamThumb4 from '../../../public/images/team4.png';
 import TeamCard from './TeamCard';
 import { FaLinkedinIn, FaPinterestP, FaXTwitter } from 'react-icons/fa6';
 import { PiStarFourFill } from 'react-icons/pi';

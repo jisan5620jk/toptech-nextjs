@@ -1,12 +1,14 @@
-/* eslint-disable no-unused-vars */
-import brandThumb from "/images/brand1.png";
-import brandThumb2 from "/images/brand2.png";
-import brandThumb3 from "/images/brand3.png";
-import brandThumb4 from "/images/brand4.png";
-import brandThumb5 from "/images/brand5.png";
+"use client"
+
+import brandThumb from "../../../public/images/brand1.png";
+import brandThumb2 from "../../../public/images/brand2.png";
+import brandThumb3 from "../../../public/images/brand3.png";
+import brandThumb4 from "../../../public/images/brand4.png";
+import brandThumb5 from "../../../public/images/brand5.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
+import Image from "next/image";
 
 const Brand = () => {
   const settings = {
@@ -38,32 +40,32 @@ const Brand = () => {
         <Swiper {...settings}>
           <SwiperSlide>
             <div className="flex justify-center">
-              <img src={brandThumb} />
+              <Image alt="Brand Image" src={brandThumb} />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="flex justify-center">
-              <img src={brandThumb2} />
+              <Image alt="Brand Image" src={brandThumb2} />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="flex justify-center">
-              <img src={brandThumb3} />
+              <Image alt="Brand Image" src={brandThumb3} />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="flex justify-center">
-              <img src={brandThumb4} />
+              <Image alt="Brand Image" src={brandThumb4} />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="flex justify-center">
-              <img src={brandThumb5} />
+              <Image alt="Brand Image" src={brandThumb5} />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="flex justify-center">
-              <img src={brandThumb3} />
+              <Image alt="Brand Image" src={brandThumb3} />
             </div>
           </SwiperSlide>
         </Swiper>

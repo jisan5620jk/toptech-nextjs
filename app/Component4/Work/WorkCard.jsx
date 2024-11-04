@@ -1,12 +1,13 @@
-/* eslint-disable react/prop-types */
+import Image from 'next/image';
 import Link from 'next/link';
 
 const WorkCard = ({ workThumb, workTitle, workDesc, workUrl, workBtn }) => {
   return (
     <div className='group relative z-10 overflow-hidden'>
-      <img
+      <Image
         src={workThumb}
         draggable='false'
+        alt='Work Image'
         className='w-full'
       />
       <Link

@@ -1,4 +1,7 @@
-import aboutThumb from '/images/about1.png';
+"use client"
+
+import Image from 'next/image';
+import aboutThumb from '../../../public/images/about1.png';
 import Link from 'next/link';
 import CountUp from 'react-countup';
 import { PiStarFourFill } from 'react-icons/pi';
@@ -61,8 +64,9 @@ const About = () => {
             </Link>
           </div>
           <div className='relative z-10'>
-            <img
+            <Image
               src={aboutThumb}
+              alt='About Image'
               draggable='false'
             />
             <div className='absolute bottom-0 sm:bottom-11 md:bottom-[65px] lg:bottom-5 xl:bottom-11 2xl:bottom-[3.8rem] right-0 md:right-[84px] lg:right-0'>

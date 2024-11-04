@@ -17,6 +17,7 @@ const BlogCard = ({
       <div className='relative rounded-md overflow-hidden before:absolute before:top-0 before:left-1/2 before:w-0 before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 group-hover:before:w-full group-hover:before:left-0 before:z-10 group-hover:before:opacity-0'>
         <Image
           src={blogThumb}
+          alt='Blog Image'
           className='transition-all duration-500 scale-100 group-hover:scale-110 w-full'
         />
       </div>

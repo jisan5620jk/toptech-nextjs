@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import footerLogo from '/images/logo-2.png';
+import footerLogo from '../../../public/images/logo-2.png';
 import {
   FaFacebookF,
   FaLinkedinIn,
@@ -8,6 +8,7 @@ import {
   FaXTwitter,
 } from 'react-icons/fa6';
 import { HiOutlineMail } from 'react-icons/hi';
+import Image from 'next/image';
 
 const Footer4 = () => {
   return (
@@ -16,9 +17,10 @@ const Footer4 = () => {
         <div className='flex flex-col sm:flex-row sm:justify-between sm:items-center gap-8 border-b border-BorderColor-0 py-[105px]'>
           <div>
             <Link href={'/'}>
-              <img
+              <Image
                 src={footerLogo}
                 draggable={false}
+                alt='Footer Logo'
               />
             </Link>
           </div>

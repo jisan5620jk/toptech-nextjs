@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import ProcessBoxCard from "./ProcessBoxCard";
 import { HiOutlineArrowRight } from "react-icons/hi";
 

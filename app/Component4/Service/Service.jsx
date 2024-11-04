@@ -1,8 +1,7 @@
-/* eslint-disable no-unused-vars */
-import serviceIcon from '/images/service7.png';
-import serviceIcon2 from '/images/service8.png';
-import serviceIcon3 from '/images/service9.png';
-import serviceIcon4 from '/images/service10.png';
+import serviceIcon from '../../../public/images/service7.png';
+import serviceIcon2 from '../../../public/images/service8.png';
+import serviceIcon3 from '../../../public/images/service9.png';
+import serviceIcon4 from '../../../public/images/service10.png';
 import ServiceCard from './ServiceCard';
 import { PiStarFourFill } from 'react-icons/pi';
 import Link from 'next/link';

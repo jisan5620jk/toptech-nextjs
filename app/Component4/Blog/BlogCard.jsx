@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+import Image from 'next/image';
 import Link from 'next/link';
 
 const BlogCard = ({ blogNumber, blogTitle, blogThumb, blogBtn }) => {
@@ -20,9 +20,10 @@ const BlogCard = ({ blogNumber, blogTitle, blogThumb, blogBtn }) => {
             {blogBtn}
           </button>
         </Link>
-        <img
+        <Image
           src={blogThumb}
           draggable='false'
+          alt='Blog Image'
           className='blog-thumb absolute left-0 opacity-0 -translate-x-1/2 top-0 -translate-y-1/2 transition-all duration-500 group-hover:left-3/4 group-hover:top-1/2 group-hover:opacity-100'
         />
       </div>

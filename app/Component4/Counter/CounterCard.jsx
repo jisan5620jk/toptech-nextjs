@@ -1,4 +1,5 @@
-/* eslint-disable react/prop-types */
+"use client"
+
 import CountUp from "react-countup";
 
 const CounterCard = ({
