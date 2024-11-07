@@ -1,6 +1,8 @@
-/* eslint-disable react/prop-types */
+"use client"
+
 import CountUp from 'react-countup';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const PricingCard = ({
   pricingMark,
@@ -20,14 +22,15 @@ const PricingCard = ({
   pricingSubTitle,
 }) => {
   return (
-    <div className='bg-white bg-opacity-5 backdrop-filter backdrop-blur-lg px-5 sm:px-10 lg:px-5 xl:px-10 py-9 relative z-10 overflow-hidden group border border-BorderColor5-0 rounded-2xl before:absolute before:bottom-0 before:left-0 before:w-full before:h-0 before:bg-[#edf3ff] before:transition-all before:duration-500 before:-z-10 hover:before:top-0 hover:before:h-full'>
+    <div className='bg-white bg-opacity-5 backdrop-filter backdrop-blur-lg px-5 sm:px-10 lg:px-5 xl:px-10 py-9 relative z-10 overflow-hidden group border border-BorderColor2-0 rounded-2xl before:absolute before:bottom-0 before:left-0 before:w-full before:h-0 before:bg-[#edf3ff] before:transition-all before:duration-500 before:-z-10 hover:before:top-0 hover:before:h-full'>
       <h6 className='px-[22px] py-1 rounded-full bg-white border absolute font-Nunito text-sm text-HeadingColor-0 top-8 -right-32 transition-all duration-500 group-hover:right-8'>
         {pricingMark}
       </h6>
-      <div className='size-[72px] rounded-lg shadow-cases bg-white border border-BorderColor5-0 flex items-center justify-center relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:rounded-lg before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-10 group-hover:before:scale-100'>
-        <img
+      <div className='size-[72px] rounded-lg shadow-cases bg-white border border-BorderColor2-0 flex items-center justify-center relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:rounded-lg before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-10 group-hover:before:scale-100'>
+        <Image
           src={pricingIcon}
           draggable='false'
+          alt='Pricing Icon'
         />
       </div>
       <h4 className='font-Rajdhani font-semibold text-2xl text-HeadingColor-0 inline-block transition-all duration-500 mt-[18px]'>
@@ -50,13 +53,13 @@ const PricingCard = ({
       </div>
       <div className='pb-7 pt-5'>
         <Link href={pricingUrl}>
-          <button className='primary-btn5 !bg-transparent before:bg-PrimaryColor-0 !border-BorderColor5-0 !text-HeadingColor-0 group-hover:!text-white w-full text-center group-hover:before:left-0 group-hover:before:w-full'>
+          <button className='primary-btn5 !bg-transparent before:bg-PrimaryColor-0 !border-BorderColor2-0 !text-HeadingColor-0 group-hover:!text-white w-full text-center group-hover:before:left-0 group-hover:before:w-full'>
             {pricingBtn}
             {pricingBtnIcon}
           </button>
         </Link>
       </div>
-      <h5 className='font-Rajdhani font-semibold text-2xl text-HeadingColor-0 border-t border-BorderColor5-0 pt-5'>
+      <h5 className='font-Rajdhani font-semibold text-2xl text-HeadingColor-0 border-t border-BorderColor2-0 pt-5'>
         {pricingFeature}
       </h5>
       <ul className='mt-4'>

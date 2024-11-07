@@ -1,8 +1,8 @@
-/* eslint-disable no-unused-vars */
-import serviceImg from '/images/service5-icon.png';
-import serviceImg2 from '/images/service5-icon2.png';
-import serviceImg3 from '/images/service5-icon3.png';
-import serviceImg4 from '/images/service5-icon4.png';
+import Image from 'next/image';
+import serviceImg from '../../../public/images/service5-icon.png';
+import serviceImg2 from '../../../public/images/service5-icon2.png';
+import serviceImg3 from '../../../public/images/service5-icon3.png';
+import serviceImg4 from '../../../public/images/service5-icon4.png';
 import Link from 'next/link';
 import { HiOutlineArrowRight } from 'react-icons/hi';
 import { RxDotsHorizontal } from 'react-icons/rx';
@@ -21,11 +21,12 @@ const Service = () => {
           </h1>
         </div>
         <div className='grid grid-cols-1 lg:grid-cols-2 mt-[66px]'>
-          <div className='flex flex-col sm:flex-row gap-[30px] group border-r border-BorderColor5-0 pt-8 pb-6'>
+          <div className='flex flex-col sm:flex-row gap-[30px] group border-r border-BorderColor2-0 pt-8 pb-6'>
             <div className='size-[90px] rounded-md flex items-center justify-center bg-white shadow-cases transition-all duration-500 group-hover:rounded-[50%]'>
-              <img
+              <Image
                 src={serviceImg}
                 draggable='false'
+                alt='Service Image'
               />
             </div>
             <div className='flex-1'>
@@ -56,9 +57,10 @@ const Service = () => {
           </div>
           <div className='flex flex-col sm:flex-row gap-[30px] group pt-8 lg:pl-10 pb-6'>
             <div className='size-[90px] rounded-md flex items-center justify-center bg-white shadow-cases transition-all duration-500 group-hover:rounded-[50%]'>
-              <img
+              <Image
                 src={serviceImg2}
                 draggable='false'
+                alt='Service Image'
               />
             </div>
             <div className='flex-1'>
@@ -87,11 +89,12 @@ const Service = () => {
               </Link>
             </div>
           </div>
-          <div className='flex flex-col sm:flex-row gap-[30px] group border-t border-r border-BorderColor5-0 pt-12'>
+          <div className='flex flex-col sm:flex-row gap-[30px] group border-t border-r border-BorderColor2-0 pt-12'>
             <div className='size-[90px] rounded-md flex items-center justify-center bg-white shadow-cases transition-all duration-500 group-hover:rounded-[50%]'>
-              <img
+              <Image
                 src={serviceImg3}
                 draggable='false'
+                alt='Service Image'
               />
             </div>
             <div className='flex-1'>
@@ -120,11 +123,12 @@ const Service = () => {
               </Link>
             </div>
           </div>
-          <div className='flex flex-col sm:flex-row gap-[30px] group border-t border-BorderColor5-0 pt-12 lg:pl-10'>
+          <div className='flex flex-col sm:flex-row gap-[30px] group border-t border-BorderColor2-0 pt-12 lg:pl-10'>
             <div className='size-[90px] rounded-md flex items-center justify-center bg-white shadow-cases transition-all duration-500 group-hover:rounded-[50%]'>
-              <img
+              <Image
                 src={serviceImg4}
                 draggable='false'
+                alt='Service Image'
               />
             </div>
             <div className='flex-1'>
