@@ -3,6 +3,7 @@ import integrationThumb from '../../../public/images/integration-thumb.png';
 import integrationShape from '../../../public/images/integration-thumb-shape.png';
 import Link from 'next/link';
 import { HiOutlineArrowRight } from 'react-icons/hi';
+import Image from 'next/image';
 
 const Integration = () => {
   return (
@@ -48,14 +49,16 @@ const Integration = () => {
             </Link>
           </div>
           <div className='relative z-10'>
-            <img
+            <Image
               src={integrationThumb}
               draggable='false'
+              alt='Integration Image'
               className='2xl:max-w-[inherit] 2xl:-ml-8'
             />
-            <img
+            <Image
               src={integrationShape}
               draggable='false'
+              alt='Integration Shape'
               className='absolute top-0 left-0 lg:-left-10 -z-10 2xl:-left-20 hidden md:block'
             />
           </div>
