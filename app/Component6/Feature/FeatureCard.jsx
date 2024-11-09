@@ -1,5 +1,4 @@
-/* eslint-disable react/prop-types */
-
+import Image from 'next/image';
 import Link from 'next/link';
 
 const FeatureCard = ({
@@ -13,9 +12,10 @@ const FeatureCard = ({
   return (
     <div className='overflow-hidden group px-6 lg:px-4 xl:px-7 pt-10 pb-9 rounded-md bg-white relative z-10 before:absolute before:left-1/2 before:top-0 before:h-full before:w-0 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:-z-10 after:absolute after:-right-28 after:-top-28 after:h-[224px] after:w-[225px] after:bg-white after:scale-0 after:opacity-10 after:rounded-full after:transition-all after:duration-500 after:-z-10 hover:before:w-full hover:after:scale-100 hover:before:left-0'>
       <div className='relativ z-10'>
-        <img
+        <Image
           src={featureIcon}
           draggable='false'
+          alt='Feature Icon'
           className='transition-all duration-500 group-hover:brightness-0 group-hover:invert-[1]'
         />
       </div>
@@ -27,9 +27,10 @@ const FeatureCard = ({
       </p>
       <div className='flex items-center justify-between'>
         <div>
-          <img
+          <Image
             src={featureStar}
             draggable='false'
+            alt='Feature Star'
             className='animate-spin transition-all duration-500 group-hover:brightness-0 group-hover:invert-[1]'
           />
         </div>

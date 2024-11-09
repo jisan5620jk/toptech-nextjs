@@ -1,4 +1,6 @@
-import { Link } from "react-router-dom";
+
+
+import Link from "next/link";
 import {
   FaApple,
   FaFacebookF,
@@ -30,28 +32,28 @@ const Footer6 = () => {
             </h4>
             <ul>
               <li>
-                <Link to={"/"}>
+                <Link href={"/"}>
                   <button className="font-Nunito text-white transition-all duration-500 hover:text-white mb-4">
                     About Us
                   </button>
                 </Link>
               </li>
               <li>
-                <Link to={"/"}>
+                <Link href={"/"}>
                   <button className="font-Nunito text-white transition-all duration-500 hover:text-white mb-4">
                     Our Team
                   </button>
                 </Link>
               </li>
               <li>
-                <Link to={"/"}>
+                <Link href={"/"}>
                   <button className="font-Nunito text-white transition-all duration-500 hover:text-white mb-4">
                     Pricing Plan
                   </button>
                 </Link>
               </li>
               <li>
-                <Link to={"/"}>
+                <Link href={"/"}>
                   <button className="font-Nunito text-white transition-all duration-500 hover:text-white">
                     Latest Blog
                   </button>
@@ -98,13 +100,13 @@ const Footer6 = () => {
               Download
             </h4>
             <div className="flex flex-col gap-6">
-              <Link to={"/"}>
+              <Link href={"/"}>
                 <button className="primary-btn6 lg:px-3 lg:py-2 xl:px-7 xl:py-3 2xl:px-10 2xl:py-[14px] border border-white">
                   <FaGooglePlay size={"28"} />
                   {`Google Play`}
                 </button>
               </Link>
-              <Link to={"/"}>
+              <Link href={"/"}>
                 <button className="primary-btn6 lg:px-3 lg:py-2 xl:px-7 xl:py-3 2xl:px-10 2xl:py-[14px] border border-white">
                   <FaApple size={"28"} />
                   {`App Store`}
@@ -124,19 +126,19 @@ const Footer6 = () => {
           <div>
             <ul className="flex gap-6">
               <li>
-                <Link to={"/home6"}>
+                <Link href={"/home6"}>
                   <button className="font-Nunito text-white">
                     Privacy & Terms
                   </button>
                 </Link>
               </li>
               <li>
-                <Link to={"/home6"}>
+                <Link href={"/home6"}>
                   <button className="font-Nunito text-white">FAQ</button>
                 </Link>
               </li>
               <li>
-                <Link to={"/home6"}>
+                <Link href={"/home6"}>
                   <button className="font-Nunito text-white">Contact Us</button>
                 </Link>
               </li>

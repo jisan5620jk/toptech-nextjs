@@ -1,6 +1,7 @@
 import { FaPlus } from 'react-icons/fa6';
 import Link from 'next/link';
-import serviceBoxShape from '/images/feat-icon1.png';
+import serviceBoxShape from '../../../public/images/feat-icon1.png';
+import Image from 'next/image';
 
 const Service = () => {
   return (
@@ -34,9 +35,10 @@ const Service = () => {
                 pro course.
               </p>
             </div>
-            <img
+            <Image
               src={serviceBoxShape}
               draggable='false'
+              alt='Service box Shape'
               className='absolute z-10 top-5 right-7 animate-rotational transition-all duration-500 group-hover:brightness-0 group-hover:invert-[1]'
             />
           </div>
@@ -57,9 +59,10 @@ const Service = () => {
                 pro course.
               </p>
             </div>
-            <img
+            <Image
               src={serviceBoxShape}
               draggable='false'
+              alt='Service box Shape'
               className='absolute z-10 top-5 right-7 animate-rotational transition-all duration-500 group-hover:brightness-0 group-hover:invert-[1]'
             />
           </div>
@@ -80,9 +83,10 @@ const Service = () => {
                 pro course.
               </p>
             </div>
-            <img
+            <Image
               src={serviceBoxShape}
               draggable='false'
+              alt='Service box Shape'
               className='absolute z-10 top-5 right-7 animate-rotational transition-all duration-500 group-hover:brightness-0 group-hover:invert-[1]'
             />
           </div>
@@ -103,9 +107,10 @@ const Service = () => {
                 pro course.
               </p>
             </div>
-            <img
+            <Image
               src={serviceBoxShape}
               draggable='false'
+              alt='Service box Shape'
               className='absolute z-10 top-5 right-7 animate-rotational transition-all duration-500 group-hover:brightness-0 group-hover:invert-[1]'
             />
           </div>
@@ -126,9 +131,10 @@ const Service = () => {
                 pro course.
               </p>
             </div>
-            <img
+            <Image
               src={serviceBoxShape}
               draggable='false'
+              alt='Service box Shape'
               className='absolute z-10 top-5 right-7 animate-rotational transition-all duration-500 group-hover:brightness-0 group-hover:invert-[1]'
             />
           </div>
@@ -149,9 +155,10 @@ const Service = () => {
                 pro course.
               </p>
             </div>
-            <img
+            <Image
               src={serviceBoxShape}
               draggable='false'
+              alt='Service box Shape'
               className='absolute z-10 top-5 right-7 animate-rotational transition-all duration-500 group-hover:brightness-0 group-hover:invert-[1]'
             />
           </div>

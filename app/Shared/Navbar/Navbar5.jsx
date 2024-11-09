@@ -85,7 +85,7 @@ const Navbar5 = () => {
             <ul
               className={`${
                 isOpen ? 'block' : 'hidden'
-              } bg-white bg-opacity-100 lg:bg-opacity-40 w-full rounded-md lg:rounded-full border lg:w-fit ease-in-out flex-1 lg:flex space-y-2 lg:space-y-0 space-x-0 flex flex-col lg:flex-row px-2 py-3 lg:py-0 font-Nunito font-medium sm:text-base text-HeadingColor-0 transition-all duration-500
+              } bg-white bg-opacity-100 lg:bg-opacity-40 w-full rounded-md lg:rounded-full border lg:w-fit ease-in-out flex-1 lg:flex space-y-2 lg:space-y-0 space-x-0 flex flex-col lg:flex-row lg:justify- px-2 py-3 lg:py-0 font-Nunito font-medium sm:text-base text-HeadingColor-0 transition-all duration-500
                 `}
             >
               <div

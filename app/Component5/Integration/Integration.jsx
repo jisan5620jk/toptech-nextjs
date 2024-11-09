@@ -1,5 +1,5 @@
 import { GiCheckMark } from 'react-icons/gi';
-import integrationThumb from '../../../public/images/integration-thumb.png';
+import integrationThumb from '../../../public/images/integrations-thumb.png';
 import integrationShape from '../../../public/images/integration-thumb-shape.png';
 import Link from 'next/link';
 import { HiOutlineArrowRight } from 'react-icons/hi';

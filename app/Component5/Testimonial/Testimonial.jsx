@@ -1,8 +1,9 @@
-/* eslint-disable no-unused-vars */
-import testiImg from "/images/testi1.png";
-import testiImg2 from "/images/testi2.png";
-import testiImg3 from "/images/testi3.png";
-import testimonialLogo from "/images/testimonial-logo.png";
+"use client"
+
+import testiImg from "../../../public/images/testi1.png";
+import testiImg2 from "../../../public/images/testi2.png";
+import testiImg3 from "../../../public/images/testi3.png";
+import testimonialLogo from "../../../public/images/testimonial-logo.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import TestimonialCard from "./TestimonialCard";
@@ -10,6 +11,7 @@ import { IoStar } from "react-icons/io5";
 import { TfiQuoteLeft } from "react-icons/tfi";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
+import Image from "next/image";
 
 const testiData = [
   {
@@ -102,7 +104,7 @@ const Testimonial = () => {
               <br /> Customer Tesmonials
             </h1>
           </div>
-          <div className="flex lg:justify-end"><img src={testimonialLogo} draggable="false" /></div>
+          <div className="flex lg:justify-end"><Image alt="Testimonial Logo" src={testimonialLogo} draggable="false" /></div>
         </div>
         <div className="mt-[26px]">
           <Swiper {...settings} pagination={pagination} modules={[Pagination]}>

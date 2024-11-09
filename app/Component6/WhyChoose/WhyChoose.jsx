@@ -1,22 +1,27 @@
-import whyChooseThumb from "/images/choose-us6-thumb.png";
-import whyChooseShape from "/images/choose-shape.png";
+"use client"
+
+import Image from "next/image";
+import whyChooseShape from "../../../public/images/choose-shape.png";
+import whyChooseThumb from "../../../public/images/choose-us6-thumb.png";
 import ProgressBar from "react-animated-progress-bar";
 import { FaSquareFull } from "react-icons/fa6";
 
 const WhyChoose = () => {
   return (
-    <section className="py-[140px] relative why-choose">
-      <div className="Container relative">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 xl:gap-0 items-center">
+    <section className="py-[140px] relative why-choose overflow-hidden">
+      <div className="Container">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 xl:gap-0 items-center relative">
           <div className="relative z-10">
-            <img
+            <Image
               src={whyChooseThumb}
               draggable="false"
+              alt="WhyChoose Image"
               className="2xl:max-w-[inherit]"
             />
-            <img
+            <Image
               src={whyChooseShape}
               draggable="false"
+              alt="WhyChoose Shape"
               className="absolute top-0 -left-16 animate-rotational -z-10"
             />
           </div>

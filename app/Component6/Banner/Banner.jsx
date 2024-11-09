@@ -1,13 +1,14 @@
 import Link from 'next/link';
-import bannerImg from '/images/hero6-thumb.png';
-import bannerShape from '/images/ban-shape1.png';
-import bannerShape2 from '/images/ban-shape2.png';
-import bannerShape3 from '/images/ban-shape4.png';
-import bannerShape4 from '/images/ban-star.png';
-import bannerShape5 from '/images/ban-client.png';
-import bannerShape6 from '/images/ban-skill.png';
-import bannerShape7 from '/images/ban-shape3.png';
+import bannerImg from '../../../public/images/hero6-thumb.png';
+import bannerShape from '../../../public/images/ban-shape1.png';
+import bannerShape2 from '../../../public/images/ban-shape2.png';
+import bannerShape3 from '../../../public/images/ban-shape4.png';
+import bannerShape4 from '../../../public/images/ban-star.png';
+import bannerShape5 from '../../../public/images/ban-client.png';
+import bannerShape6 from '../../../public/images/ban-skill.png';
+import bannerShape7 from '../../../public/images/ban-shape3.png';
 import { FaSquareFull } from 'react-icons/fa6';
+import Image from 'next/image';
 import Brand from '../Brand/Brand';
 import Feature from '../Feature/Feature';
 import About from '../About/About';
@@ -19,14 +20,16 @@ const Banner = () => {
         <div className='Container'>
           <div className='grid lg:grid-cols-2 items-center gap-16 lg:gap-0'>
             <div className='relative'>
-              <img
+              <Image
                 src={bannerShape}
                 draggable={false}
+                alt='Banner Shape'
                 className='absolute bottom-0 right-10 animate-rotational hidden sm:block'
               />
-              <img
+              <Image
                 src={bannerShape2}
                 draggable={false}
+                alt='Banner Shape'
                 className='absolute top-0 -left-24 animate-dance2 hidden sm:block'
               />
 
@@ -47,39 +50,46 @@ const Banner = () => {
                 <br className='hidden 2xl:block' />
                 has been single line of code industry’s standard dummy text.
               </p>
-              <Link href={'/contact'}>
-                <button className='primary-btn6'>{`Start A Project`}</button>
-              </Link>
+              <div className='inline-block'>
+                <Link href={'/contact'}>
+                  <button className='primary-btn6'>{`Start A Project`}</button>
+                </Link>
+              </div>
             </div>
             <div className='sm:flex justify-center lg:justify-end -mb-[132px] lg:-mb-12 relative hidden'>
-              <img
+              <Image
                 src={bannerImg}
                 draggable='false'
-                className=''
+                alt='Banner Image'
               />
-              <img
+              <Image
                 src={bannerShape7}
                 draggable={false}
+                alt='banner Shape'
                 className='absolute top-20 left-10 animate-swing hidden sm:block'
               />
-              <img
+              <Image
                 src={bannerShape3}
                 draggable={false}
+                alt='banner Shape'
                 className='absolute top-0 -right-20 animate-swing hidden sm:block'
               />
-              <img
+              <Image
                 src={bannerShape4}
                 draggable={false}
+                alt='banner Shape'
                 className='absolute bottom-0 -right-20 animate-rotational hidden sm:block'
               />
-              <img
+              <Image
                 src={bannerShape5}
                 draggable={false}
+                alt='banner Shape'
                 className='absolute bottom-20 left-20 animate-dance3 hidden sm:block'
               />
-              <img
+              <Image
                 src={bannerShape6}
                 draggable={false}
+                alt='banner Shape'
                 className='absolute top-1/2 -translate-y-1/2 -right-24 2xl:-right-36 animate-wiggle hidden sm:block'
               />
             </div>

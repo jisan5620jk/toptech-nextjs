@@ -1,4 +1,5 @@
-import aboutThumb from '/images/about6-thumb.png';
+import Image from 'next/image';
+import aboutThumb from '../../../public/images/about6-thumb.png';
 import Link from 'next/link';
 import { FaSquareFull } from 'react-icons/fa6';
 
@@ -55,9 +56,10 @@ const About = () => {
             </Link>
           </div>
           <div className='relative z-10'>
-            <img
+            <Image
               src={aboutThumb}
               draggable='false'
+              alt='About Thumb'
               className='2xl:max-w-[inherit]'
             />
           </div>

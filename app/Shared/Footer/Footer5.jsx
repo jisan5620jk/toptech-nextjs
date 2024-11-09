@@ -1,5 +1,4 @@
-import { Link } from "react-router-dom";
-import footerLogo from "/images/logo-2.png";
+import footerLogo from "../../../public/images/logo-2.png";
 import {
   FaBehance,
   FaFacebookF,
@@ -10,6 +9,8 @@ import {
 } from "react-icons/fa6";
 import { VscArrowRight } from "react-icons/vsc";
 import { TiStarHalfOutline } from "react-icons/ti";
+import Image from "next/image";
+import Link from "next/link";
 
 const Footer5 = () => {
   return (
@@ -17,8 +18,8 @@ const Footer5 = () => {
       <div className="Container">
         <div className="grid gap-y-7 grid-cols-12">
           <div className="col-span-12 md:col-span-6 lg:col-span-4">
-            <Link to={"/"}>
-              <img src={footerLogo} draggable={false} />
+            <Link href={"/"}>
+              <Image alt="Footer Logo" src={footerLogo} draggable={false} />
             </Link>
             <p className="font-Nunito text-TextColor-0 mt-6 mb-8 w-10/12">
               Monotonectally synergize granular top{" "}
@@ -62,35 +63,35 @@ const Footer5 = () => {
             </h4>
             <ul>
               <li>
-                <Link to={"/"}>
+                <Link href={"/"}>
                   <button className="font-Nunito text-TextColor-0 transition-all duration-500 hover:text-white mb-5">
                     About Us
                   </button>
                 </Link>
               </li>
               <li>
-                <Link to={"/"}>
+                <Link href={"/"}>
                   <button className="font-Nunito text-TextColor-0 transition-all duration-500 hover:text-white mb-5">
                     Our Team
                   </button>
                 </Link>
               </li>
               <li>
-                <Link to={"/"}>
+                <Link href={"/"}>
                   <button className="font-Nunito text-TextColor-0 transition-all duration-500 hover:text-white mb-5">
                     Pricing Plan
                   </button>
                 </Link>
               </li>
               <li>
-                <Link to={"/"}>
+                <Link href={"/"}>
                   <button className="font-Nunito text-TextColor-0 transition-all duration-500 hover:text-white mb-5">
                     Latest Blog
                   </button>
                 </Link>
               </li>
               <li>
-                <Link to={"/"}>
+                <Link href={"/"}>
                   <button className="font-Nunito text-TextColor-0 transition-all duration-500 hover:text-white mb-5">
                     Careers
                   </button>
@@ -104,35 +105,35 @@ const Footer5 = () => {
             </h4>
             <ul>
               <li>
-                <Link to={"/"}>
+                <Link href={"/"}>
                   <button className="font-Nunito text-TextColor-0 transition-all duration-500 hover:text-white mb-5">
                     IT Solutions
                   </button>
                 </Link>
               </li>
               <li>
-                <Link to={"/"}>
+                <Link href={"/"}>
                   <button className="font-Nunito text-TextColor-0 transition-all duration-500 hover:text-white mb-5">
                     Cyber Security
                   </button>
                 </Link>
               </li>
               <li>
-                <Link to={"/"}>
+                <Link href={"/"}>
                   <button className="font-Nunito text-TextColor-0 transition-all duration-500 hover:text-white mb-5">
                     Digital Marketing
                   </button>
                 </Link>
               </li>
               <li>
-                <Link to={"/"}>
+                <Link href={"/"}>
                   <button className="font-Nunito text-TextColor-0 transition-all duration-500 hover:text-white mb-5">
                     Brand Identity
                   </button>
                 </Link>
               </li>
               <li>
-                <Link to={"/"}>
+                <Link href={"/"}>
                   <button className="font-Nunito text-TextColor-0 transition-all duration-500 hover:text-white mb-5">
                     SEO Marketing
                   </button>
