@@ -1,5 +1,7 @@
+"use client"
+
 import PricingCard from './PricingCard';
-import pricingIcon from '/images/mobile-app-price-icon.png';
+import pricingIcon from '../../../public/images/mobile-app-price-icon.png';
 import { HiOutlineArrowRight } from 'react-icons/hi';
 import Link from 'next/link';
 import CountUp from 'react-countup';

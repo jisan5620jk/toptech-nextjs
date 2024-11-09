@@ -6,7 +6,7 @@ import Experience from '@/app/Component6/Experience/Experience';
 import Perform from '@/app/Component6/Perform/Perform';
 import Footer6 from '@/app/Shared/Footer/Footer6';
 
-const Home6 = () => {
+const page = () => {
   return (
     <>
       <Navbar6 />
@@ -19,4 +19,4 @@ const Home6 = () => {
     </>
   );
 };
-export default Home6;
+export default page;

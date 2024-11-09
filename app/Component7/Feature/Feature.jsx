@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import FeatureCard from "./FeatureCard";
 import { ImCheckmark } from "react-icons/im";
 

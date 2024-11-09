@@ -1,7 +1,6 @@
-/* eslint-disable no-unused-vars */
-import blogThumb from "/images/mobile-app-blog-img1.jpg";
-import blogThumb2 from "/images/mobile-app-blog-img2.jpg";
-import blogThumb3 from "/images/mobile-app-blog-img3.jpg";
+import blogThumb from "../../../public/images/mobile-app-blog-img1.jpg";
+import blogThumb2 from "../../../public/images/mobile-app-blog-img2.jpg";
+import blogThumb3 from "../../../public/images/mobile-app-blog-img3.jpg";
 import BlogCard from "./BlogCard";
 import { GoArrowRight, GoDotFill } from "react-icons/go";
 

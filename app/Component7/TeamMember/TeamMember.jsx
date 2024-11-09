@@ -1,8 +1,8 @@
-import teamThumb from '/images/mobile-app-team1.png';
-import teamThumb2 from '/images/mobile-app-team2.png';
-import teamThumb3 from '/images/mobile-app-team3.png';
-import teamThumb4 from '/images/mobile-app-team4.png';
-import allTeamThumb from '/images/mobile-app-team-members.png';
+import teamThumb from '../../../public/images/mobile-app-team1.png';
+import teamThumb2 from '../../../public/images/mobile-app-team2.png';
+import teamThumb3 from '../../../public/images/mobile-app-team3.png';
+import teamThumb4 from '../../../public/images/mobile-app-team4.png';
+import allTeamThumb from '../../../public/images/mobile-app-team-members.png';
 import TeamCard from './TeamCard';
 import {
   FaFacebookF,
@@ -12,6 +12,7 @@ import {
 } from 'react-icons/fa6';
 import { IoShareSocialOutline } from 'react-icons/io5';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const teamData = [
   {
@@ -79,9 +80,10 @@ const TeamMember = () => {
               href={'/'}
               className='text-center'
             >
-              <img
+              <Image
                 src={allTeamThumb}
                 draggable='false'
+                alt='All Team Thumb'
               />
               <h6 className='font-Nunito text-lg text-HeadingColor-0 pt-3'>
                 Expert Members

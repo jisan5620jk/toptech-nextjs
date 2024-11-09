@@ -1,6 +1,7 @@
 import { FaSquareFull } from "react-icons/fa6";
-import liveThumb from "/images/live-thumb.png";
-import liveShape from "/images/live-shape.png";
+import liveThumb from "../../../public/images/live-thumb.png";
+import liveShape from "../../../public/images/live-shape.png";
+import Image from "next/image";
 
 const Perform = () => {
   return (
@@ -52,14 +53,16 @@ const Perform = () => {
             </div>
           </div>
           <div className="flex justify-end relative z-10 mt-16 lg:mt-0">
-            <img
+            <Image
               src={liveThumb}
               draggable="false"
+              alt="Perform Image"
               className="w-11/12 2xl:w-[inherit] relative 2xl:left-12"
             />
-            <img
+            <Image
               src={liveShape}
               draggable="false"
+              alt="Perform Shape"
               className="w-11/12 2xl:w-[inherit] animate-wiggle absolute -z-10 -top-10 right-0 2xl:-right-6"
             />
           </div>

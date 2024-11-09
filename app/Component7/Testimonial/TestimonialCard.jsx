@@ -1,4 +1,5 @@
-/* eslint-disable react/prop-types */
+import Image from "next/image";
+
 const TestimonialCard = ({
   testiIcon,
   testiImg,
@@ -24,7 +25,7 @@ const TestimonialCard = ({
       </div>
       <div className="flex flex-col gap-5 md:gap-4 xl:gap-5 mt-10">
         <div>
-          <img src={testiImg} draggable="false" className="m-auto" />
+          <Image alt="Testimonial Profile" src={testiImg} draggable="false" className="m-auto" />
         </div>
         <div className="flex-1">
           <h5 className="font-Nunito font-semibold text-white text-[22px]">

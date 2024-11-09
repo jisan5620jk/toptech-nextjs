@@ -1,6 +1,7 @@
-import { Link } from "react-router-dom";
 import { FaFacebookF, FaLinkedinIn, FaPinterestP, FaRegEnvelope, FaXTwitter } from "react-icons/fa6";
-import logo from "/images/logo.png"
+import logo from "../../../public/images/logo.png"
+import Image from "next/image";
+import Link from "next/link";
 
 const Footer7 = () => {
   return (
@@ -8,8 +9,8 @@ const Footer7 = () => {
       <div className="Container">
         <div className="grid gap-y-7 grid-cols-12">
           <div className="col-span-12 md:col-span-6 lg:col-span-5 sm:mr-14 md:mr-28">
-            <Link to={"/"}>
-              <img src={logo} draggable="false" />
+            <Link href={"/"}>
+              <Image alt="Footer Logo" src={logo} draggable="false" />
             </Link>
             <h4 className="font-Rajdhani text-[28px] text-HeadingColor-0 font-semibold mt-6 mb-2">
               Newsletter
@@ -47,35 +48,35 @@ const Footer7 = () => {
             </h4>
             <ul>
               <li>
-                <Link to={"/"}>
+                <Link href={"/"}>
                   <button className="font-Rajdhani text-[#68686a] text-lg font-semibold transition-all duration-500 hover:text-PrimaryColor-0 mb-4">
                     Why Choose Us
                   </button>
                 </Link>
               </li>
               <li>
-                <Link to={"/"}>
+                <Link href={"/"}>
                   <button className="font-Rajdhani text-[#68686a] text-lg font-semibold transition-all duration-500 hover:text-PrimaryColor-0 mb-4">
                     Working Process
                   </button>
                 </Link>
               </li>
               <li>
-                <Link to={"/"}>
+                <Link href={"/"}>
                   <button className="font-Rajdhani text-[#68686a] text-lg font-semibold transition-all duration-500 hover:text-PrimaryColor-0 mb-4">
                     App Features
                   </button>
                 </Link>
               </li>
               <li>
-                <Link to={"/"}>
+                <Link href={"/"}>
                   <button className="font-Rajdhani text-[#68686a] text-lg font-semibold transition-all duration-500 hover:text-PrimaryColor-0 mb-4">
                     Pricing Plans
                   </button>
                 </Link>
               </li>
               <li>
-                <Link to={"/"}>
+                <Link href={"/"}>
                   <button className="font-Rajdhani text-[#68686a] text-lg font-semibold transition-all duration-500 hover:text-PrimaryColor-0">
                     Downloads
                   </button>
@@ -89,35 +90,35 @@ const Footer7 = () => {
             </h4>
             <ul>
               <li>
-                <Link to={"/"}>
+                <Link href={"/"}>
                   <button className="font-Rajdhani text-[#68686a] text-lg font-semibold transition-all duration-500 hover:text-PrimaryColor-0 mb-4">
                     Demo
                   </button>
                 </Link>
               </li>
               <li>
-                <Link to={"/"}>
+                <Link href={"/"}>
                   <button className="font-Rajdhani text-[#68686a] text-lg font-semibold transition-all duration-500 hover:text-PrimaryColor-0 mb-4">
                     Webnair
                   </button>
                 </Link>
               </li>
               <li>
-                <Link to={"/"}>
+                <Link href={"/"}>
                   <button className="font-Rajdhani text-[#68686a] text-lg font-semibold transition-all duration-500 hover:text-PrimaryColor-0 mb-4">
                     {`Doc's`}
                   </button>
                 </Link>
               </li>
               <li>
-                <Link to={"/"}>
+                <Link href={"/"}>
                   <button className="font-Rajdhani text-[#68686a] text-lg font-semibold transition-all duration-500 hover:text-PrimaryColor-0 mb-4">
                     Supports
                   </button>
                 </Link>
               </li>
               <li>
-                <Link to={"/"}>
+                <Link href={"/"}>
                   <button className="font-Rajdhani text-[#68686a] text-lg font-semibold transition-all duration-500 hover:text-PrimaryColor-0">
                     {`Faq's`}
                   </button>
@@ -131,35 +132,35 @@ const Footer7 = () => {
             </h4>
             <ul>
               <li>
-                <Link to={"/"}>
+                <Link href={"/"}>
                   <button className="font-Rajdhani text-[#68686a] text-lg font-semibold transition-all duration-500 hover:text-PrimaryColor-0 mb-4">
                     Home
                   </button>
                 </Link>
               </li>
               <li>
-                <Link to={"/"}>
+                <Link href={"/"}>
                   <button className="font-Rajdhani text-[#68686a] text-lg font-semibold transition-all duration-500 hover:text-PrimaryColor-0 mb-4">
                     About
                   </button>
                 </Link>
               </li>
               <li>
-                <Link to={"/"}>
+                <Link href={"/"}>
                   <button className="font-Rajdhani text-[#68686a] text-lg font-semibold transition-all duration-500 hover:text-PrimaryColor-0 mb-4">
                     Services
                   </button>
                 </Link>
               </li>
               <li>
-                <Link to={"/"}>
+                <Link href={"/"}>
                   <button className="font-Rajdhani text-[#68686a] text-lg font-semibold transition-all duration-500 hover:text-PrimaryColor-0 mb-4">
                     Our Team
                   </button>
                 </Link>
               </li>
               <li>
-                <Link to={"/"}>
+                <Link href={"/"}>
                   <button className="font-Rajdhani text-[#68686a] text-lg font-semibold transition-all duration-500 hover:text-PrimaryColor-0">
                     Testimonials
                   </button>

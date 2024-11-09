@@ -1,5 +1,6 @@
+import Image from "next/image";
 import "./content-slider.css";
-import contentSliderImg from "/images/mobile-app-animation-icon.png";
+import contentSliderImg from "../../../public/images/mobile-app-animation-icon.png";
 
 const ContentSlider = () => {
   return (
@@ -9,31 +10,31 @@ const ContentSlider = () => {
           <h1>FAST SUPPORT</h1>
         </div>
         <div className="content-slider-content">
-          <img src={contentSliderImg} draggable="false" className="animate-spin" />
+         <Image alt="Content slider star" src={contentSliderImg} draggable="false" className="animate-spin" />
         </div>
         <div className="content-slider-content">
           <h1>FREE VERSON</h1>
         </div>
         <div className="content-slider-content">
-          <img src={contentSliderImg} draggable="false" className="animate-spin" />
+         <Image alt="Content slider star" src={contentSliderImg} draggable="false" className="animate-spin" />
         </div>
         <div className="content-slider-content">
           <h1>PAYMENT GATEWAY</h1>
         </div>
         <div className="content-slider-content">
-          <img src={contentSliderImg} draggable="false" className="animate-spin" />
+         <Image alt="Content slider star" src={contentSliderImg} draggable="false" className="animate-spin" />
         </div>
         <div className="content-slider-content">
           <h1>SAFE TRANSACTIONS</h1>
         </div>
         <div className="content-slider-content">
-          <img src={contentSliderImg} draggable="false" className="animate-spin" />
+         <Image alt="Content slider star" src={contentSliderImg} draggable="false" className="animate-spin" />
         </div>
         <div className="content-slider-content">
           <h1>FAST COMMUNICATIONS</h1>
         </div>
         <div className="content-slider-content">
-          <img src={contentSliderImg} draggable="false" className="animate-spin" />
+         <Image alt="Content slider star" src={contentSliderImg} draggable="false" className="animate-spin" />
         </div>
       </div>
       <div className="content-slider">
@@ -41,31 +42,31 @@ const ContentSlider = () => {
           <h1>FAST SUPPORT</h1>
         </div>
         <div className="content-slider-content">
-          <img src={contentSliderImg} draggable="false" className="animate-spin" />
+         <Image alt="Content slider star" src={contentSliderImg} draggable="false" className="animate-spin" />
         </div>
         <div className="content-slider-content">
           <h1>FREE VERSON</h1>
         </div>
         <div className="content-slider-content">
-          <img src={contentSliderImg} draggable="false" className="animate-spin" />
+         <Image alt="Content slider star" src={contentSliderImg} draggable="false" className="animate-spin" />
         </div>
         <div className="content-slider-content">
           <h1>PAYMENT GATEWAY</h1>
         </div>
         <div className="content-slider-content">
-          <img src={contentSliderImg} draggable="false" className="animate-spin" />
+         <Image alt="Content slider star" src={contentSliderImg} draggable="false" className="animate-spin" />
         </div>
         <div className="content-slider-content">
           <h1>SAFE TRANSACTIONS</h1>
         </div>
         <div className="content-slider-content">
-          <img src={contentSliderImg} draggable="false" className="animate-spin" />
+         <Image alt="Content slider star" src={contentSliderImg} draggable="false" className="animate-spin" />
         </div>
         <div className="content-slider-content">
           <h1>FAST COMMUNICATIONS</h1>
         </div>
         <div className="content-slider-content">
-          <img src={contentSliderImg} draggable="false" className="animate-spin" />
+         <Image alt="Content slider star" src={contentSliderImg} draggable="false" className="animate-spin" />
         </div>
       </div>
     </div>

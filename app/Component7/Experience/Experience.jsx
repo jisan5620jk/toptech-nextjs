@@ -1,11 +1,12 @@
 import { FaApple, FaGooglePlay } from 'react-icons/fa6';
 import Link from 'next/link';
-import experienceThumb from '/images/call-thumb.png';
-import experienceThumb2 from '/images/call-thumb2.png';
-import experienceShape from '/images/ball1.png';
-import experienceShape2 from '/images/ball2.png';
-import experienceShape3 from '/images/call-shape1.png';
-import experienceShape4 from '/images/call-shape2.png';
+import experienceThumb from '../../../public/images/call-thumb.png';
+import experienceThumb2 from '../../../public/images/call-thumb2.png';
+import experienceShape from '../../../public/images/ball1.png';
+import experienceShape2 from '../../../public/images/ball2.png';
+import experienceShape3 from '../../../public/images/call-shape1.png';
+import experienceShape4 from '../../../public/images/call-shape2.png';
+import Image from 'next/image';
 
 const Experience = () => {
   return (
@@ -14,27 +15,32 @@ const Experience = () => {
         <div className='grid gap-10 lg:gap-0 grid-cols-1 lg:grid-cols-12'>
           <div className='lg:col-span-3'>
             <div className='relative'>
-              <img
+              <Image
+                alt='Experience Shape'
                 src={experienceThumb}
                 draggable='false'
                 className='animate-wiggle relative top-8 left-0 2xl:-left-24 max-w-full 2xl:max-w-[inherit]'
               />
-              <img
+              <Image
+                alt='Experience Shape'
                 src={experienceShape}
                 draggable='false'
                 className='animate-dance2 absolute top-8 left-0'
               />
-              <img
+              <Image
+                alt='Experience Shape'
                 src={experienceShape2}
                 draggable='false'
                 className='animate-bounce absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'
               />
-              <img
+              <Image
+                alt='Experience Shape'
                 src={experienceShape3}
                 draggable='false'
                 className='animate-dance3 absolute bottom-8 left-0 2xl:-left-20 w-4/12 md:w-2/12 2xl:w-[inherit] hidden sm:block'
               />
-              <img
+              <Image
+                alt='Experience Shape'
                 src={experienceShape4}
                 draggable='false'
                 className='animate-rotational absolute top-8 right-0 md:right-40 lg:right-0'
@@ -72,18 +78,21 @@ const Experience = () => {
           </div>
           <div className='lg:col-span-3'>
             <div className='relative'>
-              <img
+              <Image
+                alt='Experience Image'
                 src={experienceThumb2}
                 draggable='false'
                 className='animate-wiggle relative top-8 left-0 max-w-full 2xl:left-8 2xl:max-w-[inherit]'
               />
-              <img
+              <Image
+                alt='Experience Shape'
                 src={experienceShape2}
                 draggable='false'
                 className='animate-bounce absolute top-20 right-20'
               />
               <div className='absolute top-8 -right-20 md:right-20 lg:right-0 xl:-right-20 size-[100px] rounded-full bg-BodyBg-0 flex justify-center items-center'>
-                <img
+                <Image
+                  alt='Experience Shape'
                   src={experienceShape4}
                   draggable='false'
                   className='animate-spin'

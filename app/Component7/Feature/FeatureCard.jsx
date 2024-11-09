@@ -1,5 +1,3 @@
-/* eslint-disable react/prop-types */
-
 const FeatureCard = ({ featureIcon, featureTitle }) => {
   return (
     <div className="overflow-hidden group px-6 lg:px-4 xl:px-5 2xl:px-7 py-6 rounded-2xl border bg-[#edf3ff] flex items-center gap-4 relative z-10">

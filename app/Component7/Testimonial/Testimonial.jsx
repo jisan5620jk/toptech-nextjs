@@ -1,8 +1,8 @@
-/* eslint-disable no-unused-vars */
-import testiImg from "/images/mobile-app-testi-img1.png";
-import testiImg2 from "/images/mobile-app-testi-img2.png";
-import testiImg3 from "/images/mobile-app-testi-img3.png";
-import testimonialLogo from "/images/testimonial-logo.png";
+"use client"
+
+import testiImg from "../../../public/images/mobile-app-testi-img1.png";
+import testiImg2 from "../../../public/images/mobile-app-testi-img2.png";
+import testiImg3 from "../../../public/images/mobile-app-testi-img3.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import TestimonialCard from "./TestimonialCard";

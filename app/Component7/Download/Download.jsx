@@ -1,10 +1,11 @@
-import playStore from '/images/mobil-app-banner-button-shape2.png';
-import appStore from '/images/app-store.png';
-import downloadThumb from '/images/mobile-app-app-img.png';
-import shape1 from '/images/mobile-app-app-notice.png';
-import shape2 from '/images/mobile-app-app-mail.png';
+import playStore from '../../../public/images/mobil-app-banner-button-shape2.png';
+import appStore from '../../../public/images/app-store.png';
+import downloadThumb from '../../../public/images/mobile-app-app-img.png';
+import shape1 from '../../../public/images/mobile-app-app-notice.png';
+import shape2 from '../../../public/images/mobile-app-app-mail.png';
 import Link from 'next/link';
 import { FaCheck } from 'react-icons/fa6';
+import Image from 'next/image';
 
 const Download = () => {
   return (
@@ -40,33 +41,38 @@ const Download = () => {
             </div>
             <div className='flex flex-col sm:flex-row gap-6'>
               <Link href={'/'}>
-                <img
+                <Image
                   src={playStore}
                   draggable='false'
+                  alt='Icon'
                 />
               </Link>
               <Link href={'/'}>
-                <img
+                <Image
                   src={appStore}
                   draggable='false'
+                  alt='Icon'
                 />
               </Link>
             </div>
           </div>
           <div className='relative hidden lg:block'>
-            <img
+            <Image
               src={downloadThumb}
               draggable='false'
               className='max-w-[inherit]'
+              alt='Download Image'
             />
-            <img
+            <Image
               src={shape1}
               draggable='false'
+              alt='Download Shape'
               className='absolute bottom-20 left-0 animate-swing'
             />
-            <img
+            <Image
               src={shape2}
               draggable='false'
+              alt='Download Shape'
               className='absolute top-20 -right-20 animate-wiggle'
             />
             <div className='absolute top-[18rem] -right-28 lg:hidden xl:flex items-center gap-3 px-7 py-5 rounded-2xl bg-white bg-opacity-45 backdrop-filter backdrop-blur-lg border-2 border-white animate-dance3'>

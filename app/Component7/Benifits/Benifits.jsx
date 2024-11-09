@@ -1,8 +1,11 @@
-import benifitsThumb from '/images/mobile-app-chart.png';
+"use client"
+
+import benifitsThumb from '../../../public/images/mobile-app-chart.png';
 import Link from 'next/link';
 import { HiOutlineArrowRight } from 'react-icons/hi';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import { FaCheck } from 'react-icons/fa6';
+import Image from 'next/image';
 
 const Benifits = () => {
   return (
@@ -88,9 +91,10 @@ const Benifits = () => {
             </Link>
           </div>
           <div className='relative z-10'>
-            <img
+            <Image
               src={benifitsThumb}
               draggable='false'
+              alt='Benifits Image'
               className='2xl:max-w-[inherit]'
             />
             <div className='hidden absolute bottom-14 -right-5 2xl:bottom-[5.5rem] 2xl:-right-[4.25rem] rotate-90 shadow-cases sm:flex gap-4 bg-PrimaryColor-0 border px-6 py-4 rounded-xl'>

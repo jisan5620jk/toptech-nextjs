@@ -9,7 +9,7 @@ import { MdOutlineFileDownload } from 'react-icons/md';
 import Link from 'next/link';
 import Image from 'next/image';
 
-const Navbar5 = () => {
+const Navbar7 = () => {
   //sticky
 
   useEffect(() => {
@@ -42,12 +42,12 @@ const Navbar5 = () => {
       className={`w-full transition-all duration-300 bg-transparent relative z-[99999]`}
     >
       <header
-        className='header-section bg-transparent absolute w-full z-10 px-[4%]'
+        className='header-section bg-transparent absolute w-full z-10 px-[4%] border-b border-BorderColor2-0'
         data-aos='zoom-in'
         data-aos-duration='1000'
       >
         {/* main Navbar */}
-        <div className='grid grid-cols-1 lg:grid-cols-12 items-center lg:h-[100px] border-b border-BorderColor5-0'>
+        <div className='grid grid-cols-1 lg:grid-cols-12 items-center lg:h-[100px]'>
           {/* website Logo */}
           <div className='col-span-1 lg:col-span-3 w-48 lg:w-52'>
             <Link href='/'>
@@ -485,7 +485,7 @@ const Navbar5 = () => {
             </ul>
           </div>
           <div className='col-span-1 lg:col-span-3 hidden lg:flex gap-8 items-center lg:justify-end'>
-            <button className='text-[#7f93ab] size-10 xl:flex items-center justify-center rounded-full border border-BorderColor5-0 hidden'>
+            <button className='text-[#7f93ab] size-10 xl:flex items-center justify-center rounded-full border border-BorderColor2-0 hidden'>
               <BiSearch size={'18'} />
             </button>
             <button className='primary-btn5'>
@@ -499,4 +499,4 @@ const Navbar5 = () => {
   );
 };
 
-export default Navbar5;
+export default Navbar7;

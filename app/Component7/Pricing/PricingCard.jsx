@@ -1,6 +1,8 @@
-/* eslint-disable react/prop-types */
+"use client"
+
 import CountUp from 'react-countup';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const PricingCard = ({
   pricingIcon,
@@ -20,11 +22,12 @@ const PricingCard = ({
   offerPrice,
 }) => {
   return (
-    <div className='shadow-cases bg-white px-5 sm:px-10 lg:px-5 xl:px-7 2xl:px-10 py-10 relative z-10 overflow-hidden group border border-BorderColor5-0 rounded-2xl before:absolute before:bottom-0 before:left-0 before:w-full before:h-0 before:bg-[#edf3ff] before:transition-all before:duration-500 before:-z-10 hover:before:top-0 hover:before:h-full'>
+    <div className='shadow-cases bg-white px-5 sm:px-10 lg:px-5 xl:px-7 2xl:px-10 py-10 relative z-10 overflow-hidden group border border-BorderColor2-0 rounded-2xl before:absolute before:bottom-0 before:left-0 before:w-full before:h-0 before:bg-[#edf3ff] before:transition-all before:duration-500 before:-z-10 hover:before:top-0 hover:before:h-full'>
       <div>
-        <img
+        <Image
           src={pricingIcon}
           draggable='false'
+          alt='Pricing Icon'
         />
       </div>
       <div className='absolute top-10 right-10 flex items-end gap-2'>

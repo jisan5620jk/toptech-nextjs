@@ -1,7 +1,8 @@
 import FaqAccordion from "./Accordion/FaqAccordion";
-import shape1 from "/images/mobile-app-faq-shape.png";
-import shape2 from "/images/mobile-app-faq-shape2.png";
-import shape3 from "/images/mobile-app-faq-img.png";
+import shape1 from "../../../public/images/mobile-app-faq-shape.png";
+import shape2 from "../../../public/images/mobile-app-faq-shape2.png";
+import shape3 from "../../../public/images/mobile-app-faq-img.png";
+import Image from "next/image";
 
 const Faqs = () => {
   //  All Faqs and  answers.
@@ -30,17 +31,17 @@ const Faqs = () => {
 
   return (
     <section className="relative z-10 overflow-hidden py-28">
-      <img
+     <Image alt="Faq Shape"
         src={shape1}
         draggable="false"
         className="animate-swing absolute top-28 left-[10%] hidden xl:block"
       />
-      <img
+     <Image alt="Faq Shape"
         src={shape2}
         draggable="false"
         className="animate-dance2 absolute top-3/4 left-[5%] hidden xl:block"
       />
-      <img
+     <Image alt="Faq Shape"
         src={shape3}
         draggable="false"
         className="animate-wiggle -z-10 absolute top-40 right-0 2xl:right-[5%] hidden xl:block"

@@ -1,11 +1,12 @@
 import Link from 'next/link';
-import bannerImg from '/images/mobile-app-banner-img.png';
-import profileImg from '/images/mobil-app-banner-img.png';
-import profileImg2 from '/images/mobil-app-banner-img3.png';
-import profileImg3 from '/images/mobil-app-banner-shape3.png';
-import icon from '/images/mobil-app-banner-title-shape1.png';
-import playStore from '/images/mobil-app-banner-button-shape2.png';
-import appStore from '/images/app-store.png';
+import bannerImg from '../../../public/images/mobile-app-banner-img.png';
+import profileImg from '../../../public/images/mobil-app-banner-img.png';
+import profileImg2 from '../../../public/images/mobil-app-banner-img3.png';
+import profileImg3 from '../../../public/images/mobil-app-banner-shape3.png';
+import icon from '../../../public/images/mobil-app-banner-title-shape1.png';
+import playStore from '../../../public/images/mobil-app-banner-button-shape2.png';
+import appStore from '../../../public/images/app-store.png';
+import Image from 'next/image';
 
 const Banner = () => {
   return (
@@ -14,9 +15,10 @@ const Banner = () => {
         <div className='grid lg:grid-cols-2 items-center lg:gap-0'>
           <div className='relative'>
             <h5 className='font-Nunito text-HeadingColor-0 text-lg font-semibold flex items-center gap-5 mb-7'>
-              <img
+             <Image
                 src={icon}
                 draggable='false'
+                alt='Banner Icon'
               />{' '}
               Think Best <br /> Be Happy
             </h5>
@@ -32,30 +34,34 @@ const Banner = () => {
             </p>
             <div className='flex flex-col sm:flex-row gap-6'>
               <Link href={'/'}>
-                <img
+               <Image
                   src={playStore}
                   draggable='false'
+                  alt='Banner Icon'
                 />
               </Link>
               <Link href={'/'}>
-                <img
+               <Image
                   src={appStore}
                   draggable='false'
+                  alt='Banner Icon'
                 />
               </Link>
             </div>
           </div>
           <div className='sm:flex justify-center lg:justify-end relative'>
-            <img
+           <Image
               src={bannerImg}
               draggable='false'
+              alt='Banner Image'
               className='top-[150px] relative lg:top-32 2xl:top-16'
             />
             <div className='absolute top-[30rem] 2xl:top-[28rem] -left-4 sm:flex xl:flex items-center gap-3 pl-3 pr-9 py-3 rounded-l-full rounded-tr-full rounded-br bg-white bg-opacity-55 backdrop-filter backdrop-blur-lg border-2 border-white animate-wiggle hidden lg:hidden'>
               <div>
-                <img
+               <Image
                   src={profileImg}
                   draggable={false}
+                  alt='Banner Image'
                 />
               </div>
               <div>
@@ -64,11 +70,12 @@ const Banner = () => {
                 </h5>
               </div>
             </div>
-            <div className='absolute bottom-5 -right-20 md:right-0 lg:right-10 2xl:-bottom-[4.5rem] sm:flex xl:flex items-center gap-3 pl-3 pr-9 py-3 rounded-r-full rounded-bl-full rounded-tl bg-white bg-opacity-55 backdrop-filter backdrop-blur-lg border-2 border-white animate-movebtn hidden lg:hidden'>
+            <div className='absolute bottom-5 -right-20 md:right-0 lg:right-10 2xl:-right-10 2xl:bottom-[4.5rem] sm:flex xl:flex items-center gap-3 pl-3 pr-9 py-3 rounded-r-full rounded-bl-full rounded-tl bg-white bg-opacity-55 backdrop-filter backdrop-blur-lg border-2 border-white animate-movebtn hidden lg:hidden'>
               <div>
-                <img
+               <Image
                   src={profileImg2}
                   draggable={false}
+                  alt='Banner Image'
                 />
               </div>
               <div>
@@ -79,9 +86,10 @@ const Banner = () => {
             </div>
             <div className='absolute top-[15rem] -right-[9rem] 2xl:top-[14rem] 2xl:-right-[10rem] 2xl:flex flex-col items-center gap-3 px-11 py-8 rounded-2xl bg-white bg-opacity-55 backdrop-filter backdrop-blur-lg border-2 border-white animate-dance3 hidden'>
               <div>
-                <img
+               <Image
                   src={profileImg3}
                   draggable={false}
+                  alt='Profile Image'
                 />
               </div>
               <div>

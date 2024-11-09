@@ -1,5 +1,6 @@
-import collaborationThumb from '/images/mobil-app-colaboration-img-1.png';
-import icon from '/images/mobil-app-download.png';
+import Image from 'next/image';
+import collaborationThumb from '../../../public/images/mobil-app-colaboration-img-1.png';
+import icon from '../../../public/images/mobil-app-download.png';
 import Link from 'next/link';
 import { HiBadgeCheck, HiOutlineArrowRight } from 'react-icons/hi';
 
@@ -9,16 +10,18 @@ const Collaboration = () => {
       <div className='Container relative'>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-[92px] lg:gap-10 2xl:gap-[92px] items-center'>
           <div className='relative z-10 2xl:-ml-[92px]'>
-            <img
+            <Image
               src={collaborationThumb}
               draggable='false'
+              alt='Collaboration Image'
               className='2xl:max-w-[inherit]'
             />
             <div className='hidden absolute top-0 right-0 shadow-cases sm:flex gap-4 2xl:w-[294px] 2xl:right-2 bg-white rounded-3xl border px-9 pt-10 pb-7'>
               <div>
-                <img
+                <Image
                   src={icon}
                   draggable='false'
+                  alt='Collaboration Image'
                 />
               </div>
               <div>

@@ -1,4 +1,5 @@
-/* eslint-disable react/prop-types */
+import Image from "next/image";
+
 const ProcessCard = ({
   processImg,
   boxNumber,
@@ -9,9 +10,10 @@ const ProcessCard = ({
   return (
     <div className="text-center group relative bg-white pt-[50px] pb-20 rounded-3xl">
       <div className="inline-block m-auto relative z-10">
-        <img
+        <Image
           src={processImg}
           draggable="false"
+          alt="Process Image"
           className="transition-all duration-500 group-hover:rotate-[360deg]"
         />
       </div>
