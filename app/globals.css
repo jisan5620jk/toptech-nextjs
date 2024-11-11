@@ -547,3 +547,200 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
 .feature-box:nth-child(2n + 2) {
   margin-top: 30px;
 }
+
+
+/* Loading */
+
+.loading-screen {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: default;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: 1000;
+}
+
+.loading-screen .bar {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  background-color: #0c59db;
+}
+
+.loading-screen .top-bar {
+  top: 0;
+  left: 0;
+  right: auto;
+  bottom: auto;
+}
+
+.loading-screen .down-bar {
+  bottom: 0;
+  top: auto;
+  right: 0;
+  left: auto;
+}
+
+.loading-screen .animation-preloader {
+  z-index: 1000;
+  position: relative;
+}
+
+.loading-screen .animation-preloader .spinner {
+  -webkit-animation: spinner 1s infinite linear;
+  animation: spinner 1s infinite linear;
+  border-radius: 50%;
+  border: 4px dotted #e2dfdd;
+  border-top: #1f212b;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 3.5em auto;
+  mix-blend-mode: difference;
+}
+
+.loading-screen .animation-preloader .txt-loading {
+  letter-spacing: 0.2em;
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@-webkit-keyframes spinner {
+  to {
+    -webkit-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes spinner {
+  to {
+    -webkit-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .loading-screen .animation-preloader .spinner {
+    height: 8em;
+    width: 8em;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  .loading-screen .animation-preloader .spinner {
+    height: 7em;
+    width: 7em;
+  }
+}
+
+.loader {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translate(-35%, 77px);
+}
+
+.loader {
+  --w: 10ch;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.4em;
+  letter-spacing: var(--w);
+  width: var(--w);
+  overflow: hidden;
+  white-space: nowrap;
+  color: transparent;
+  text-shadow: calc(0 * var(--w)) 0 #fff, calc(-1 * var(--w)) 0 #fff,
+    calc(-2 * var(--w)) 0 #fff, calc(-3 * var(--w)) 0 #fff,
+    calc(-4 * var(--w)) 0 #fff, calc(-5 * var(--w)) 0 #fff,
+    calc(-6 * var(--w)) 0 #fff, calc(-7 * var(--w)) 0 #fff,
+    calc(-8 * var(--w)) 0 #fff, calc(-9 * var(--w)) 0 #fff;
+  animation: l20 2s infinite linear;
+  font-family: 'Albert Sans', sans-serif;
+}
+.loader:before {
+  content: 'Loading...';
+}
+
+.load {
+  position: relative;
+}
+
+.load:before,
+.load:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 0.25em;
+  transform: translate(-50%, -50%);
+}
+
+.load:before {
+  animation: before 2s infinite;
+}
+
+.load:after {
+  animation: after 2s infinite;
+}
+
+@keyframes before {
+  0% {
+    width: 0.5em;
+    box-shadow: 1em -0.5em rgba(225, 20, 98, 0.75),
+      -1em 0.5em rgba(111, 202, 220, 0.75);
+  }
+  35% {
+    width: 2.5em;
+    box-shadow: 0 -0.5em rgba(225, 20, 98, 0.75),
+      0 0.5em rgba(111, 202, 220, 0.75);
+  }
+  70% {
+    width: 0.5em;
+    box-shadow: -1em -0.5em rgba(225, 20, 98, 0.75),
+      1em 0.5em rgba(111, 202, 220, 0.75);
+  }
+  100% {
+    box-shadow: 1em -0.5em rgba(225, 20, 98, 0.75),
+      -1em 0.5em rgba(111, 202, 220, 0.75);
+  }
+}
+@keyframes after {
+  0% {
+    height: 0.5em;
+    box-shadow: 0.5em 1em rgba(61, 184, 143, 0.75),
+      -0.5em -1em rgba(233, 169, 32, 0.75);
+  }
+  35% {
+    height: 2.5em;
+    box-shadow: 0.5em 0 rgba(61, 184, 143, 0.75),
+      -0.5em 0 rgba(233, 169, 32, 0.75);
+  }
+  70% {
+    height: 0.5em;
+    box-shadow: 0.5em -1em rgba(61, 184, 143, 0.75),
+      -0.5em 1em rgba(233, 169, 32, 0.75);
+  }
+  100% {
+    box-shadow: 0.5em 1em rgba(61, 184, 143, 0.75),
+      -0.5em -1em rgba(233, 169, 32, 0.75);
+  }
+}
+

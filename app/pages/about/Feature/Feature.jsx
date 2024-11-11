@@ -1,9 +1,9 @@
-/* eslint-disable no-unused-vars */
-import featureIcon from "/images/feature-icon-1.png";
-import featureIcon2 from "/images/feature-icon-2.png";
-import featureIcon3 from "/images/feature-icon-3.png";
-import featureIcon4 from "/images/feature-icon-4.png";
-import featureImage from "/images/feature-image.png";
+import Image from "next/image";
+import featureIcon from "../../../../public/images/feature-icon-1.png";
+import featureIcon2 from "../../../../public/images/feature-icon-2.png";
+import featureIcon3 from "../../../../public/images/feature-icon-3.png";
+import featureIcon4 from "../../../../public/images/feature-icon-4.png";
+import featureImage from "../../../../public/images/feature-image.png";
 import FeatureCard from "./FeatureCard";
 
 const processData = [
@@ -36,9 +36,10 @@ const processData = [
 const Feature = () => {
   return (
     <section className="bg-[url(/images/about-images-bg.png)] pt-10 lg:pt-[222px] 2xl:pt-[270px] relative">
-      <img
+      <Image
         src={featureImage}
         draggable="false"
+        alt="Feature Image"
         className="absolute right-0 -top-[50%] xl:-top-[68%] 2xl:-top-[72%] hidden lg:w-[60%] 2xl:w-[inherit] lg:block"
       />
       <div className="relative z-10 -mb-[118px]">

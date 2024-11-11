@@ -1,11 +1,14 @@
-import aboutThumb from '/images/about-inner-thumb2.png';
-import aboutAward from '/images/about-award-icon.png';
-import aboutShape from '/images/about-inner-shape.png';
-import aboutCounterIcon from '/images/about-counter-icon.png';
+"use client"
+
+import aboutThumb from '../../../../public/images/about-inner-thumb2.png';
+import aboutAward from '../../../../public/images/about-award-icon.png';
+import aboutShape from '../../../../public/images/about-inner-shape.png';
+import aboutCounterIcon from '../../../../public/images/about-counter-icon.png';
 import Link from 'next/link';
 import { RiCheckFill } from 'react-icons/ri';
 import { BiRightTopArrowCircle, BiSolidQuoteLeft } from 'react-icons/bi';
 import CountUp from 'react-countup';
+import Image from 'next/image';
 
 const About = () => {
   return (
@@ -13,16 +16,18 @@ const About = () => {
       <div className='Container'>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-[92px] lg:gap-10 2xl:gap-[92px] items-center'>
           <div className='relative z-10'>
-            <img
+            <Image
               src={aboutThumb}
               draggable='false'
+              alt='About Image'
               className='md:w-full 2xl:-ml-[38px] 2xl:max-w-[inherit]'
             />
             <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 hidden sm:block'>
               <div className='bg-PrimaryColor-0 border-[6px] border-white pb-6 pt-5 flex flex-col justify-center overflow-hidden rounded-full h-[117px] sm:h-[214px] lg:h-[180px] xl:h-[214px] w-[92px] sm:w-[214px] lg:w-[180px] xl:w-[214px] items-center text-center relative z-10'>
-                <img
+                <Image
                   src={aboutCounterIcon}
                   draggable='false'
+                  alt='About Icon'
                 />
                 <CountUp
                   start={-9}
@@ -37,9 +42,10 @@ const About = () => {
             </div>
             <div className='absolute top-0 right-0 sm:flex gap-5 items-center animate-dance3 hidden bg-SecondaryColor-0 px-12 py-[18px] rounded-lg'>
               <div>
-                <img
+                <Image
                   src={aboutAward}
                   draggable={false}
+                  alt='About Award'
                 />
               </div>
               <div>
@@ -51,9 +57,10 @@ const About = () => {
                 </h5>
               </div>
             </div>
-            <img
+            <Image
               src={aboutShape}
               draggable='false'
+              alt='About Shape'
               className='absolute bottom-10 left-24 -z-10 animate-movebtn hidden sm:block'
             />
           </div>

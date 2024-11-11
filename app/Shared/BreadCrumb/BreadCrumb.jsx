@@ -1,11 +1,9 @@
-/* eslint-disable react/prop-types */
 import Link from 'next/link';
 import { IoHome } from 'react-icons/io5';
 
 const BreadCrumb = ({
   breadCrumbTitle,
   breadCrumbIcon,
-  url,
   breadCrumbLink,
 }) => {
   return (
@@ -28,11 +26,9 @@ const BreadCrumb = ({
               <div className='text-white hidden sm:block'>{breadCrumbIcon}</div>
             </li>
             <li>
-              <Link href={url}>
                 <button className='font-Rajdhani font-medium text-lg capitalize text-white'>
                   {breadCrumbLink}
                 </button>
-              </Link>
             </li>
           </ul>
         </div>
