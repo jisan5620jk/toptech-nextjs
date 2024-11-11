@@ -1,12 +1,11 @@
 import Link from 'next/link';
-import BreadCrumb from '../../../Shared/BreadCrumb/BreadCrumb';
-import blogListImg from '/images/blog-1.png';
-import blogListImg2 from '/images/blog-2.png';
-import blogListImg3 from '/images/blog-3.png';
-import blogListImg4 from '/images/blog-4.png';
-import itemthumb from '/images/recent-post-1.png';
-import itemthumb2 from '/images/recent-post-2.png';
-import itemthumb3 from '/images/recent-post-3.png';
+import blogListImg from '../../../public/images/blog-1.png';
+import blogListImg2 from '../../../public/images/blog-2.png';
+import blogListImg3 from '../../../public/images/blog-3.png';
+import blogListImg4 from '../../../public/images/blog-4.png';
+import itemthumb from '../../../public/images/recent-post-1.png';
+import itemthumb2 from '../../../public/images/recent-post-2.png';
+import itemthumb3 from '../../../public/images/recent-post-3.png';
 import { IoSearch } from 'react-icons/io5';
 import {
   FaAngleRight,
@@ -14,6 +13,8 @@ import {
   FaRegFolderOpen,
 } from 'react-icons/fa6';
 import BlogListCard from './BlogListCard';
+import Image from 'next/image';
+import BreadCrumb from '@/app/Shared/BreadCrumb/BreadCrumb';
 
 const blogListData = [
   {
@@ -23,6 +24,7 @@ const blogListData = [
     blogListTilte: 'Newest Comments (04) Equipment for House 2024',
     postBy: 'Admin : Mera',
     comments: 'Comments (04)',
+    blogListUrl: '/pages/blog_details',
     blogListDesc:
       'Alternative innovation to ethical network environmental whiteboard pursue compelling results for methods empowerment. Dramatically architect go forward opportunities transition mission top critical supply chains after enterprise',
   },
@@ -33,6 +35,7 @@ const blogListData = [
     blogListTilte: 'Newest Comments (04) Equipment for House 2024',
     postBy: 'Admin : Mera',
     comments: 'Comments (04)',
+    blogListUrl: '/pages/blog_details',
     blogListDesc:
       'Alternative innovation to ethical network environmental whiteboard pursue compelling results for methods empowerment. Dramatically architect go forward opportunities transition mission top critical supply chains after enterprise',
   },
@@ -53,6 +56,7 @@ const blogListData = [
     blogListTilte: 'Newest Comments (04) Equipment for House 2024',
     postBy: 'Admin : Mera',
     comments: 'Comments (04)',
+    blogListUrl: '/pages/blog_details',
     blogListDesc:
       'Alternative innovation to ethical network environmental whiteboard pursue compelling results for methods empowerment. Dramatically architect go forward opportunities transition mission top critical supply chains after enterprise',
   },
@@ -81,6 +85,7 @@ const BlogRightSideBar = () => {
                   blogListTilte,
                   postBy,
                   comments,
+                  blogListUrl,
                   blogListDesc,
                 }) => {
                   return (
@@ -94,6 +99,7 @@ const BlogRightSideBar = () => {
                         blogListTitle={blogListTilte}
                         postBy={postBy}
                         comments={comments}
+                        blogListUrl={blogListUrl}
                         blogListDesc={blogListDesc}
                       />
                     </div>
@@ -198,9 +204,10 @@ const BlogRightSideBar = () => {
                 <Link href={'/blog-details'}>
                   <button className='group flex gap-4 mb-6'>
                     <div className='rounded overflow-hidden'>
-                      <img
+                      <Image
                         draggable='false'
                         src={itemthumb}
+                        alt='Item Image'
                       />
                     </div>
                     <div className='flex-1 text-left'>
@@ -216,9 +223,10 @@ const BlogRightSideBar = () => {
                 <Link href={'/blog_details'}>
                   <button className='group flex gap-4 my-6'>
                     <div className='rounded overflow-hidden'>
-                      <img
+                      <Image
                         draggable='false'
                         src={itemthumb2}
+                        alt='Item Image'
                       />
                     </div>
                     <div className='flex-1 text-left'>
@@ -234,9 +242,10 @@ const BlogRightSideBar = () => {
                 <Link href={'/blog_details'}>
                   <button className='group flex gap-4 my-6'>
                     <div className='rounded overflow-hidden'>
-                      <img
+                      <Image
                         draggable='false'
                         src={itemthumb3}
+                        alt='Item Image'
                       />
                     </div>
                     <div className='flex-1 text-left'>

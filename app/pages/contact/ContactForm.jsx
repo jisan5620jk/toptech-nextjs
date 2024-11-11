@@ -5,15 +5,17 @@ import {
   FaXTwitter,
 } from 'react-icons/fa6';
 import Link from 'next/link';
-import contactFormImg from '/images/contact-form-img.png';
+import contactFormImg from '../../../public/images/contact-form-img.png';
+import Image from 'next/image';
 
 const ContactForm = () => {
   return (
     <div className='Container py-28 bg-BodyBg-0 border-t-4 border-PrimaryColor-0'>
       <div className='grid grid-cols-2 lg:grid-cols-3 lg:items-center gap-10 lg:gap-0'>
         <div className='col-span-2 lg:col-span-1 rounded-md overflow-hidden inline-block'>
-          <img
+          <Image
             src={contactFormImg}
+            alt='Contact Form Image'
             className='w-full'
             draggable='false'
           />

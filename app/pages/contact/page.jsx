@@ -1,10 +1,10 @@
 import { FaArrowRightLong } from "react-icons/fa6";
-import BreadCrumb from "../../../Shared/BreadCrumb/BreadCrumb";
 import ContactBox from "./ContactBox/ContactBox";
 import Map from "./Map";
 import ContactForm from "./ContactForm";
+import BreadCrumb from "@/app/Shared/BreadCrumb/BreadCrumb";
 
-const ContactInner = () => {
+const page = () => {
   return (
     <>
       <BreadCrumb
@@ -19,4 +19,4 @@ const ContactInner = () => {
   );
 };
 
-export default ContactInner;
+export default page;

@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+import Image from 'next/image';
 import Link from 'next/link';
 
 const FeatureCard = ({
@@ -13,19 +13,22 @@ const FeatureCard = ({
   return (
     <div className="text-center shadow-shade overflow-hidden group px-10 pt-[60px] pb-8 rounded-lg bg-white relative z-10 before:absolute before:bottom-0 before:left-0 before:w-full before:h-0 before:bg-[url('/images/feature-box-shape.png')] before:bg-cover before:bg-center before:bg-no-repeat before:transition-all before:duration-500 before:-z-10 hover:before:h-full hover:before:top-0">
       <div className='relative text-center z-10'>
-        <img
+        <Image
           src={featureIcon}
           draggable='false'
+          alt='Featuture Icon'
           className='m-auto'
         />
-        <img
+        <Image
           src={featureshape}
           draggable='false'
+          alt='Feature Shape'
           className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 transition-all duration-500 group-hover:opacity-0'
         />
-        <img
+        <Image
           src={featureshape2}
           draggable='false'
+          alt='Feature Shape'
           className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 transition-all duration-500 opacity-0 group-hover:opacity-100'
         />
       </div>

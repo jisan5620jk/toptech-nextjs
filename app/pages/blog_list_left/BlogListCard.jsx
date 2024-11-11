@@ -1,5 +1,6 @@
-/* eslint-disable react/prop-types */
+import Image from 'next/image';
 import Link from 'next/link';
+import PropTypes from 'prop-types';
 
 const BlogListCard = ({
   blogListImg,
@@ -13,8 +14,9 @@ const BlogListCard = ({
   return (
     <div className='group'>
       <div className='relative overflow-hidden rounded-md'>
-        <img
+        <Image
           src={blogListImg}
+          alt='Blog List Image'
           className='w-full transition-all duration-500 group-hover:scale-110'
         />
         <div className='absolute top-0 -left-1/4 transition-all duration-500 opacity-0 group-hover:opacity-100 group-hover:left-0'>
@@ -32,15 +34,27 @@ const BlogListCard = ({
             {comments}
           </h6>
         </div>
-        <Link href={blogListUrl}>
-          <button className='font-Rajdhani font-bold text-left text-lg sm:text-2xl text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 mt-7 mb-5'>
-            {blogListTitle}
-          </button>
-        </Link>
+        {blogListUrl && (
+          <Link href={blogListUrl}>
+            <button className='font-Rajdhani font-bold text-left text-lg sm:text-2xl text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 mt-7 mb-5'>
+              {blogListTitle}
+            </button>
+          </Link>
+        )}
         <p className='font-Nunito text-TextColor2-0 pb-9'>{blogListDesc}</p>
       </div>
     </div>
   );
+};
+
+BlogListCard.propTypes = {
+  blogListUrl: PropTypes.string.isRequired,
+  blogListImg: PropTypes.string.isRequired,
+  thumbContent: PropTypes.string,
+  blogListTitle: PropTypes.string,
+  postBy: PropTypes.string,
+  comments: PropTypes.string,
+  blogListDesc: PropTypes.string,
 };
 
 export default BlogListCard;

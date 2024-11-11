@@ -1,11 +1,11 @@
+import BreadCrumb from "@/app/Shared/BreadCrumb/BreadCrumb";
 import { FaArrowRightLong } from "react-icons/fa6";
-import BreadCrumb from "../../../Shared/BreadCrumb/BreadCrumb";
-import Contact from "../../../Component2/Contact/Contact";
-import WhyChoose from "../../../Component2/WhyChoose/WhyChoose";
 import About from "./About";
-import Counter from "../../../Component2/Counter/Counter";
+import Contact from "@/app/Component2/Contact/Contact";
+import Counter from "@/app/Component2/Counter/Counter";
+import WhyChoose from "@/app/Component2/WhyChoose/WhyChoose";
 
-const AboutInner2 = () => {
+const page = () => {
   return (
     <>
       <BreadCrumb
@@ -21,4 +21,4 @@ const AboutInner2 = () => {
   );
 };
 
-export default AboutInner2;
+export default page;

@@ -1,208 +1,78 @@
 import Link from 'next/link';
-import BreadCrumb from '../../../Shared/BreadCrumb/BreadCrumb';
-import blog_detailsThumb from '/images/blog-details.jpg';
-import blog_detailsImg from '/images/blog-details-benifis-thumb-1.png';
-import blog_detailsImg2 from '/images/blog-details-benifis-thumb-2.png';
-import itemthumb from '/images/recent-post-1.png';
-import itemthumb2 from '/images/recent-post-2.png';
-import itemthumb3 from '/images/recent-post-3.png';
+import blogListImg from '../../../public/images/blog-1.png';
+import blogListImg2 from '../../../public/images/blog-2.png';
+import blogListImg3 from '../../../public/images/blog-3.png';
+import blogListImg4 from '../../../public/images/blog-4.png';
+import itemthumb from '../../../public/images/recent-post-1.png';
+import itemthumb2 from '../../../public/images/recent-post-2.png';
+import itemthumb3 from '../../../public/images/recent-post-3.png';
 import { IoSearch } from 'react-icons/io5';
 import {
+  FaAngleRight,
   FaArrowRightLong,
-  FaCircleCheck,
-  FaFacebookF,
-  FaLinkedinIn,
-  FaPinterestP,
   FaRegFolderOpen,
-  FaXTwitter,
 } from 'react-icons/fa6';
-import { BiSolidQuoteAltRight } from 'react-icons/bi';
+import BlogListCard from './BlogListCard';
+import Image from 'next/image';
+import BreadCrumb from '@/app/Shared/BreadCrumb/BreadCrumb';
 
-const BlogDetails = () => {
+const blogListData = [
+  {
+    id: 1,
+    blogListImg: blogListImg,
+    thumbContent: 'IT Solution',
+    blogListTilte: 'Newest Comments (04) Equipment for House 2024',
+    postBy: 'Admin : Mera',
+    comments: 'Comments (04)',
+    blogListDesc:
+      'Alternative innovation to ethical network environmental whiteboard pursue compelling results for methods empowerment. Dramatically architect go forward opportunities transition mission top critical supply chains after enterprise',
+  },
+  {
+    id: 2,
+    blogListImg: blogListImg2,
+    thumbContent: 'IT Solution',
+    blogListTilte: 'Newest Comments (04) Equipment for House 2024',
+    postBy: 'Admin : Mera',
+    comments: 'Comments (04)',
+    blogListDesc:
+      'Alternative innovation to ethical network environmental whiteboard pursue compelling results for methods empowerment. Dramatically architect go forward opportunities transition mission top critical supply chains after enterprise',
+  },
+  {
+    id: 3,
+    blogListImg: blogListImg3,
+    thumbContent: 'IT Solution',
+    blogListTilte: 'Newest Comments (04) Equipment for House 2024',
+    postBy: 'Admin : Mera',
+    comments: 'Comments (04)',
+    blogListDesc:
+      'Alternative innovation to ethical network environmental whiteboard pursue compelling results for methods empowerment. Dramatically architect go forward opportunities transition mission top critical supply chains after enterprise',
+  },
+  {
+    id: 4,
+    blogListImg: blogListImg4,
+    thumbContent: 'IT Solution',
+    blogListTilte: 'Newest Comments (04) Equipment for House 2024',
+    postBy: 'Admin : Mera',
+    comments: 'Comments (04)',
+    blogListDesc:
+      'Alternative innovation to ethical network environmental whiteboard pursue compelling results for methods empowerment. Dramatically architect go forward opportunities transition mission top critical supply chains after enterprise',
+  },
+];
+
+const page = () => {
   return (
     <>
       <BreadCrumb
-        breadCrumbTitle={'Blog Details'}
+        breadCrumbTitle={'Blog left Sidebar'}
+        url={'/blog'}
         breadCrumbIcon={<FaArrowRightLong />}
-        breadCrumbLink={'Blog Details'}
+        breadCrumbIcon2={<FaArrowRightLong />}
+        breadCrumbLink={'Blog'}
+        breadCrumbContent={'Blog left Sidebar'}
       />
-      <section className='py-28'>
+      <section className='pt-[120px]'>
         <div className='Container'>
           <div className='grid grid-cols-2 lg:grid-cols-3 gap-12'>
-            <div className='col-span-2'>
-              <div className='border-l border-b border-BorderColor2-0 rounded-md'>
-                <div className='relative overflow-hidden rounded-md'>
-                  <img
-                    draggable='false'
-                    src={blog_detailsThumb}
-                    className='w-full'
-                  />
-                  <div className='absolute top-0 left-0'>
-                    <h6 className='font-Nunito text-white pl-7 pr-12 py-2 overflow-hidden bg-PrimaryColor-0 relative z-10 before:absolute before:-right-4 before:top-1 before:w-8 before:h-8 before:!rotate-45 before:bg-SecondaryColor-0'>
-                      Cyber Security
-                    </h6>
-                  </div>
-                </div>
-                <div className='px-4 sm:px-8 ml-8 bg-white shadow-cases rounded-b-md rounded-ss-md -mt-[50px] relative z-10'>
-                  <div className='flex items-center justify-between gap-5 pt-9 pb-7 border-b-2  relative before:absolute before:left-0 before:-bottom-[2px] before:w-8 before:h-[2px] before:bg-PrimaryColor-0 before:animate-dance5'>
-                    <h6 className='flex items-center gap-2 font-Rajdhani text-[17px] text-PrimaryColor-0 font-medium'>
-                      Admin : Mera
-                    </h6>
-                    <h6 className='flex items-center font-Rajdhani text-[17px] text-TextColor2-0 font-medium'>
-                      Comments (04)
-                    </h6>
-                  </div>
-                  <Link href={'blog_details'}>
-                    <button className='font-Rajdhani font-bold text-left text-lg sm:text-2xl text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 mt-7 mb-5'>
-                      Solution This Business For is Marketing Blog
-                    </button>
-                  </Link>
-                  <p className='font-Nunito text-TextColor2-0 pb-9'>
-                    Alternative innovation to ethical network environmental
-                    whiteboard pursue compelling results for methods
-                    empowerment. Dramatically architect go forward opportunities
-                    transition mission top critical supply chains after
-                    enterprise
-                  </p>
-                </div>{' '}
-                <div className='px-4 sm:px-8'>
-                  <div className='flex flex-col bg-[#f3f4f8] sm:flex-row gap-7 px-4 sm:px-11 py-4 sm:py-10 rounded-md mt-12'>
-                    <div className='text-6xl text-PrimaryColor-0'>
-                      <BiSolidQuoteAltRight />
-                    </div>
-                    <div className='flex-1'>
-                      <p className='font-Nunito text-HeadingColor-0 sm:text-lg italic'>
-                        “Competently architect intermandated deliverables client
-                        with niches continually underwhelm build cross-media
-                        growth strategies without robust.”
-                      </p>
-                      <h6 className='font-Nunito text-HeadingColor-0 pl-16 mt-4 relative before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:w-14 before:h-[1px] before:bg-PrimaryColor-0'>
-                        CEO & Founder
-                      </h6>
-                    </div>
-                  </div>
-                  <Link href={'/blog_details'}>
-                    <button className='font-Rajdhani font-bold text-left text-lg sm:text-[28px] text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 mt-14 mb-4'>
-                      Our Begin Now To Beingonl
-                    </button>
-                  </Link>
-                  <p className='font-Nunito text-TextColor2-0'>
-                    Dramatically matrix cross-media vortals wireless
-                    deliverables. Phosfluorescently underwhelm market driven
-                    e-services and 24/365 infrastructures. Intrinsicly
-                    incentivize resource.
-                  </p>
-                  <ul className='flex flex-col gap-[14px] mt-7'>
-                    <li className='flex gap-3 items-center font-Nunito font-light text-TextColor2-0'>
-                      <FaCircleCheck
-                        size={'20'}
-                        className='text-PrimaryColor-0'
-                      />
-                      Innovate wireless market
-                    </li>
-                    <li className='flex gap-3 items-center font-Nunito font-light text-TextColor2-0'>
-                      <FaCircleCheck
-                        size={'20'}
-                        className='text-PrimaryColor-0'
-                      />
-                      Productivate resource sucking
-                    </li>
-                    <li className='flex gap-3 items-center font-Nunito font-light text-TextColor2-0'>
-                      <FaCircleCheck
-                        size={'20'}
-                        className='text-PrimaryColor-0'
-                      />
-                      Proactively unleash oriented communities
-                    </li>
-                    <li className='flex gap-3 items-center font-Nunito font-light text-TextColor2-0'>
-                      <FaCircleCheck
-                        size={'20'}
-                        className='text-PrimaryColor-0'
-                      />
-                      Credibly develop progressive archi
-                    </li>
-                    <li className='flex gap-3 items-center font-Nunito font-light text-TextColor2-0'>
-                      <FaCircleCheck
-                        size={'20'}
-                        className='text-PrimaryColor-0'
-                      />
-                      Phosfluorescently to customer
-                    </li>
-                  </ul>
-                  <div className='grid grid-cols-1 md:grid-cols-2 gap-7 mt-16'>
-                    <div>
-                      <img
-                        draggable='false'
-                        src={blog_detailsImg}
-                      />
-                    </div>
-                    <div>
-                      <img
-                        draggable='false'
-                        src={blog_detailsImg2}
-                      />
-                    </div>
-                  </div>
-                  <Link href={'/blog_details'}>
-                    <button className='font-Rajdhani font-bold text-left text-lg sm:text-[28px] text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 mt-10 mb-4'>
-                      Tree Plantation for Human
-                    </button>
-                  </Link>
-                  <p className='font-Nunito font-light text-TextColor2-0'>
-                    Dramatically matrix cross-media vortals wireless
-                    deliverables. Phosfluorescently underwhelm market driven
-                    e-services and 24/365 infrastructures. Intrinsicly
-                    incentivize resource.
-                  </p>
-                </div>
-                <div className='flex flex-col sm:flex-row gap-5 items-start sm:justify-between border-t border-BorderColor1-0 mt-9 py-5 px-4 md:px-8 border-r border-BorderColor2-0'>
-                  <div className='font-Nunito text-lg font-medium flex flex-col sm:flex-row gap-2'>
-                    <Link href={'/'}>
-                      <button className='font-Nunito px-5 py-2 text-HeadingColor-0 text-sm rounded bg-[#f3f4f8] transition-all duration-500 hover:bg-PrimaryColor-0 hover:text-white'>
-                        Digital Marketing
-                      </button>
-                    </Link>
-                    <Link href={'/'}>
-                      <button className='font-Nunito px-5 py-2 text-HeadingColor-0 text-sm rounded bg-[#f3f4f8] transition-all duration-500 hover:bg-PrimaryColor-0 hover:text-white'>
-                        Development
-                      </button>
-                    </Link>
-                  </div>
-                  <div>
-                    <ul className='flex justify-center items-center gap-2'>
-                      <li>
-                        <Link href={'/'}>
-                          <button className='text-white w-9 h-9 rounded-full bg-[#1673ea] flex justify-center items-center'>
-                            <FaFacebookF size={'13'} />
-                          </button>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href={'/'}>
-                          <button className='text-white w-9 h-9 rounded-full bg-[#38ceff] flex justify-center items-center'>
-                            <FaXTwitter size={'13'} />
-                          </button>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href={'/'}>
-                          <button className='text-white w-9 h-9 rounded-full bg-[#0b4ab1] flex justify-center items-center'>
-                            <FaLinkedinIn size={'13'} />
-                          </button>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href={'/'}>
-                          <button className='text-white w-9 h-9 rounded-full bg-[#e92928] flex justify-center items-center'>
-                            <FaPinterestP size={'13'} />
-                          </button>
-                        </Link>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
             <div className='col-span-2 lg:col-span-1'>
               <div className='relative inline-block w-full mb-7 p-4 sm:p-8 lg:p-6 xl:p-8 rounded-md bg-[#f3f4f8]'>
                 <input
@@ -300,9 +170,10 @@ const BlogDetails = () => {
                 <Link href={'/blog-details'}>
                   <button className='group flex gap-4 mb-6'>
                     <div className='rounded overflow-hidden'>
-                      <img
+                      <Image
                         draggable='false'
                         src={itemthumb}
+                        alt='Item Image'
                       />
                     </div>
                     <div className='flex-1 text-left'>
@@ -318,9 +189,10 @@ const BlogDetails = () => {
                 <Link href={'/blog_details'}>
                   <button className='group flex gap-4 my-6'>
                     <div className='rounded overflow-hidden'>
-                      <img
+                      <Image
                         draggable='false'
                         src={itemthumb2}
+                        alt='Item Image'
                       />
                     </div>
                     <div className='flex-1 text-left'>
@@ -336,9 +208,10 @@ const BlogDetails = () => {
                 <Link href={'/blog_details'}>
                   <button className='group flex gap-4 my-6'>
                     <div className='rounded overflow-hidden'>
-                      <img
+                      <Image
                         draggable='false'
                         src={itemthumb3}
+                        alt='Item Image'
                       />
                     </div>
                     <div className='flex-1 text-left'>
@@ -402,11 +275,64 @@ const BlogDetails = () => {
                 </ul>
               </div>
             </div>
+            <div className='col-span-2'>
+              {blogListData.map(
+                ({
+                  id,
+                  blogListImg,
+                  thumbContent,
+                  blogListTilte,
+                  postBy,
+                  comments,
+                  blogListDesc,
+                }) => {
+                  return (
+                    <div
+                      key={id}
+                      className='mb-7'
+                    >
+                      <BlogListCard
+                        blogListImg={blogListImg}
+                        thumbContent={thumbContent}
+                        blogListTitle={blogListTilte}
+                        postBy={postBy}
+                        comments={comments}
+                        blogListDesc={blogListDesc}
+                      />
+                    </div>
+                  );
+                }
+              )}
+            </div>
           </div>
         </div>
       </section>
+      <div>
+        <ul className='flex items-center gap-2 justify-center pb-[120px] pt-[50px]'>
+          <li>
+            <button className='h-[50px] w-[50px] font-Nunito rounded-full border-BorderColor2-0 border bg-white flex justify-center items-center text-HeadingColor-0 transition-all duration-500 hover:text-white overflow-hidden relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100'>
+              01
+            </button>
+          </li>
+          <li>
+            <button className='h-[50px] w-[50px] font-Nunito rounded-full border-BorderColor2-0 border bg-white flex justify-center items-center text-HeadingColor-0 transition-all duration-500 hover:text-white overflow-hidden relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100'>
+              02
+            </button>
+          </li>
+          <li>
+            <button className='h-[50px] w-[50px] font-Nunito rounded-full border-BorderColor2-0 border bg-white flex justify-center items-center text-HeadingColor-0 transition-all duration-500 hover:text-white overflow-hidden relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100'>
+              03
+            </button>
+          </li>
+          <li>
+            <button className='h-[50px] w-[50px] font-Nunito rounded-full border-BorderColor2-0 border bg-white flex justify-center items-center text-HeadingColor-0 transition-all duration-500 hover:text-white overflow-hidden relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100'>
+              <FaAngleRight />
+            </button>
+          </li>
+        </ul>
+      </div>
     </>
   );
 };
 
-export default BlogDetails;
+export default page;

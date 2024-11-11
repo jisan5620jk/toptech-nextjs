@@ -1,5 +1,6 @@
-/* eslint-disable react/prop-types */
+import Image from 'next/image';
 import Link from 'next/link';
+import PropTypes from 'prop-types';
 
 const BlogGridCard = ({
   blogGridImg,
@@ -14,8 +15,10 @@ const BlogGridCard = ({
   return (
     <div className='group bg-BodyBg-0 p-5 rounded-md overflow-hidden'>
       <div className='relative overflow-hidden rounded-md'>
-        <img
+        <Image
           src={blogGridImg}
+          alt='Blog Grid Image'
+          draggable='false'
           className='w-full transition-all duration-500 group-hover:scale-110'
         />
         <div className='absolute top-0 left-0'>
@@ -23,13 +26,15 @@ const BlogGridCard = ({
             {thumbContent}
           </h6>
         </div>
-        <div className='absolute bottom-4 -right-1/4 transition-all duration-500 opacity-0 group-hover:opacity-100 group-hover:right-6'>
-          <Link href={blogGridUrl}>
-            <button className='font-Nunito text-white size-11 rounded-full border-2 text-2xl flex justify-center items-center border-white bg-PrimaryColor-0'>
-              {thumbBtn}
-            </button>
-          </Link>
-        </div>
+        {blogGridUrl && (
+          <div className='absolute bottom-4 -right-1/4 transition-all duration-500 opacity-0 group-hover:opacity-100 group-hover:right-6'>
+            <Link href={blogGridUrl}>
+              <button className='font-Nunito text-white size-11 rounded-full border-2 text-2xl flex justify-center items-center border-white bg-PrimaryColor-0'>
+                {thumbBtn}
+              </button>
+            </Link>
+          </div>
+        )}
       </div>
       <div className='sm:px-5 lg:px-0 xl:px-5 relative z-10'>
         <div className='flex items-center justify-between gap-5 pt-7 pb-7 border-b-2  relative before:absolute before:left-0 before:-bottom-[2px] before:w-8 before:h-[2px] before:bg-PrimaryColor-0 before:animate-dance5'>
@@ -40,15 +45,28 @@ const BlogGridCard = ({
             {comments}
           </h6>
         </div>
-        <Link href={blogGridUrl}>
-          <button className='font-Rajdhani font-semibold text-left text-lg sm:text-[22px] lg:text-xl xl:text-[22px] 2xl:text-2xl text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 mt-7 mb-3'>
-            {blogGridTitle}
-          </button>
-        </Link>
+        {blogGridUrl && (
+          <Link href={blogGridUrl}>
+            <button className='font-Rajdhani font-semibold text-left text-lg sm:text-[22px] lg:text-xl xl:text-[22px] 2xl:text-2xl text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 mt-7 mb-3'>
+              {blogGridTitle}
+            </button>
+          </Link>
+        )}
         <p className='font-Nunito text-TextColor2-0 pb-4'>{blogGridDesc}</p>
       </div>
     </div>
   );
+};
+
+BlogGridCard.propTypes = {
+  blogGridUrl: PropTypes.string.isRequired,
+  blogGridImg: PropTypes.string.isRequired,
+  thumbContent: PropTypes.string,
+  blogGridTitle: PropTypes.string,
+  postBy: PropTypes.string,
+  comments: PropTypes.string,
+  blogGridDesc: PropTypes.string,
+  thumbBtn: PropTypes.string,
 };
 
 export default BlogGridCard;

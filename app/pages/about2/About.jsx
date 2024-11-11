@@ -1,9 +1,12 @@
-import aboutThumb from '/images/about-inner-thumb.png';
-import aboutIcon from '/images/about-icon.png';
+"use client"
+
+import aboutThumb from '../../../public/images/about-inner-thumb.png';
+import aboutIcon from '../../../public/images/about-icon.png';
 import { IoMdPlay } from 'react-icons/io';
 import { useState } from 'react';
 import FsLightbox from 'fslightbox-react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const About = () => {
   const [toggler, setToggler] = useState(false);
@@ -12,9 +15,10 @@ const About = () => {
       <div className='Container'>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-[92px] lg:gap-10 2xl:gap-[92px] items-center'>
           <div className='relative z-10'>
-            <img
+            <Image
               src={aboutThumb}
               draggable='false'
+              alt='About Image'
             />
             <div className='h-14 w-14 sm:h-[245px] sm:w-[295px] border-8 border-white rounded bg-PrimaryColor-0 flex justify-center items-center absolute bottom-10 right-0'>
               <button className='h-14 w-14 sm:h-[100px] sm:w-[100px] border-white rounded-full bg-white flex justify-center items-center relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-transparent before:border before:border-white before:-z-10 before:rounded-full before:animate-ping'>
@@ -51,9 +55,10 @@ const About = () => {
               <div>
                 <div className='flex gap-3 items-center'>
                   <div>
-                    <img
+                    <Image
                       src={aboutIcon}
                       draggable='false'
+                      alt='About Icon'
                     />
                   </div>
                   <div className='flex-1'>
@@ -69,9 +74,10 @@ const About = () => {
               <div>
                 <div className='flex gap-3 items-center'>
                   <div>
-                    <img
+                    <Image
                       src={aboutIcon}
                       draggable='false'
+                      alt='About Icon'
                     />
                   </div>
                   <div className='flex-1'>
