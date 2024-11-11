@@ -1,13 +1,15 @@
+"use client"
+
+import Image from "next/image";
 import { useState, useEffect } from "react";
 import { FaAngleDown } from "react-icons/fa6";
 
-/* eslint-disable react/prop-types */
 const PricingAccordion = ({ children, faqIcon, title, id, active = false }) => {
   const [accordionOpen, setAccordionOpen] = useState(false);
 
   useEffect(() => {
     setAccordionOpen(active);
-  }, []);
+  }, [active]);
 
   return (
     <div className="mb-5 rounded-md overflow-hidden">
@@ -26,8 +28,9 @@ const PricingAccordion = ({ children, faqIcon, title, id, active = false }) => {
               accordionOpen && "!text-white"
             }`}
           >
-            <img
+            <Image
               src={faqIcon} draggable="false"
+              alt="Faq Icon"
               className="size-[30px] transition-all duration-500"
             />
             <span>

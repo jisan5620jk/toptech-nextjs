@@ -1,8 +1,8 @@
 import HelpCenterCard from "./HelpCenterCard";
-import helpCenterImg from "/images/flag-1.png";
-import helpCenterImg2 from "/images/flag-2.png";
-import helpCenterImg3 from "/images/flag-3.png";
-import helpCenterIcon from "/images/location-icon.png";
+import helpCenterImg from "../../../public/images/flag-1.png";
+import helpCenterImg2 from "../../../public/images/flag-2.png";
+import helpCenterImg3 from "../../../public/images/flag-3.png";
+import helpCenterIcon from "../../../public/images/location-icon.png";
 
 const processData = [
   {

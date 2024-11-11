@@ -1,10 +1,10 @@
 import { FaArrowRightLong } from "react-icons/fa6";
-import BreadCrumb from "../../../Shared/BreadCrumb/BreadCrumb";
-import Video from "../../../Component1/Video/Video";
-import ContactBox from "../ContactInner/ContactBox/ContactBox";
+import BreadCrumb from "@/app/Shared/BreadCrumb/BreadCrumb";
+import Video from "@/app/Component1/Video/Video";
 import Pricing from "./Pricing/Pricing";
+import ContactBox from "../contact/ContactBox/ContactBox";
 
-const PricingInner = () => {
+const page = () => {
   return (
     <>
       <BreadCrumb
@@ -19,4 +19,4 @@ const PricingInner = () => {
   );
 };
 
-export default PricingInner;
+export default page;

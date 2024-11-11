@@ -1,13 +1,14 @@
-import BreadCrumb from '../../../Shared/BreadCrumb/BreadCrumb';
+import BreadCrumb from '@/app/Shared/BreadCrumb/BreadCrumb';
 import { FaArrowRightLong } from 'react-icons/fa6';
 import { FiCheck } from 'react-icons/fi';
-import missionImg from '/images/mission-1.png';
-import missionImg2 from '/images/mission-2.png';
+import missionImg from '../../../public/images/mission-1.png';
+import missionImg2 from '../../../public/images/mission-2.png';
 import Link from 'next/link';
-import Feature from '../../../Component2/Feature/Feature';
-import Brand from '../../../Component1/Brand/Brand';
+import Image from 'next/image';
+import Feature from '@/app/Component2/Feature/Feature';
+import Brand from '@/app/Component1/Brand/Brand';
 
-const MissionInner = () => {
+const page = () => {
   return (
     <>
       <BreadCrumb
@@ -19,9 +20,10 @@ const MissionInner = () => {
         <div className='Container'>
           <div className='grid grid-cols-1 lg:grid-cols-2 lg:items-center gap-10 lg:gap-0 bg-BodyBg-0 rounded-md mb-8 lg:mb-0'>
             <div>
-              <img
+              <Image
                 src={missionImg}
                 draggable='false'
+                alt='Mission Image'
               />
             </div>
             <div className='ml-10 2xl:ml-20 mr-10'>
@@ -97,17 +99,19 @@ const MissionInner = () => {
               </Link>
             </div>
             <div>
-              <img
+              <Image
                 src={missionImg2}
                 draggable='false'
+                alt='Mission Image'
               />
             </div>
           </div>
           <div className='grid grid-cols-1 lg:grid-cols-2 lg:items-center gap-10 lg:gap-0 bg-BodyBg-0 rounded-md'>
             <div>
-              <img
+              <Image
                 src={missionImg}
                 draggable='false'
+                alt='Mission Image'
               />
             </div>
             <div className='ml-10 2xl:ml-20 mr-10'>
@@ -154,4 +158,4 @@ const MissionInner = () => {
   );
 };
 
-export default MissionInner;
+export default page;
