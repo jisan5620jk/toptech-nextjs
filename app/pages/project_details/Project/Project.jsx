@@ -1,9 +1,8 @@
-/* eslint-disable no-unused-vars */
 import { FaArrowRightLong } from "react-icons/fa6";
-import projectThumb from "/images/project-1.png";
-import projectThumb2 from "/images/project-2.png";
-import projectThumb3 from "/images/project-3.png";
-import projectContentShape from "/images/project-content-shape.png";
+import projectThumb from "../../../../public/images/project-1.png";
+import projectThumb2 from "../../../../public/images/project-2.png";
+import projectThumb3 from "../../../../public/images/project-3.png";
+import projectContentShape from "../../../../public/images/project-content-shape.png";
 import ProjectCard from "./ProjectCard";
 
 const ProjectData = [

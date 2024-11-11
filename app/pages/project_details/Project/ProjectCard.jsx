@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+import Image from 'next/image';
 import Link from 'next/link';
 
 const ProjectCard = ({
@@ -13,16 +13,18 @@ const ProjectCard = ({
   return (
     <div className='relative z-10 group rounded-md overflow-hidden'>
       <div className='overflow-hidden relative z-10 before:absolute before:top-0 before:left-1/2 before:w-0 before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 group-hover:before:w-full group-hover:before:left-0 group-hover:before:opacity-0'>
-        <img
+        <Image
           src={projectThumb}
           draggable='false'
+          alt='Project Image'
           className='w-full'
         />
       </div>
       <div className='w-11/12 -mt-[42px] bg-[#f5f8ed] rounded-md overflow-hidden border-l-[5px] border-PrimaryColor-0 px-4 md:px-8 pb-8 transition-all duration-500 relative z-10 before:absolute before:left-0 before:w-0 before:h-full before:bg-SecondaryColor-0 before:-z-10 before:transition-all before:duration-500 group-hover:before:w-full group-hover:-mt-[86px]'>
-        <img
+        <Image
           src={projectContentShape}
           draggable='false'
+          alt='Project Shape'
           className='absolute bottom-0 right-10 animate-dance2 -z-10 opacity-0 transition-all
            duration-500 group-hover:opacity-100'
         />

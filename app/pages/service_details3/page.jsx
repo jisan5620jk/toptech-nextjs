@@ -1,11 +1,10 @@
 import Link from 'next/link';
-import BreadCrumb from '../../../Shared/BreadCrumb/BreadCrumb';
-import wedgetIcon from '/images/widget-icon.png';
-import serviceDetailsIcon from '/images/services-details-icon-1.png';
-import serviceDetailsIcon2 from '/images/services-details-icon-2.png';
-import serviceDetailsThumb from '/images/service-details.jpg';
-import projectDetialsBoxImg from '/images/services-details-benifis-thumb-1.png';
-import projectDetialsBoxImg2 from '/images/services-details-benifis-thumb-2.png';
+import wedgetIcon from '../../../public/images/widget-icon.png';
+import serviceDetailsIcon from '../../../public/images/services-details-icon-1.png';
+import serviceDetailsIcon2 from '../../../public/images/services-details-icon-2.png';
+import serviceDetailsThumb from '../../../public/images/service-details.jpg';
+import projectDetialsBoxImg from '../../../public/images/services-details-benifis-thumb-1.png';
+import projectDetialsBoxImg2 from '../../../public/images/services-details-benifis-thumb-2.png';
 import {
   FaArrowRight,
   FaArrowRightLong,
@@ -16,8 +15,10 @@ import { HiDownload } from 'react-icons/hi';
 import { BsFileEarmarkPdf } from 'react-icons/bs';
 import { IoMdCheckmark } from 'react-icons/io';
 import { AiOutlineSolution } from 'react-icons/ai';
+import Image from 'next/image';
+import BreadCrumb from '@/app/Shared/BreadCrumb/BreadCrumb';
 
-const ServiceDetails3 = () => {
+const page = () => {
   return (
     <>
       <BreadCrumb
@@ -29,9 +30,10 @@ const ServiceDetails3 = () => {
         <div className='Container'>
           <div className='grid grid-cols-3 gap-[50px]'>
             <div className='col-span-3 lg:col-span-2'>
-              <img
+              <Image
                 src={serviceDetailsThumb}
                 draggable='false'
+                alt='Service Details Image'
                 className='w-full'
               />
               <h2 className='font-Rajdhani font-bold text-2xl sm:text-4xl text-HeadingColor-0 mt-8'>
@@ -55,9 +57,10 @@ const ServiceDetails3 = () => {
               <div className='grid grid-cols-1 sm:grid-cols-2 gap-7'>
                 <div className='flex flex-col md:flex-row lg:flex-col xl:flex-row gap-5 bg-[#f3f4f8] rounded-md px-6 py-7'>
                   <div className='w-[72px] h-[72px] rounded-full bg-white flex justify-center items-center'>
-                    <img
+                    <Image
                       src={serviceDetailsIcon}
                       draggable='false'
+                      alt='Service Details Icon'
                     />
                   </div>
                   <div className='flex-1'>
@@ -72,9 +75,10 @@ const ServiceDetails3 = () => {
                 </div>
                 <div className='flex flex-col md:flex-row lg:flex-col xl:flex-row gap-5 bg-[#f3f4f8] rounded-md px-6 py-7'>
                   <div className='w-[72px] h-[72px] rounded-full bg-white flex justify-center items-center'>
-                    <img
+                    <Image
                       src={serviceDetailsIcon2}
                       draggable='false'
+                      alt='Service Details Icon'
                     />
                   </div>
                   <div className='flex-1'>
@@ -114,9 +118,10 @@ const ServiceDetails3 = () => {
               <div className='grid grid-cols-1 md:grid-cols-2 gap-7 mt-9'>
                 <div className='text-center group'>
                   <div className='overflow-hidden rounded'>
-                    <img
+                    <Image
                       src={projectDetialsBoxImg}
                       draggable='false'
+                      alt='Project Details Image'
                       className='transition-all duration-500 group-hover:scale-110'
                     />
                   </div>
@@ -138,9 +143,10 @@ const ServiceDetails3 = () => {
                 </div>
                 <div className='text-center group'>
                   <div className='overflow-hidden rounded'>
-                    <img
+                    <Image
                       src={projectDetialsBoxImg2}
                       draggable='false'
+                      alt='Project Details Image'
                       className='transition-all duration-500 group-hover:scale-110'
                     />
                   </div>
@@ -278,9 +284,10 @@ const ServiceDetails3 = () => {
                 </ul>
               </div>
               <div className="rounded-lg px-9 overflow-hidden bg-[url('/images/sidber-contact.png')] bg-cover bg-no-repeat bg-center py-[50px]">
-                <img
+                <Image
                   src={wedgetIcon}
                   draggable='false'
+                  alt='Wedget Icon'
                 />
                 <h6 className='font-Nunito font-medium text-lg text-white mt-5 mb-2'>
                   Call Us Anytime
@@ -311,4 +318,4 @@ const ServiceDetails3 = () => {
   );
 };
 
-export default ServiceDetails3;
+export default page;

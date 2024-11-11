@@ -1,13 +1,14 @@
 import Link from 'next/link';
-import BreadCrumb from '../../../Shared/BreadCrumb/BreadCrumb';
-import projectDetailsThumb from '/images/project-details-thumb.jpg';
-import projectDetailsListThumb from '/images/project-details-item-images.jpg';
-import wedgetIcon from '/images/widget-icon.png';
+import projectDetailsThumb from '../../../public/images/project-details-thumb.jpg';
+import projectDetailsListThumb from '../../../public/images/project-details-item-images.jpg';
+import wedgetIcon from '../../../public/images/widget-icon.png';
 import { FaArrowRight, FaArrowRightLong, FaCircleCheck } from 'react-icons/fa6';
 import { MdEmail } from 'react-icons/md';
 import Project from './Project/Project';
+import Image from 'next/image';
+import BreadCrumb from '@/app/Shared/BreadCrumb/BreadCrumb';
 
-const ProjectDetails = () => {
+const page = () => {
   return (
     <>
       <BreadCrumb
@@ -17,9 +18,10 @@ const ProjectDetails = () => {
       />
       <section className='py-[120px]'>
         <div className='Container'>
-          <img
+          <Image
             src={projectDetailsThumb}
             draggable='false'
+            alt='Project Details Image'
             className='w-full'
           />
           <div className='grid grid-cols-3 gap-[70px] mt-12'>
@@ -54,9 +56,10 @@ const ProjectDetails = () => {
               </p>
               <div className='grid gap-7 grid-cols-1 lg:grid-cols-1 md:grid-cols-2 items-center xl:grid-cols-2 mt-12'>
                 <div>
-                  <img
+                  <Image
                     src={projectDetailsListThumb}
                     draggable='false'
+                    alt='Project Details Image'
                   />
                 </div>
                 <div>
@@ -151,9 +154,10 @@ const ProjectDetails = () => {
                 </div>
               </div>
               <div className="rounded-lg px-9 overflow-hidden bg-[url('/images/sidber-contact.png')] bg-cover bg-no-repeat bg-center py-[50px]">
-                <img
+                <Image
                   src={wedgetIcon}
                   draggable='false'
+                  alt='Wedget Icon'
                 />
                 <h6 className='font-Nunito font-medium text-lg text-white mt-5 mb-2'>
                   Call Us Anytime
@@ -185,4 +189,4 @@ const ProjectDetails = () => {
   );
 };
 
-export default ProjectDetails;
+export default page;
