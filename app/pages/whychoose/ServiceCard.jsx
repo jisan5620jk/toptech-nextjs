@@ -1,4 +1,5 @@
-/* eslint-disable react/prop-types */
+import Image from "next/image";
+
 const ServiceCard = ({
   serviceIcon,
   serviceTitle,
@@ -7,7 +8,7 @@ const ServiceCard = ({
   return (
     <div className="relative z-10 text-center">
       <div>
-        <img src={serviceIcon} draggable="false" className="m-auto" />
+        <Image alt="Service Icon" src={serviceIcon} draggable="false" className="m-auto" />
       </div>
       <h5 className="font-Rajdhani font-semibold text-2xl lg:text-xl xl:text-2xl 2xl:text-[26px] text-HeadingColor-0 mt-6">
         {serviceTitle}

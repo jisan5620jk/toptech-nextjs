@@ -1,7 +1,7 @@
-import teamThumb from '/images/team-1.png';
-import teamThumb2 from '/images/team-2.png';
-import teamThumb3 from '/images/team-4.png';
-import teamThumb4 from '/images/team-3.png';
+import teamThumb from '../../../public/images/team-1.png';
+import teamThumb2 from '../../../public/images/team-2.png';
+import teamThumb3 from '../../../public/images/team-4.png';
+import teamThumb4 from '../../../public/images/team-3.png';
 import TeamInnerCard from './TeamInnerCard';
 import {
   FaArrowRightLong,
@@ -13,7 +13,7 @@ import {
 import { IoShareSocialOutline } from 'react-icons/io5';
 import Link from 'next/link';
 import { GoArrowRight } from 'react-icons/go';
-import BreadCrumb from '../../../Shared/BreadCrumb/BreadCrumb';
+import BreadCrumb from '@/app/Shared/BreadCrumb/BreadCrumb';
 
 const teamData = [
   {
@@ -106,7 +106,7 @@ const teamData = [
   },
 ];
 
-const TeamInner = () => {
+const page = () => {
   return (
     <>
       <BreadCrumb
@@ -172,4 +172,4 @@ const TeamInner = () => {
   );
 };
 
-export default TeamInner;
+export default page;

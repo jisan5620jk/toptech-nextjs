@@ -1,9 +1,6 @@
-/* eslint-disable no-unused-vars */
-import processImg from "/images/process2-1.png";
-import processImg2 from "/images/process2-2.png";
-import processImg3 from "/images/process2-3.png";
-import boxShape from "/images/porcess-shape1.png";
-import boxShape2 from "/images/porcess-shape2.png";
+import processImg from "../../../../public/images/process2-1.png";
+import processImg2 from "../../../../public/images/process2-2.png";
+import processImg3 from "../../../../public/images/process2-3.png";
 import ProcessCard from "./ProcessCard";
 
 const processData = [

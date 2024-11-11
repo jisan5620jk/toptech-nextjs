@@ -1,11 +1,11 @@
 import {
   FaArrowRightLong,
 } from "react-icons/fa6";
-import BreadCrumb from "../../../Shared/BreadCrumb/BreadCrumb";
 import TeamDetailsMain from "./TeamDetailsMain";
+import BreadCrumb from "@/app/Shared/BreadCrumb/BreadCrumb";
 
 
-const TeamDetails = () => {
+const page = () => {
   return (
     <>
       <BreadCrumb
@@ -18,6 +18,6 @@ const TeamDetails = () => {
   );
 };
 
-export default TeamDetails;
+export default page;
 
 

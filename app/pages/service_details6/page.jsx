@@ -1,11 +1,10 @@
 import Link from 'next/link';
-import BreadCrumb from '../../../Shared/BreadCrumb/BreadCrumb';
-import wedgetIcon from '/images/widget-icon.png';
-import serviceDetailsIcon from '/images/services-details-icon-1.png';
-import serviceDetailsIcon2 from '/images/services-details-icon-2.png';
-import serviceDetailsThumb from '/images/service-details.jpg';
-import projectDetialsBoxImg from '/images/services-details-benifis-thumb-1.png';
-import projectDetialsBoxImg2 from '/images/services-details-benifis-thumb-2.png';
+import wedgetIcon from '../../../public/images/widget-icon.png';
+import serviceDetailsIcon from '../../../public/images/services-details-icon-1.png';
+import serviceDetailsIcon2 from '../../../public/images/services-details-icon-2.png';
+import serviceDetailsThumb from '../../../public/images/service-details.jpg';
+import projectDetialsBoxImg from '../../../public/images/services-details-benifis-thumb-1.png';
+import projectDetialsBoxImg2 from '../../../public/images/services-details-benifis-thumb-2.png';
 import {
   FaArrowRight,
   FaArrowRightLong,
@@ -17,6 +16,7 @@ import { BsFileEarmarkPdf } from 'react-icons/bs';
 import { IoMdCheckmark } from 'react-icons/io';
 import { AiOutlineSolution } from 'react-icons/ai';
 import Image from 'next/image';
+import BreadCrumb from '@/app/Shared/BreadCrumb/BreadCrumb';
 
 const page = () => {
   return (

@@ -1,9 +1,12 @@
+"use client"
+
 import { FaPhoneAlt } from "react-icons/fa";
-import teamDetailsImg from "/images/team-details.jpg"
+import teamDetailsImg from "../../../public/images/team-details.jpg"
 import { FaFacebookF, FaLinkedinIn, FaPinterestP, FaXTwitter } from "react-icons/fa6";
 import { MdOutlineMail } from "react-icons/md";
 import { TfiLocationPin } from "react-icons/tfi";
 import ProgressBar from "react-animated-progress-bar";
+import Image from "next/image";
 
 const TeamDetailsMain = () => {
   return (
@@ -11,7 +14,7 @@ const TeamDetailsMain = () => {
       <div className="Container">
         <div className="grid grid-cols-1 lg:grid-cols-2 lg:items-center gap-10 lg:gap-20 2xl:gap-[140px]">
           <div>
-            <img src={teamDetailsImg} draggable="false" />
+            <Image alt="Team Details Image" src={teamDetailsImg} draggable="false" />
           </div>
           <div>
             <h2 className="font-Rajdhani font-bold text-4xl text-HeadingColor-0 mb-1">

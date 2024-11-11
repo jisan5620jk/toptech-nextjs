@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+import Image from 'next/image';
 import Link from 'next/link';
 
 const TeamInnerCard = ({
@@ -14,8 +14,10 @@ const TeamInnerCard = ({
   return (
     <div className='group relative'>
       <div className='relative overflow-hidden before:absolute before:bottom-0 before:left-0 before:bg-[#f5f8ed] before:w-full before:h-1/2 before:rounded-t-md before:-z-10'>
-        <img
+        <Image
           src={teamThumb}
+          draggable="false"
+          alt='Team Image'
           className='w-full xl:w-[inherit] m-auto'
         />
       </div>

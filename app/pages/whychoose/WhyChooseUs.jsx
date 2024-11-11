@@ -1,10 +1,11 @@
 import { FaCircle } from "react-icons/fa6";
-import whyChooseImg from "/images/choose-us-thumb.png"
+import whyChooseImg from "../../../public/images/choose-us-thumb.png"
 import ServiceCard from "./ServiceCard";
-import serviceIcon from "/images/choose-us-icon-1.png";
-import serviceIcon2 from "/images/choose-us-icon-2.png";
-import serviceIcon3 from "/images/choose-us-icon-3.png";
-import serviceIcon4 from "/images/choose-us-icon-4.png";
+import serviceIcon from "../../../public/images/choose-us-icon-1.png";
+import serviceIcon2 from "../../../public/images/choose-us-icon-2.png";
+import serviceIcon3 from "../../../public/images/choose-us-icon-3.png";
+import serviceIcon4 from "../../../public/images/choose-us-icon-4.png";
+import Image from "next/image";
 
 const ServiceData = [
   {
@@ -75,7 +76,7 @@ const WhyChooseUs = () => {
             </ul>
           </div>
           <div>
-            <img src={whyChooseImg} draggable="false" />
+            <Image alt="Why Choose Image" src={whyChooseImg} draggable="false" />
           </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[30px] pt-[100px] border-t border-PrimaryColor-0">

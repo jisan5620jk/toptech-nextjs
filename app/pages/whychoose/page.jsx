@@ -1,10 +1,10 @@
 import { FaArrowRightLong } from "react-icons/fa6";
-import BreadCrumb from "../../../Shared/BreadCrumb/BreadCrumb";
 import Newsletter from "./Newsletter/Newsletter";
 import WhyChooseUs from "./WhyChooseUs";
+import BreadCrumb from "@/app/Shared/BreadCrumb/BreadCrumb";
 
 
-const WhyChoose = () => {
+const page = () => {
   return (
     <>
       <BreadCrumb
@@ -18,4 +18,4 @@ const WhyChoose = () => {
   );
 };
 
-export default WhyChoose;
+export default page;
