@@ -1,4 +1,4 @@
-"use client"
+'use client';
 
 import PricingCard from './PricingCard';
 import pricingIcon from '../../../public/images/mobile-app-price-icon.png';
@@ -22,7 +22,7 @@ const pricingData = [
     pricingContent2: 'Simple signup system',
     pricingContent3: 'Customizations all information',
     pricingContent4: 'Support Any Mobile Apps',
-    pricingUrl: '/pricing_inner',
+    pricingUrl: '/pages/pricing_inner',
     pricingBtn: 'LEARN MORE',
     pricingBtnIcon: <HiOutlineArrowRight />,
   },
@@ -40,7 +40,7 @@ const pricingData = [
     pricingContent2: 'Simple signup system',
     pricingContent3: 'Customizations all information',
     pricingContent4: 'Support Any Mobile Apps',
-    pricingUrl: '/pricing_inner',
+    pricingUrl: '/pages/pricing_inner',
     pricingBtn: 'LEARN MORE',
     pricingBtnIcon: <HiOutlineArrowRight />,
   },
@@ -77,7 +77,7 @@ const Pricing = () => {
                 </p>
               </div>
             </div>
-            <Link href={'/contact'}>
+            <Link href={'/pages/contact'}>
               <button className='primary-btn5 !bg-BodyBg-0 !text-HeadingColor-0 hover:!text-white'>
                 {`Contact Us`}
                 <HiOutlineArrowRight size={'20'} />

@@ -128,7 +128,7 @@ const page = () => {
               </h1>
             </div>
             <div className='flex lg:justify-end'>
-              <Link href={'/about'}>
+              <Link href={'/pages/about'}>
                 <button className='primary-btn'>
                   {`All Member`}
                   <GoArrowRight size={'22'} />

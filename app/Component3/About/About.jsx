@@ -41,7 +41,10 @@ const About = () => {
             </p>
             <div className='flex items-center gap-5'>
               <div className='w-[74px] h-[74px] rounded bg-[#d4e1f7] flex items-center justify-center'>
-                <Image alt='About Icon' src={aboutIcon} />
+                <Image
+                  alt='About Icon'
+                  src={aboutIcon}
+                />
               </div>
               <div className='flex-1'>
                 <h6 className='font-Rajdhani font-bold text-[22px] text-HeadingColor-0'>
@@ -56,7 +59,10 @@ const About = () => {
             </div>
             <div className='flex items-center gap-5 mt-9'>
               <div className='w-[74px] h-[74px] rounded bg-[#d4e1f7] flex items-center justify-center'>
-                <Image alt='About Icon' src={aboutIcon2} />
+                <Image
+                  alt='About Icon'
+                  src={aboutIcon2}
+                />
               </div>
               <div className='flex-1'>
                 <h6 className='font-Rajdhani font-bold text-[22px] text-HeadingColor-0'>
@@ -71,7 +77,7 @@ const About = () => {
             </div>
             <div className='mt-10 flex flex-col sm:flex-row gap-6 sm:items-center'>
               <Link
-                href={'/about'}
+                href={'/pages/about'}
                 className='inline-block'
               >
                 <button className='primary-btn'>
@@ -81,7 +87,10 @@ const About = () => {
               </Link>
               <div className='flex items-center gap-5'>
                 <div className='inline-block rounded-full overflow-hidden'>
-                  <Image alt='About Author' src={aboutAuthor} />
+                  <Image
+                    alt='About Author'
+                    src={aboutAuthor}
+                  />
                 </div>
                 <div className='flex-1'>
                   <h6 className='font-Rajdhani font-semibold text-xl text-HeadingColor-0'>

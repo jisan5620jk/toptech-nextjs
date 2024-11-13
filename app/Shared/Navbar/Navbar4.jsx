@@ -45,9 +45,7 @@ const Navbar4 = () => {
     <nav
       className={`w-full transition-all duration-300 bg-transparent relative z-[99999]`}
     >
-      <header
-        className='header-section bg-transparent w-full z-10'
-      >
+      <header className='header-section bg-transparent w-full z-10'>
         <div className='Container'>
           {/* main Navbar */}
           <div className='flex flex-col lg:flex-row items-center justify-between lg:h-[100px] '>
@@ -96,7 +94,6 @@ const Navbar4 = () => {
                 `}
               >
                 <div
-                 
                   className={`${({ isActive, isPending }) =>
                     isPending
                       ? 'pending'
@@ -104,7 +101,10 @@ const Navbar4 = () => {
                       ? 'active'
                       : ''} text-HeadingColor-0 text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 2xl:px-5 w-full block transition-all duration-300 group relative`}
                 >
-                  <Link href='/' className='flex items-center'>
+                  <Link
+                    href='/'
+                    className='flex items-center'
+                  >
                     Home
                     <BiChevronDown className='ml-1' />
                   </Link>
@@ -207,9 +207,11 @@ const Navbar4 = () => {
                       : isActive
                       ? 'active'
                       : ''} text-HeadingColor-0 text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 2xl:px-5 w-full block transition-all duration-300 group relative `}
-                 
                 >
-                  <Link href='/about' className='flex items-center'>
+                  <Link
+                    href='/pages/about'
+                    className='flex items-center'
+                  >
                     About
                     <BiChevronDown className='ml-1' />
                   </Link>
@@ -218,7 +220,7 @@ const Navbar4 = () => {
                       <div className='px-5 group hover:bg-PrimaryColor-0 '>
                         <li className='hover:ml-3 duration-300'>
                           <Link
-                            href='/about'
+                            href='/pages/about'
                             className='py-2 block'
                           >
                             About us 01
@@ -228,7 +230,7 @@ const Navbar4 = () => {
                       <div className='px-5 group hover:bg-PrimaryColor-0 '>
                         <li className='hover:ml-3 duration-300'>
                           <Link
-                            href='/about2'
+                            href='/pages/about2'
                             className='py-2 block'
                           >
                             About Us 02
@@ -245,9 +247,11 @@ const Navbar4 = () => {
                       : isActive
                       ? 'active'
                       : ''} text-HeadingColor-0 text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 2xl:px-5 w-full block transition-all duration-300 group relative `}
-                 
                 >
-                  <Link href='#' className='flex items-center'>
+                  <Link
+                    href='#'
+                    className='flex items-center'
+                  >
                     Service
                     <BiChevronDown className='ml-1' />
                   </Link>
@@ -256,7 +260,7 @@ const Navbar4 = () => {
                       <div className='px-5 group hover:bg-PrimaryColor-0 '>
                         <li className='hover:ml-3 duration-300'>
                           <Link
-                            href='/service'
+                            href='/pages/service'
                             className='py-2 block'
                           >
                             Service
@@ -266,7 +270,7 @@ const Navbar4 = () => {
                       <div className='px-5 group hover:bg-PrimaryColor-0 '>
                         <li className='hover:ml-3 duration-300'>
                           <Link
-                            href='/service_details'
+                            href='/pages/service_details'
                             className='py-2 block'
                           >
                             Service Details
@@ -283,9 +287,11 @@ const Navbar4 = () => {
                       : isActive
                       ? 'active'
                       : ''} text-HeadingColor-0 text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 2xl:px-5 w-full block transition-all duration-300 group relative `}
-                 
                 >
-                  <Link href='#' className='flex items-center'>
+                  <Link
+                    href='#'
+                    className='flex items-center'
+                  >
                     Pages
                     <BiChevronDown className='ml-1' />
                   </Link>
@@ -294,7 +300,7 @@ const Navbar4 = () => {
                       <div className='px-5 group hover:bg-PrimaryColor-0'>
                         <li className='hover:ml-3 duration-300'>
                           <Link
-                            href='/why_choose'
+                            href='/pages/why_choose'
                             className='py-2 block'
                           >
                             Why Choose Us
@@ -304,7 +310,7 @@ const Navbar4 = () => {
                       <div className='px-5 group hover:bg-PrimaryColor-0'>
                         <li className='hover:ml-3 duration-300'>
                           <Link
-                            href='/mission_inner'
+                            href='/pages/mission'
                             className='py-2 block'
                           >
                             Our Mission
@@ -314,7 +320,7 @@ const Navbar4 = () => {
                       <div className='px-5 group hover:bg-PrimaryColor-0'>
                         <li className='hover:ml-3 duration-300'>
                           <Link
-                            href='/team_inner'
+                            href='/pages/team'
                             className='py-2 block'
                           >
                             Team Member
@@ -324,7 +330,7 @@ const Navbar4 = () => {
                       <div className='px-5 group hover:bg-PrimaryColor-0'>
                         <li className='hover:ml-3 duration-300'>
                           <Link
-                            href='/team_details'
+                            href='/pages/team_details'
                             className='py-2 block'
                           >
                             Team Details
@@ -334,7 +340,7 @@ const Navbar4 = () => {
                       <div className='px-5 group hover:bg-PrimaryColor-0'>
                         <li className='hover:ml-3 duration-300'>
                           <Link
-                            href='/project'
+                            href='/pages/project'
                             className='py-2 block'
                           >
                             Projects
@@ -344,7 +350,7 @@ const Navbar4 = () => {
                       <div className='px-5 group hover:bg-PrimaryColor-0'>
                         <li className='hover:ml-3 duration-300'>
                           <Link
-                            href='/project_details'
+                            href='/pages/project_details'
                             className='py-2 block'
                           >
                             Project Details
@@ -354,7 +360,7 @@ const Navbar4 = () => {
                       <div className='px-5 group hover:bg-PrimaryColor-0'>
                         <li className='hover:ml-3 duration-300'>
                           <Link
-                            href='/pricing_inner'
+                            href='/pages/pricing_inner'
                             className='py-2 block'
                           >
                             Pricing Plan
@@ -364,7 +370,7 @@ const Navbar4 = () => {
                       <div className='px-5 group hover:bg-PrimaryColor-0'>
                         <li className='hover:ml-3 duration-300'>
                           <Link
-                            href='/location'
+                            href='/pages/location'
                             className='py-2 block'
                           >
                             Our Location
@@ -374,7 +380,7 @@ const Navbar4 = () => {
                       <div className='px-5 group hover:bg-PrimaryColor-0'>
                         <li className='hover:ml-3 duration-300'>
                           <Link
-                            href='/career'
+                            href='/pages/career'
                             className='py-2 block'
                           >
                             Careers
@@ -384,7 +390,7 @@ const Navbar4 = () => {
                       <div className='px-5 group hover:bg-PrimaryColor-0'>
                         <li className='hover:ml-3 duration-300'>
                           <Link
-                            href='/faq_inner'
+                            href='/pages/faq_inner'
                             className='py-2 block'
                           >
                             Faq
@@ -402,9 +408,11 @@ const Navbar4 = () => {
                       : isActive
                       ? 'active'
                       : ''} text-HeadingColor-0 text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 2xl:px-5 w-full block transition-all duration-300 group relative `}
-                 
                 >
-                  <Link href='#' className='flex items-center'>
+                  <Link
+                    href='#'
+                    className='flex items-center'
+                  >
                     Blog
                     <BiChevronDown className='ml-1' />
                   </Link>
@@ -413,7 +421,7 @@ const Navbar4 = () => {
                       <div className='px-5 group hover:bg-PrimaryColor-0'>
                         <li className='hover:ml-3 duration-300'>
                           <Link
-                            href='/blog_grid'
+                            href='/pages/blog_grid'
                             className='py-2 block'
                           >
                             Blog Grid
@@ -423,7 +431,7 @@ const Navbar4 = () => {
                       <div className='px-5 group hover:bg-PrimaryColor-0'>
                         <li className='hover:ml-3 duration-300'>
                           <Link
-                            href='/blog_left_sidebar'
+                            href='/pages/blog_left_sidebar'
                             className='py-2 block'
                           >
                             Blog Left Sidebar
@@ -433,7 +441,7 @@ const Navbar4 = () => {
                       <div className='px-5 group hover:bg-PrimaryColor-0'>
                         <li className='hover:ml-3 duration-300'>
                           <Link
-                            href='/blog_right_sidebar'
+                            href='/pages/blog_right_sidebar'
                             className='py-2 block'
                           >
                             Blog Right Sidebar
@@ -443,7 +451,7 @@ const Navbar4 = () => {
                       <div className='px-5 group hover:bg-PrimaryColor-0'>
                         <li className='hover:ml-3 duration-300'>
                           <Link
-                            href='/blog_details'
+                            href='/pages/blog_details'
                             className='py-2 block'
                           >
                             Blog Details
@@ -460,14 +468,14 @@ const Navbar4 = () => {
                       : isActive
                       ? 'active'
                       : ''} text-HeadingColor-0 text-left lg:border-b-0 px-3 lg:px-2 2xl:px-5 w-full block transition-all duration-300`}
-                  href='/contact'
+                  href='/pages/contact'
                 >
                   Contact
                 </Link>
               </ul>
               <div className='hidden lg:flex xl:gap-10 2xl:gap-[80px] items-center'>
                 <Link
-                  href={'/contact'}
+                  href={'/pages/contact'}
                   className='header-btn'
                 >
                   Get A Quote

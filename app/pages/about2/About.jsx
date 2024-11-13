@@ -1,4 +1,4 @@
-"use client"
+'use client';
 
 import aboutThumb from '../../../public/images/about-inner-thumb.png';
 import aboutIcon from '../../../public/images/about-icon.png';
@@ -92,12 +92,12 @@ const About = () => {
               </div>
             </div>
             <div className='flex items-center gap-5'>
-              <Link href={'/mission_inner'}>
+              <Link href={'/pages/mission'}>
                 <button className='px-8 py-[6px] rounded-full bg-PrimaryColor-0 text-white font-Nunito'>
                   Mission
                 </button>
               </Link>
-              <Link href={'/mission_inner'}>
+              <Link href={'/pages/mission'}>
                 <button className='px-8 py-[6px] rounded-full bg-PrimaryColor-0 text-white font-Nunito'>
                   Vission
                 </button>

@@ -1,4 +1,4 @@
-"use client"
+'use client';
 
 import Image from 'next/image';
 import aboutThumb from '../../../public/images/about1.png';
@@ -59,7 +59,7 @@ const About = () => {
                 </li>
               </ul>
             </div>
-            <Link href={'/about'}>
+            <Link href={'/pages/about'}>
               <button className='primary-btn4'>{`Get Started Now`}</button>
             </Link>
           </div>

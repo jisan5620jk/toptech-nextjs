@@ -1,4 +1,4 @@
-"use client"
+'use client';
 
 import benifitsThumb from '../../../public/images/mobile-app-chart.png';
 import Link from 'next/link';
@@ -83,7 +83,7 @@ const Benifits = () => {
                 </h5>
               </div>
             </div>
-            <Link href={'/about'}>
+            <Link href={'/pages/about'}>
               <button className='primary-btn5 !bg-BodyBg-0 !text-HeadingColor-0 hover:!text-white'>
                 {`Learn More`}
                 <HiOutlineArrowRight size={'20'} />

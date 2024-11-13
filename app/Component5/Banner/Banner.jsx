@@ -1,4 +1,4 @@
-"use client"
+'use client';
 
 import Link from 'next/link';
 import portfolioThumb from '../../../public/images/portfolio-thumb.png';
@@ -47,7 +47,7 @@ const Banner = () => {
                 through low business
               </p>
               <div className='flex flex-col sm:flex-row justify-center items-center gap-5'>
-                <Link href={'/contact'}>
+                <Link href={'/pages/contact'}>
                   <button className='primary-btn5'>
                     {`Try It Now`}
                     <HiOutlineArrowRight size={'20'} />

@@ -12,32 +12,37 @@ const About = () => {
   return (
     <section className='pt-[80px] pb-[120px] bg-no-repeat bg-center bg-cover relative'>
       <div className='Container relative'>
-        <Image alt="About Image"
+        <Image
+          alt='About Image'
           src={aboutMainShape}
           draggable='false'
           className='animate-rotational absolute top-0 -right-20'
         />
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-[92px] lg:gap-10 2xl:gap-[92px] items-center'>
           <div className='relative z-10 sm:flex justify-between hidden'>
-            <Image alt="About Image"
+            <Image
+              alt='About Image'
               src={aboutThumb}
               draggable='false'
               className='2xl:max-w-[inherit] 2xl:-ml-36'
             />
             <div className='absolute top-20 sm:top-10 md:top-20 lg:top-5 2xl:top-28 left-24 animate-rotational'>
-              <Image alt="About Image"
+              <Image
+                alt='About Image'
                 src={aboutShape}
                 draggable='false'
               />
             </div>
             <div className='absolute -z-10 top-0 md:top-14 2xl:top-20 left-10 animate-wiggle'>
-              <Image alt="About Image"
+              <Image
+                alt='About Image'
                 src={aboutShape2}
                 draggable='false'
               />
             </div>
             <div className='absolute -z-10 bottom-16 right-10 md:bottom-36 lg:bottom-10 xl:bottom-24 2xl:bottom-44 2xl:right-0 animate-dance3'>
-              <Image alt="About Image"
+              <Image
+                alt='About Image'
                 src={aboutCounter}
                 draggable='false'
               />
@@ -85,7 +90,7 @@ const About = () => {
                 Quickly engineer client-centric metric
               </li>
             </ul>
-            <Link href={'/about'}>
+            <Link href={'/pages/about'}>
               <button className='primary-btn5 !bg-[#ecf2fe] border-none !text-HeadingColor-0 hover:!text-white hover:!bg-PrimaryColor-0'>
                 {`Learn More`}
                 <HiOutlineArrowRight size={'20'} />

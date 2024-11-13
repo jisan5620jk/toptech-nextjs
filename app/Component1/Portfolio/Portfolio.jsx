@@ -1,4 +1,4 @@
-"use client"
+'use client';
 
 import { FaPlus } from 'react-icons/fa6';
 import portfolioThumb from '../../../public/images/portfolio-1.png';
@@ -16,7 +16,7 @@ const PortfolioData = [
     portfolioThumb: portfolioThumb,
     portfolioIcon: '01',
     portfolioTitle: 'Business Growth with Toptech Agency ',
-    portfolioUrl: '/project_details',
+    portfolioUrl: '/pages/project_details',
     portfolioBtn: <FaPlus />,
   },
   {
@@ -24,7 +24,7 @@ const PortfolioData = [
     portfolioThumb: portfolioThumb2,
     portfolioIcon: '02',
     portfolioTitle: 'Business Growth with Toptech Agency ',
-    portfolioUrl: '/project_details',
+    portfolioUrl: '/pages/project_details',
     portfolioBtn: <FaPlus />,
   },
   {
@@ -32,7 +32,7 @@ const PortfolioData = [
     portfolioThumb: portfolioThumb3,
     portfolioIcon: '03',
     portfolioTitle: 'Business Growth with Toptech Agency ',
-    portfolioUrl: '/project_details',
+    portfolioUrl: '/pages/project_details',
     portfolioBtn: <FaPlus />,
   },
   {
@@ -40,7 +40,7 @@ const PortfolioData = [
     portfolioThumb: portfolioThumb,
     portfolioIcon: '04',
     portfolioTitle: 'Business Growth with Toptech Agency ',
-    portfolioUrl: '/project_details',
+    portfolioUrl: '/pages/project_details',
     portfolioBtn: <FaPlus />,
   },
 ];

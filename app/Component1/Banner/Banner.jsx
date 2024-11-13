@@ -24,13 +24,13 @@ const Banner = () => {
               Progressively fabricate done
             </p>
             <div className='flex flex-col sm:flex-row gap-5'>
-              <Link href={'/contact'}>
+              <Link href={'/pages/contact'}>
                 <button className='primary-btn'>
                   {`Let's Talk`}
                   <BiRightTopArrowCircle size={'20'} />
                 </button>
               </Link>
-              <Link href={'/about'}>
+              <Link href={'/pages/about'}>
                 <button className='primary-btn'>{`Read More`}</button>
               </Link>
             </div>

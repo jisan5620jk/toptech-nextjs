@@ -1,4 +1,4 @@
-"use client"
+'use client';
 
 import Link from 'next/link';
 import processThumb from '../../../public/images/process-thumb.png';
@@ -52,7 +52,7 @@ const Process = () => {
               business’s potential and achieve remar success.
             </p>
             <div className='flex flex-col sm:flex-row sm:items-center gap-7 mt-5'>
-              <Link href={'/about'}>
+              <Link href={'/pages/about'}>
                 <button className='primary-btn4'>{`Read More`}</button>
               </Link>
               <Link href={'/home4'}>

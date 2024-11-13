@@ -20,7 +20,7 @@ const Service = () => {
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px] mt-[54px]'>
           <div className='px-10 lg:px-7 xl:px-10 pt-8 pb-[30px] rounded-lg bg-white group relative z-10 overflow-hidden'>
             <div className='inline-block relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-[#5020d9] before:rounded-full before:transition-all before:duration-700 before:-z-20 before:scale-0 group-hover:before:scale-[15] sm:group-hover:before:scale-[22] md:group-hover:before:scale-[15] 2xl:group-hover:before:scale-[17]'>
-              <Link href={'/service_details'}>
+              <Link href={'/pages/service_details'}>
                 <button className='size-[46px] rounded-full text-xl text-white bg-[#5020d9] flex items-center justify-center transition-all duration-500 group-hover:text-[#5020d9] relative z-10 after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-white after:rounded-full after:scale-0 after:transition-all after:duration-500 after:-z-10 group-hover:after:scale-100'>
                   <FaPlus />
                 </button>
@@ -35,7 +35,8 @@ const Service = () => {
                 pro course.
               </p>
             </div>
-            <Image alt="Process Shape"
+            <Image
+              alt='Process Shape'
               src={serviceBoxShape}
               draggable='false'
               className='absolute z-10 top-5 right-7 animate-rotational transition-all duration-500 group-hover:brightness-0 group-hover:invert-[1]'
@@ -43,7 +44,7 @@ const Service = () => {
           </div>
           <div className='px-10 lg:px-7 xl:px-10 pt-8 pb-[30px] rounded-lg bg-white group relative z-10 overflow-hidden'>
             <div className='inline-block relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:rounded-full before:transition-all before:duration-700 before:-z-20 before:scale-0 group-hover:before:scale-[15] sm:group-hover:before:scale-[22] md:group-hover:before:scale-[15] 2xl:group-hover:before:scale-[17]'>
-              <Link href={'/service_details'}>
+              <Link href={'/pages/service_details'}>
                 <button className='size-[46px] rounded-full text-xl text-white bg-PrimaryColor-0 flex items-center justify-center transition-all duration-500 group-hover:text-PrimaryColor-0 relative z-10 after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-white after:rounded-full after:scale-0 after:transition-all after:duration-500 after:-z-10 group-hover:after:scale-100'>
                   <FaPlus />
                 </button>
@@ -58,7 +59,8 @@ const Service = () => {
                 pro course.
               </p>
             </div>
-            <Image alt="Process Shape"
+            <Image
+              alt='Process Shape'
               src={serviceBoxShape}
               draggable='false'
               className='absolute z-10 top-5 right-7 animate-rotational transition-all duration-500 group-hover:brightness-0 group-hover:invert-[1]'
@@ -66,7 +68,7 @@ const Service = () => {
           </div>
           <div className='px-10 lg:px-7 xl:px-10 pt-8 pb-[30px] rounded-lg bg-white group relative z-10 overflow-hidden'>
             <div className='inline-block relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-[#1dda7d] before:rounded-full before:transition-all before:duration-700 before:-z-20 before:scale-0 group-hover:before:scale-[15] sm:group-hover:before:scale-[22] md:group-hover:before:scale-[15] 2xl:group-hover:before:scale-[17]'>
-              <Link href={'/service_details'}>
+              <Link href={'/pages/service_details'}>
                 <button className='size-[46px] rounded-full text-xl text-white bg-[#1dda7d] flex items-center justify-center transition-all duration-500 group-hover:text-[#1dda7d] relative z-10 after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-white after:rounded-full after:scale-0 after:transition-all after:duration-500 after:-z-10 group-hover:after:scale-100'>
                   <FaPlus />
                 </button>
@@ -81,7 +83,8 @@ const Service = () => {
                 pro course.
               </p>
             </div>
-            <Image alt="Process Shape"
+            <Image
+              alt='Process Shape'
               src={serviceBoxShape}
               draggable='false'
               className='absolute z-10 top-5 right-7 animate-rotational transition-all duration-500 group-hover:brightness-0 group-hover:invert-[1]'
@@ -89,7 +92,7 @@ const Service = () => {
           </div>
           <div className='px-10 lg:px-7 xl:px-10 pt-8 pb-[30px] rounded-lg bg-white group relative z-10 overflow-hidden'>
             <div className='inline-block relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-[#fcb900] before:rounded-full before:transition-all before:duration-700 before:-z-20 before:scale-0 group-hover:before:scale-[15] sm:group-hover:before:scale-[22] md:group-hover:before:scale-[15] 2xl:group-hover:before:scale-[17]'>
-              <Link href={'/service_details'}>
+              <Link href={'/pages/service_details'}>
                 <button className='size-[46px] rounded-full text-xl text-white bg-[#fcb900] flex items-center justify-center transition-all duration-500 group-hover:text-[#fcb900] relative z-10 after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-white after:rounded-full after:scale-0 after:transition-all after:duration-500 after:-z-10 group-hover:after:scale-100'>
                   <FaPlus />
                 </button>
@@ -104,7 +107,8 @@ const Service = () => {
                 pro course.
               </p>
             </div>
-            <Image alt="Process Shape"
+            <Image
+              alt='Process Shape'
               src={serviceBoxShape}
               draggable='false'
               className='absolute z-10 top-5 right-7 animate-rotational transition-all duration-500 group-hover:brightness-0 group-hover:invert-[1]'
@@ -112,7 +116,7 @@ const Service = () => {
           </div>
           <div className='px-10 lg:px-7 xl:px-10 pt-8 pb-[30px] rounded-lg bg-white group relative z-10 overflow-hidden'>
             <div className='inline-block relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-[#fc5a3e] before:rounded-full before:transition-all before:duration-700 before:-z-20 before:scale-0 group-hover:before:scale-[15] sm:group-hover:before:scale-[22] md:group-hover:before:scale-[15] 2xl:group-hover:before:scale-[17]'>
-              <Link href={'/service_details'}>
+              <Link href={'/pages/service_details'}>
                 <button className='size-[46px] rounded-full text-xl text-white bg-[#fc5a3e] flex items-center justify-center transition-all duration-500 group-hover:text-[#fc5a3e] relative z-10 after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-white after:rounded-full after:scale-0 after:transition-all after:duration-500 after:-z-10 group-hover:after:scale-100'>
                   <FaPlus />
                 </button>
@@ -127,7 +131,8 @@ const Service = () => {
                 pro course.
               </p>
             </div>
-            <Image alt="Process Shape"
+            <Image
+              alt='Process Shape'
               src={serviceBoxShape}
               draggable='false'
               className='absolute z-10 top-5 right-7 animate-rotational transition-all duration-500 group-hover:brightness-0 group-hover:invert-[1]'
@@ -135,7 +140,7 @@ const Service = () => {
           </div>
           <div className='px-10 lg:px-7 xl:px-10 pt-8 pb-[30px] rounded-lg bg-white group relative z-10 overflow-hidden'>
             <div className='inline-block relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-[#2ad4ff] before:rounded-full before:transition-all before:duration-700 before:-z-20 before:scale-0 group-hover:before:scale-[15] sm:group-hover:before:scale-[22] md:group-hover:before:scale-[15] 2xl:group-hover:before:scale-[17]'>
-              <Link href={'/service_details'}>
+              <Link href={'/pages/service_details'}>
                 <button className='size-[46px] rounded-full text-xl text-white bg-[#2ad4ff] flex items-center justify-center transition-all duration-500 group-hover:text-[#2ad4ff] relative z-10 after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-white after:rounded-full after:scale-0 after:transition-all after:duration-500 after:-z-10 group-hover:after:scale-100'>
                   <FaPlus />
                 </button>
@@ -150,7 +155,8 @@ const Service = () => {
                 pro course.
               </p>
             </div>
-            <Image alt="Process Shape"
+            <Image
+              alt='Process Shape'
               src={serviceBoxShape}
               draggable='false'
               className='absolute z-10 top-5 right-7 animate-rotational transition-all duration-500 group-hover:brightness-0 group-hover:invert-[1]'

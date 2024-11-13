@@ -32,7 +32,7 @@ const Footer3 = () => {
               digital agency in north
             </p>
             <div>
-              <Link href={'/about'}>
+              <Link href={'/pages/about'}>
                 <button className='primary-btn'>
                   {`Discover More`}
                   <GoArrowRight size={'22'} />

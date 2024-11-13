@@ -1,4 +1,4 @@
-"use client"
+'use client';
 
 import Link from 'next/link';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -37,7 +37,7 @@ const Banner = () => {
                   Passion and Peolpe
                 </h1>
                 <div className='flex justify-center m-auto mt-14'>
-                  <Link href={'/about'}>
+                  <Link href={'/pages/about'}>
                     <button className='primary-btn4'>{`Discover More`}</button>
                   </Link>
                 </div>
@@ -60,7 +60,7 @@ const Banner = () => {
                   Passion and Peolpe
                 </h1>
                 <div className='flex justify-center m-auto mt-14'>
-                  <Link href={'/about'}>
+                  <Link href={'/pages/about'}>
                     <button className='primary-btn4'>{`Discover More`}</button>
                   </Link>
                 </div>

@@ -39,7 +39,7 @@ const Service = () => {
                 disseminate
               </p>
               <Link
-                href={'/service_details'}
+                href={'/pages/service_details'}
                 className='inline-block'
               >
                 <button className='flex items-center overflow-hidden relative'>
@@ -73,7 +73,7 @@ const Service = () => {
                 disseminate
               </p>
               <Link
-                href={'/service_details'}
+                href={'/pages/service_details'}
                 className='inline-block'
               >
                 <button className='flex items-center overflow-hidden relative'>
@@ -107,7 +107,7 @@ const Service = () => {
                 disseminate
               </p>
               <Link
-                href={'/service_details'}
+                href={'/pages/service_details'}
                 className='inline-block'
               >
                 <button className='flex items-center overflow-hidden relative'>
@@ -141,7 +141,7 @@ const Service = () => {
                 disseminate
               </p>
               <Link
-                href={'/service_details'}
+                href={'/pages/service_details'}
                 className='inline-block'
               >
                 <button className='flex items-center overflow-hidden relative'>

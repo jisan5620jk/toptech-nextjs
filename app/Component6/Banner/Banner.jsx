@@ -51,7 +51,7 @@ const Banner = () => {
                 has been single line of code industry’s standard dummy text.
               </p>
               <div className='inline-block'>
-                <Link href={'/contact'}>
+                <Link href={'/pages/contact'}>
                   <button className='primary-btn6'>{`Start A Project`}</button>
                 </Link>
               </div>

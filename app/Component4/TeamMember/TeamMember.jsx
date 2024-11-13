@@ -93,7 +93,7 @@ const TeamMember = () => {
           <p className='font-Rajdhani text-white font-medium'>
             You can also find our Consultant Service to{' '}
             <Link
-              href={'/contact'}
+              href={'/pages/contact'}
               className='text-PrimaryColor-0 font-semibold'
             >
               Contact

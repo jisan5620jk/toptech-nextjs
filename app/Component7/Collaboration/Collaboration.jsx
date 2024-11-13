@@ -89,7 +89,7 @@ const Collaboration = () => {
                 </div>
               </div>
             </div>
-            <Link href={'/about'}>
+            <Link href={'/pages/about'}>
               <button className='primary-btn5'>
                 {`Learn More`}
                 <HiOutlineArrowRight size={'20'} />

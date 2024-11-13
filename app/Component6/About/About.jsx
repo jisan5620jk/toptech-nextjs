@@ -51,7 +51,7 @@ const About = () => {
                 </p>
               </div>
             </div>
-            <Link href={'/about'}>
+            <Link href={'/pages/about'}>
               <button className='primary-btn6'>{`Discover More`}</button>
             </Link>
           </div>

@@ -209,7 +209,7 @@ const Navbar6 = () => {
                       : ''} text-TextColor2-0 text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 xl:px-3 w-full block transition-all duration-300 group relative `}
                 >
                   <Link
-                    href='/about'
+                    href='/pages/about'
                     className='flex items-center'
                   >
                     About
@@ -220,7 +220,7 @@ const Navbar6 = () => {
                       <div className='px-5 group hover:bg-PrimaryColor-0 '>
                         <li className='hover:ml-3 duration-300'>
                           <Link
-                            href='/about'
+                            href='/pages/about'
                             className='py-2 block'
                           >
                             About us 01
@@ -230,7 +230,7 @@ const Navbar6 = () => {
                       <div className='px-5 group hover:bg-PrimaryColor-0 '>
                         <li className='hover:ml-3 duration-300'>
                           <Link
-                            href='/about2'
+                            href='/pages/about2'
                             className='py-2 block'
                           >
                             About Us 02
@@ -260,7 +260,7 @@ const Navbar6 = () => {
                       <div className='px-5 group hover:bg-PrimaryColor-0 '>
                         <li className='hover:ml-3 duration-300'>
                           <Link
-                            href='/service'
+                            href='/pages/service'
                             className='py-2 block'
                           >
                             Service
@@ -270,7 +270,7 @@ const Navbar6 = () => {
                       <div className='px-5 group hover:bg-PrimaryColor-0 '>
                         <li className='hover:ml-3 duration-300'>
                           <Link
-                            href='/service_details'
+                            href='/pages/service_details'
                             className='py-2 block'
                           >
                             Service Details
@@ -300,7 +300,7 @@ const Navbar6 = () => {
                       <div className='px-5 group hover:bg-PrimaryColor-0'>
                         <li className='hover:ml-3 duration-300'>
                           <Link
-                            href='/why_choose'
+                            href='/pages/why_choose'
                             className='py-2 block'
                           >
                             Why Choose Us
@@ -310,7 +310,7 @@ const Navbar6 = () => {
                       <div className='px-5 group hover:bg-PrimaryColor-0'>
                         <li className='hover:ml-3 duration-300'>
                           <Link
-                            href='/mission_inner'
+                            href='/pages/mission'
                             className='py-2 block'
                           >
                             Our Mission
@@ -320,7 +320,7 @@ const Navbar6 = () => {
                       <div className='px-5 group hover:bg-PrimaryColor-0'>
                         <li className='hover:ml-3 duration-300'>
                           <Link
-                            href='/team_inner'
+                            href='/pages/team'
                             className='py-2 block'
                           >
                             Team Member
@@ -330,7 +330,7 @@ const Navbar6 = () => {
                       <div className='px-5 group hover:bg-PrimaryColor-0'>
                         <li className='hover:ml-3 duration-300'>
                           <Link
-                            href='/team_details'
+                            href='/pages/team_details'
                             className='py-2 block'
                           >
                             Team Details
@@ -340,7 +340,7 @@ const Navbar6 = () => {
                       <div className='px-5 group hover:bg-PrimaryColor-0'>
                         <li className='hover:ml-3 duration-300'>
                           <Link
-                            href='/project'
+                            href='/pages/project'
                             className='py-2 block'
                           >
                             Projects
@@ -350,7 +350,7 @@ const Navbar6 = () => {
                       <div className='px-5 group hover:bg-PrimaryColor-0'>
                         <li className='hover:ml-3 duration-300'>
                           <Link
-                            href='/project_details'
+                            href='/pages/project_details'
                             className='py-2 block'
                           >
                             Project Details
@@ -360,7 +360,7 @@ const Navbar6 = () => {
                       <div className='px-5 group hover:bg-PrimaryColor-0'>
                         <li className='hover:ml-3 duration-300'>
                           <Link
-                            href='/pricing_inner'
+                            href='/pages/pricing_inner'
                             className='py-2 block'
                           >
                             Pricing Plan
@@ -370,7 +370,7 @@ const Navbar6 = () => {
                       <div className='px-5 group hover:bg-PrimaryColor-0'>
                         <li className='hover:ml-3 duration-300'>
                           <Link
-                            href='/location'
+                            href='/pages/location'
                             className='py-2 block'
                           >
                             Our Location
@@ -380,7 +380,7 @@ const Navbar6 = () => {
                       <div className='px-5 group hover:bg-PrimaryColor-0'>
                         <li className='hover:ml-3 duration-300'>
                           <Link
-                            href='/career'
+                            href='/pages/career'
                             className='py-2 block'
                           >
                             Careers
@@ -390,7 +390,7 @@ const Navbar6 = () => {
                       <div className='px-5 group hover:bg-PrimaryColor-0'>
                         <li className='hover:ml-3 duration-300'>
                           <Link
-                            href='/faq_inner'
+                            href='/pages/faq_inner'
                             className='py-2 block'
                           >
                             Faq
@@ -421,7 +421,7 @@ const Navbar6 = () => {
                       <div className='px-5 group hover:bg-PrimaryColor-0'>
                         <li className='hover:ml-3 duration-300'>
                           <Link
-                            href='/blog_grid'
+                            href='/pages/blog_grid'
                             className='py-2 block'
                           >
                             Blog Grid
@@ -431,7 +431,7 @@ const Navbar6 = () => {
                       <div className='px-5 group hover:bg-PrimaryColor-0'>
                         <li className='hover:ml-3 duration-300'>
                           <Link
-                            href='/blog_left_sidebar'
+                            href='/pages/blog_left_sidebar'
                             className='py-2 block'
                           >
                             Blog Left Sidebar
@@ -441,7 +441,7 @@ const Navbar6 = () => {
                       <div className='px-5 group hover:bg-PrimaryColor-0'>
                         <li className='hover:ml-3 duration-300'>
                           <Link
-                            href='/blog_right_sidebar'
+                            href='/pages/blog_right_sidebar'
                             className='py-2 block'
                           >
                             Blog Right Sidebar
@@ -451,7 +451,7 @@ const Navbar6 = () => {
                       <div className='px-5 group hover:bg-PrimaryColor-0'>
                         <li className='hover:ml-3 duration-300'>
                           <Link
-                            href='/blog_details'
+                            href='/pages/blog_details'
                             className='py-2 block'
                           >
                             Blog Details
@@ -468,7 +468,7 @@ const Navbar6 = () => {
                       : isActive
                       ? 'active'
                       : ''} text-TextColor2-0 hover:text-PrimaryColor-0 text-left lg:border-b-0 px-3 lg:px-2 xl:px-3 w-full block transition-all duration-300`}
-                  href='/contact'
+                  href='/pages/contact'
                 >
                   Contact
                 </Link>
@@ -478,7 +478,7 @@ const Navbar6 = () => {
                   <h6 className='font-Nunito text-PrimaryColor-0 text-[17px]'>
                     For Support
                   </h6>
-                  <Link href={'/contact'}>
+                  <Link href={'/pages/contact'}>
                     <button className='flex items-center gap-2 font-Nunito text-[15px] text-TextColor2-0 mt-1'>
                       <FaPhoneAlt />
                       +1(888)123-4567
@@ -486,7 +486,7 @@ const Navbar6 = () => {
                   </Link>
                 </div>
                 <Link
-                  href={'/contact'}
+                  href={'/pages/contact'}
                   className='primary-btn6'
                 >
                   Sign Up Free

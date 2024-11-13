@@ -41,7 +41,7 @@ const Integration = () => {
                 Unlimited Users
               </li>
             </ul>
-            <Link href={'/about'}>
+            <Link href={'/pages/about'}>
               <button className='primary-btn5'>
                 {`Learn More`}
                 <HiOutlineArrowRight size={'20'} />

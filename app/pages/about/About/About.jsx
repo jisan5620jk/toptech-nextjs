@@ -1,4 +1,4 @@
-"use client"
+'use client';
 
 import aboutThumb from '../../../../public/images/about-inner-thumb2.png';
 import aboutAward from '../../../../public/images/about-award-icon.png';
@@ -124,7 +124,7 @@ const About = () => {
               </p>
             </div>
             <Link
-              href={'/about'}
+              href={'/pages/about'}
               className='mt-9 inline-block'
             >
               <button className='primary-btn'>

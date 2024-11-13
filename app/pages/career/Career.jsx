@@ -39,7 +39,7 @@ const Career = () => {
             </p>
           </div>
           <div className='col-span-4 flex lg:justify-end'>
-            <Link href={'/contact'}>
+            <Link href={'/pages/contact'}>
               <button className='font-Nunito text-HeadingColor-0 px-[60px] py-[14px] border rounded-full transition-all duration-500 hover:border-PrimaryColor-0'>
                 Apply Now
               </button>
@@ -66,7 +66,7 @@ const Career = () => {
             </p>
           </div>
           <div className='col-span-4 flex lg:justify-end'>
-            <Link href={'/contact'}>
+            <Link href={'/pages/contact'}>
               <button className='font-Nunito text-HeadingColor-0 px-[60px] py-[14px] border rounded-full transition-all duration-500 hover:border-PrimaryColor-0'>
                 Apply Now
               </button>
@@ -93,7 +93,7 @@ const Career = () => {
             </p>
           </div>
           <div className='col-span-4 flex lg:justify-end'>
-            <Link href={'/contact'}>
+            <Link href={'/pages/contact'}>
               <button className='font-Nunito text-HeadingColor-0 px-[60px] py-[14px] border rounded-full transition-all duration-500 hover:border-PrimaryColor-0'>
                 Apply Now
               </button>

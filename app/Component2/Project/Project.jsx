@@ -16,7 +16,7 @@ const ProjectData = [
     projectThumb: projectThumb,
     projectSubTilte: 'Design',
     projectTitle: 'Mobile UI/UX Design',
-    projectUrl: '/project_details',
+    projectUrl: '/pages/project_details',
     projectBtn: <FaPlus />,
   },
   {
@@ -24,7 +24,7 @@ const ProjectData = [
     projectThumb: projectThumb2,
     projectSubTilte: 'Technology',
     projectTitle: 'Cyber Security & Protect',
-    projectUrl: '/project_details',
+    projectUrl: '/pages/project_details',
     projectBtn: <FaPlus />,
   },
   {
@@ -32,7 +32,7 @@ const ProjectData = [
     projectThumb: projectThumb3,
     projectSubTilte: 'IT Solution',
     projectTitle: 'Website Development',
-    projectUrl: '/project_details',
+    projectUrl: '/pages/project_details',
     projectBtn: <FaPlus />,
   },
   {
@@ -40,7 +40,7 @@ const ProjectData = [
     projectThumb: projectThumb2,
     projectSubTilte: 'Technology',
     projectTitle: 'Cyber Security & Protect',
-    projectUrl: '/project_details',
+    projectUrl: '/pages/project_details',
     projectBtn: <FaPlus />,
   },
 ];
