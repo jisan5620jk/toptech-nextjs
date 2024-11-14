@@ -1,8 +1,8 @@
-import Service from '../Component1/Service/Service';
-import WhyChoose from '../Component2/WhyChoose/WhyChoose';
 import Banner from '../Component6/Banner/Banner';
 import Experience from '../Component6/Experience/Experience';
-import Perform from '../Component7/Perform/Perform';
+import Perform from '../Component6/Perform/Perform';
+import Service from '../Component6/Service/Service';
+import WhyChoose from '../Component6/WhyChoose/WhyChoose';
 import Footer6 from '../Shared/Footer/Footer6';
 import Navbar6 from '../Shared/Navbar/Navbar6';
 
@@ -11,7 +11,7 @@ const page = () => {
     <>
       <Navbar6 />
       <Banner />
-      <WhyChoose/>
+      <WhyChoose />
       <Service />
       <Experience />
       <Perform />
