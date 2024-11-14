@@ -1,12 +1,12 @@
 "use client"
 
-import { useState, useEffect } from "react";
+import { useState, useReducer } from 'react';
 import { FaAngleDown } from "react-icons/fa6";
 
 const FaqAccordion = ({ children, title, id, active = false }) => {
   const [accordionOpen, setAccordionOpen] = useState(false);
 
-  useEffect(() => {
+  useReducer(() => {
     setAccordionOpen(active);
   }, [active]);
 

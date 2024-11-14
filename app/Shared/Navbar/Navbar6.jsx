@@ -390,7 +390,7 @@ const Navbar6 = () => {
                       <div className='px-5 group hover:bg-PrimaryColor-0'>
                         <li className='hover:ml-3 duration-300'>
                           <Link
-                            href='/pages/faq_inner'
+                            href='/pages/faq'
                             className='py-2 block'
                           >
                             Faq
