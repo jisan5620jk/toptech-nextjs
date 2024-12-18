@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rajdhani:wght@300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rajdhani:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -79,7 +79,6 @@ body {
   @apply !m-0 leading-[10px] !text-HeadingColor-0 font-Rajdhani;
 }
 
-
 .why-choose .progress-bar-rect-wrap-container {
   position: relative;
   z-index: 999;
@@ -141,7 +140,7 @@ span.swiper-pagination-bullet {
 
 span.swiper-pagination-bullet::before {
   position: absolute;
-  content: "";
+  content: '';
   top: -10px;
   left: -10px;
   width: 26px;
@@ -287,7 +286,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
 }
 
 .testimonial span.swiper-pagination-bullet:nth-of-type(1) {
-  background: url(../public/images/testi-5.png) no-repeat center/cover !important;
+  background: url(../public/images/testi-2.png) no-repeat center/cover !important;
 }
 
 .testimonial span.swiper-pagination-bullet:nth-of-type(2) {
@@ -373,7 +372,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
 
 /* Faq */
 
-.faq-button[aria-expanded="true"],
+.faq-button[aria-expanded='true'],
 .faq-button:hover {
   border-radius: 5px;
   background: #0c59db;
@@ -381,34 +380,33 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
   padding: 0 20px 0 30px;
 }
 
-.faq-button3[aria-expanded="true"],
+.faq-button3[aria-expanded='true'],
 .faq-button3:hover {
   background: #0b59db;
   border-radius: 6px 6px 0 0;
 }
 
 .faq-button3:hover img,
-.faq-button3[aria-expanded="true"] img {
+.faq-button3[aria-expanded='true'] img {
   filter: brightness(0) invert(1);
 }
 
-.faq-button2[aria-expanded="true"] {
+.faq-button2[aria-expanded='true'] {
   background: #0b59db;
   border-radius: 6px 6px 0 0;
 }
 
 .faq-button2:hover img,
-.faq-button2[aria-expanded="true"] img {
+.faq-button2[aria-expanded='true'] img {
   filter: brightness(0) invert(1);
 }
 
-.faq-button7[aria-expanded="true"],
+.faq-button7[aria-expanded='true'],
 .faq-button7:hover {
   border-radius: 8px 8px 0 0;
   background: #f2f7fd;
   border-bottom: transparent;
 }
-
 
 /* Pricing */
 
@@ -548,7 +546,6 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
   margin-top: 30px;
 }
 
-
 /* Loading */
 
 .loading-screen {
@@ -637,7 +634,6 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
     height: 8em;
     width: 8em;
   }
-
 }
 
 @media screen and (max-width: 500px) {
@@ -743,4 +739,3 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
       -0.5em -1em rgba(233, 169, 32, 0.75);
   }
 }
-

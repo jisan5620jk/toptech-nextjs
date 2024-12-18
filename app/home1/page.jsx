@@ -5,6 +5,7 @@ import Brand from "../Component1/Brand/Brand";
 import Contact from "../Component1/Contact/Contact";
 import Counter from "../Component1/Counter/Counter";
 import Feature from "../Component1/Feature/Feature";
+import AuthForm from "../Component1/Form/AuthForm";
 import Portfolio from "../Component1/Portfolio/Portfolio";
 import Pricing from "../Component1/Pricing/Pricing";
 import Process from "../Component1/Process/Process";
@@ -35,6 +36,7 @@ const page = () => {
       <Blog />
       <Brand />
       <Footer />
+      <AuthForm />
     </>
   );
 };
