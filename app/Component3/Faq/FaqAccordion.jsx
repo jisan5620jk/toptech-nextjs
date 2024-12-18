@@ -9,7 +9,7 @@ const PricingAccordion = ({ children, faqIcon, title, id, active = false }) => {
 
   useEffect(() => {
     setAccordionOpen(active);
-  }, []);
+  }, [active]);
 
   return (
     <div className="mb-5 rounded-md overflow-hidden">
