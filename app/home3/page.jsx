@@ -1,3 +1,5 @@
+"use client";
+
 import About from "../Component3/About/About";
 import Banner from "../Component3/Banner/Banner";
 import Blog from "../Component3/Blog/Blog";
@@ -10,11 +12,15 @@ import TeamMember from "../Component3/TeamMember/TeamMember";
 import Testimonial from "../Component3/Testimonial/Testimonial";
 import Footer3 from "../Shared/Footer/Footer3";
 import Navbar3 from "../Shared/Navbar/Navbar3";
+import dynamic from "next/dynamic";
 
-const Home3 = () => {
+const NoSSR = dynamic(() => import("../Shared/NoSSR"), { ssr: false });
+
+const page = () => {
   return (
     <>
-    <Navbar3 />
+      <NoSSR />
+      <Navbar3 />
       <Banner />
       <Feature />
       <About />

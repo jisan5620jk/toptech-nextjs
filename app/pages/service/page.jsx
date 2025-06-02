@@ -1,3 +1,5 @@
+"use client";
+
 import { FaArrowRightLong } from "react-icons/fa6";
 import serviceIcon from "../../../public/images/service-icon1.png";
 import serviceIcon2 from "../../../public/images/service-icon2.png";
@@ -9,6 +11,7 @@ import ServiceCard from "./ServiceCard";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 import Newsletter from "./Newsletter/Newsletter";
 import BreadCrumb from "@/app/Shared/BreadCrumb/BreadCrumb";
+import dynamic from "next/dynamic";
 
 const serviceData = [
   {
@@ -16,7 +19,7 @@ const serviceData = [
     serviceIcon: serviceIcon,
     serviceTitle: "Cloud Services",
     serviceDesc:
-    "Monotonectal grants to business visualize provid solution services business provid done",
+      "Monotonectal grants to business visualize provid solution services business provid done",
     serviceUrl: "/service_details",
     serviceButton2: "Learn More",
     serviceButton: <HiOutlineArrowNarrowRight />,
@@ -26,7 +29,7 @@ const serviceData = [
     serviceIcon: serviceIcon2,
     serviceTitle: "IT Management",
     serviceDesc:
-    "Monotonectal grants to business visualize provid solution services business provid done",
+      "Monotonectal grants to business visualize provid solution services business provid done",
     serviceUrl: "/service_details",
     serviceButton2: "Learn More",
     serviceButton: <HiOutlineArrowNarrowRight />,
@@ -36,7 +39,7 @@ const serviceData = [
     serviceIcon: serviceIcon4,
     serviceTitle: "Software Renew",
     serviceDesc:
-    "Monotonectal grants to business visualize provid solution services business provid done",
+      "Monotonectal grants to business visualize provid solution services business provid done",
     serviceUrl: "/service_details",
     serviceButton2: "Learn More",
     serviceButton: <HiOutlineArrowNarrowRight />,
@@ -46,7 +49,7 @@ const serviceData = [
     serviceIcon: serviceIcon3,
     serviceTitle: "Machine Learning",
     serviceDesc:
-    "Monotonectal grants to business visualize provid solution services business provid done",
+      "Monotonectal grants to business visualize provid solution services business provid done",
     serviceUrl: "/service_details",
     serviceButton2: "Learn More",
     serviceButton: <HiOutlineArrowNarrowRight />,
@@ -56,7 +59,7 @@ const serviceData = [
     serviceIcon: serviceIcon5,
     serviceTitle: "Digital Marketing",
     serviceDesc:
-    "Monotonectal grants to business visualize provid solution services business provid done",
+      "Monotonectal grants to business visualize provid solution services business provid done",
     serviceUrl: "/service_details",
     serviceButton2: "Learn More",
     serviceButton: <HiOutlineArrowNarrowRight />,
@@ -66,7 +69,7 @@ const serviceData = [
     serviceIcon: serviceIcon6,
     serviceTitle: "Web Development",
     serviceDesc:
-    "Monotonectal grants to business visualize provid solution services business provid done",
+      "Monotonectal grants to business visualize provid solution services business provid done",
     serviceUrl: "/service_details",
     serviceButton2: "Learn More",
     serviceButton: <HiOutlineArrowNarrowRight />,
@@ -76,7 +79,7 @@ const serviceData = [
     serviceIcon: serviceIcon6,
     serviceTitle: "Cyber Security",
     serviceDesc:
-    "Monotonectal grants to business visualize provid solution services business provid done",
+      "Monotonectal grants to business visualize provid solution services business provid done",
     serviceUrl: "/service_details",
     serviceButton2: "Learn More",
     serviceButton: <HiOutlineArrowNarrowRight />,
@@ -86,16 +89,19 @@ const serviceData = [
     serviceIcon: serviceIcon6,
     serviceTitle: "Data Analytic",
     serviceDesc:
-    "Monotonectal grants to business visualize provid solution services business provid done",
+      "Monotonectal grants to business visualize provid solution services business provid done",
     serviceUrl: "/service_details",
     serviceButton2: "Learn More",
     serviceButton: <HiOutlineArrowNarrowRight />,
   },
 ];
 
+const NoSSR = dynamic(() => import("../Shared/NoSSR"), { ssr: false });
+
 const page = () => {
   return (
     <>
+      <NoSSR />
       <BreadCrumb
         breadCrumbTitle={"Our Services"}
         breadCrumbIcon={<FaArrowRightLong />}

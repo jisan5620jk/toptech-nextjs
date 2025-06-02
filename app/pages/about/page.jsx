@@ -1,3 +1,5 @@
+"use client";
+
 import { FaArrowRightLong } from "react-icons/fa6";
 import BreadCrumb from "@/app/Shared/BreadCrumb/BreadCrumb";
 import Feature from "./Feature/Feature";
@@ -6,10 +8,14 @@ import TeamMember from "@/app/Component1/TeamMember/TeamMember";
 import Counter from "@/app/Component1/Counter/Counter";
 import Testimonial from "@/app/Component1/Testimonial/Testimonial";
 import Brand from "../faq/Brand";
+import dynamic from "next/dynamic";
+
+const NoSSR = dynamic(() => import("../Shared/NoSSR"), { ssr: false });
 
 const page = () => {
   return (
     <>
+      <NoSSR />
       <BreadCrumb
         breadCrumbTitle={"About Us 01"}
         breadCrumbIcon={<FaArrowRightLong />}

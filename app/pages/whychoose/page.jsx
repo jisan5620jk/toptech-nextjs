@@ -1,12 +1,17 @@
+"use client";
+
 import { FaArrowRightLong } from "react-icons/fa6";
 import Newsletter from "./Newsletter/Newsletter";
 import WhyChooseUs from "./WhyChooseUs";
 import BreadCrumb from "@/app/Shared/BreadCrumb/BreadCrumb";
+import dynamic from "next/dynamic";
 
+const NoSSR = dynamic(() => import("../Shared/NoSSR"), { ssr: false });
 
 const page = () => {
   return (
     <>
+      <NoSSR />
       <BreadCrumb
         breadCrumbTitle={"Why Choose Us"}
         breadCrumbIcon={<FaArrowRightLong />}

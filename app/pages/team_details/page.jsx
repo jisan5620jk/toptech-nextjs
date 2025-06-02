@@ -1,13 +1,16 @@
-import {
-  FaArrowRightLong,
-} from "react-icons/fa6";
+"use client";
+
+import { FaArrowRightLong } from "react-icons/fa6";
 import TeamDetailsMain from "./TeamDetailsMain";
 import BreadCrumb from "@/app/Shared/BreadCrumb/BreadCrumb";
+import dynamic from "next/dynamic";
 
+const NoSSR = dynamic(() => import("../Shared/NoSSR"), { ssr: false });
 
 const page = () => {
   return (
     <>
+      <NoSSR />
       <BreadCrumb
         breadCrumbTitle={"Team Details"}
         breadCrumbIcon={<FaArrowRightLong />}
@@ -19,5 +22,3 @@ const page = () => {
 };
 
 export default page;
-
-

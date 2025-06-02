@@ -1,3 +1,5 @@
+"use client";
+
 import About from "../Component4/About/About";
 import Banner from "../Component4/Banner/Banner";
 import Blog from "../Component4/Blog/Blog";
@@ -12,10 +14,14 @@ import Testimonial from "../Component4/Testimonial/Testimonial";
 import Work from "../Component4/Work/Work";
 import Footer4 from "../Shared/Footer/Footer4";
 import Navbar4 from "../Shared/Navbar/Navbar4";
+import dynamic from "next/dynamic";
+
+const NoSSR = dynamic(() => import("../Shared/NoSSR"), { ssr: false });
 
 const page = () => {
   return (
     <>
+      <NoSSR />
       <Navbar4 />
       <Banner />
       <Brand />
