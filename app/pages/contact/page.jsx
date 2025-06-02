@@ -1,5 +1,3 @@
-"use client";
-
 import { FaArrowRightLong } from "react-icons/fa6";
 import ContactBox from "./ContactBox/ContactBox";
 import Map from "./Map";

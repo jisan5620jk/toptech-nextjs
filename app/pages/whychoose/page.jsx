@@ -1,5 +1,3 @@
-"use client";
-
 import { FaArrowRightLong } from "react-icons/fa6";
 import Newsletter from "./Newsletter/Newsletter";
 import WhyChooseUs from "./WhyChooseUs";

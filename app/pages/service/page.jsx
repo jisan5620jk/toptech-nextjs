@@ -1,5 +1,3 @@
-"use client";
-
 import { FaArrowRightLong } from "react-icons/fa6";
 import serviceIcon from "../../../public/images/service-icon1.png";
 import serviceIcon2 from "../../../public/images/service-icon2.png";
@@ -11,7 +9,6 @@ import ServiceCard from "./ServiceCard";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 import Newsletter from "./Newsletter/Newsletter";
 import BreadCrumb from "@/app/Shared/BreadCrumb/BreadCrumb";
-import dynamic from "next/dynamic";
 
 const serviceData = [
   {
@@ -95,10 +92,6 @@ const serviceData = [
     serviceButton: <HiOutlineArrowNarrowRight />,
   },
 ];
-
-const NoSSR = dynamic(() => import("@/app/Shared/NoSSR"), {
-  ssr: false,
-});
 
 const page = () => {
   return (

@@ -155,26 +155,26 @@ const Footer4 = () => {
       </div>
       <div className='text-left py-6 bg-[#0d0d53] mt-24'>
         <div className='Container flex flex-col gap-5 md:flex-row md:gap-0 justify-between'>
-          <p className='font-Nunito text-white'>
+          <p className='font-Nunito text-white' data-no-animate>
             TopTech © Copyright 2024 All Rights Reserved.
           </p>
           <div>
             <ul className='flex gap-7'>
-              <li>
+              <li data-no-animate>
                 <Link href={'/'}>
                   <button className='font-Nunito text-white transition-all duration-500 hover:opacity-100'>
                     Privacy & Terms.
                   </button>
                 </Link>
               </li>
-              <li>
+              <li data-no-animate>
                 <Link href={'/'}>
                   <button className='font-Nunito text-white transition-all duration-500 hover:opacity-100'>
                     FAQ
                   </button>
                 </Link>
               </li>
-              <li>
+              <li data-no-animate>
                 <Link href={'/'}>
                   <button className='font-Nunito text-white transition-all duration-500 hover:opacity-100'>
                     Contact Us

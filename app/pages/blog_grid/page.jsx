@@ -1,5 +1,3 @@
-"use client";
-
 import { FaAngleRight, FaArrowRightLong } from "react-icons/fa6";
 import blogGridImg from "../../../public/images/blog-1.png";
 import blogGridImg2 from "../../../public/images/blog-2.png";

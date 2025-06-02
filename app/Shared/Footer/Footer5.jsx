@@ -178,33 +178,33 @@ const Footer5 = () => {
         </div>
         <div className="flex flex-col md:flex-row gap-y-7 md: md:col-span-6 justify-between md:items-center py-6 mt-[108px] border-t border-BorderColor-0">
           <div>
-            <p className="font-Nunito text-TextColor-0">
+            <p className="font-Nunito text-TextColor-0" data-no-animate>
               Copyright © 2024. Designed By Dream IT Solution
             </p>
           </div>
           <div>
             <ul className="flex gap-5">
-              <li>
+              <li data-no-animate>
                 <button className="text-TextColor-0 transition-all duration-500 hover:text-white">
                   <FaFacebookF />
                 </button>
               </li>
-              <li>
+              <li data-no-animate>
                 <button className="text-TextColor-0 transition-all duration-500 hover:text-white">
                   <FaXTwitter />
                 </button>
               </li>
-              <li>
+              <li data-no-animate>
                 <button className="text-TextColor-0 transition-all duration-500 hover:text-white">
                   <FaLinkedinIn />
                 </button>
               </li>
-              <li>
+              <li data-no-animate>
                 <button className="text-TextColor-0 transition-all duration-500 hover:text-white">
                   <FaPinterestP />
                 </button>
               </li>
-              <li>
+              <li data-no-animate>
                 <button className="text-TextColor-0 transition-all duration-500 hover:text-white">
                   <FaBehance size={"18"} />
                 </button>

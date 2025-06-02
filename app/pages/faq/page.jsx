@@ -1,5 +1,3 @@
-"use client";
-
 import FaqAccordion from "./FaqAccordion";
 import faqIcon from "../../../public/images/faqs-icon-s.png";
 import faqIcon2 from "../../../public/images/faqs-icon1.png";
@@ -10,7 +8,6 @@ import Brand from "./Brand";
 import Image from "next/image";
 import BreadCrumb from "@/app/Shared/BreadCrumb/BreadCrumb";
 import Newsletter from "./Newsletter/Newsletter";
-import dynamic from "next/dynamic";
 
 //  All Faqs and  answers.
 const faqs = [
@@ -45,10 +42,6 @@ const faqs = [
     active: false,
   },
 ];
-
-const NoSSR = dynamic(() => import("@/app/Shared/NoSSR"), {
-  ssr: false,
-});
 
 const page = () => {
   return (

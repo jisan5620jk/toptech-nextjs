@@ -1,5 +1,3 @@
-"use client";
-
 import Link from "next/link";
 import blog_detailsThumb from "../../../public/images/blog-details.jpg";
 import blog_detailsImg from "../../../public/images/blog-details-benifis-thumb-1.png";

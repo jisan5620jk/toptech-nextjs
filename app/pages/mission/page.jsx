@@ -1,5 +1,3 @@
-"use client";
-
 import BreadCrumb from "@/app/Shared/BreadCrumb/BreadCrumb";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { FiCheck } from "react-icons/fi";

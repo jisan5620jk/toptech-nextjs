@@ -119,25 +119,25 @@ const Footer6 = () => {
       <div className="bg-white bg-opacity-5 py-6 mt-28 mb-10">
         <div className="Container flex flex-col md:flex-row gap-y-7 md: md:col-span-6 justify-between md:items-center">
           <div>
-            <p className="font-Nunito text-white">
+            <p className="font-Nunito text-white" data-no-animate>
               TopTech © 2024 All Rights Reserved.
             </p>
           </div>
           <div>
             <ul className="flex gap-6">
-              <li>
+              <li data-no-animate>
                 <Link href={"/home6"}>
                   <button className="font-Nunito text-white">
                     Privacy & Terms
                   </button>
                 </Link>
               </li>
-              <li>
+              <li data-no-animate>
                 <Link href={"/home6"}>
                   <button className="font-Nunito text-white">FAQ</button>
                 </Link>
               </li>
-              <li>
+              <li data-no-animate>
                 <Link href={"/home6"}>
                   <button className="font-Nunito text-white">Contact Us</button>
                 </Link>

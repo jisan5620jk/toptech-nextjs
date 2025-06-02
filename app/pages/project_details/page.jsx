@@ -1,5 +1,3 @@
-"use client";
-
 import Link from "next/link";
 import projectDetailsThumb from "../../../public/images/project-details-thumb.jpg";
 import projectDetailsListThumb from "../../../public/images/project-details-item-images.jpg";

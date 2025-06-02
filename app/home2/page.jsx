@@ -1,5 +1,11 @@
 "use client";
 
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import ScrollSmoother from "gsap/ScrollSmoother";
+import ScrollToPlugin from "gsap/ScrollToPlugin";
+
 import About from "../Component2/About/About";
 import Appionment from "../Component2/Appionment/Appionment";
 import Banner from "../Component2/Banner/Banner";
@@ -19,25 +25,87 @@ const WhyChoose = dynamic(() => import("../Component2/WhyChoose/WhyChoose"), {
   ssr: false,
 });
 
-const page = () => {
+import TextReveal from "../Shared/TextAnim/TextReveal";
+import ContentReveal from "../Shared/ContentReveal/ContentReveal";
+import ImageReveal from "../Shared/ImageReveal/ImageReveal";
+import BackToTop from "../Shared/BackToTop/BackToTop";
+
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother, ScrollToPlugin);
+
+const Page = () => {
+  const smootherRef = useRef(null);
+
+  // Run global image reveal animations
+  ImageReveal();
+
+  // Run global text reveal animations
+  ContentReveal();
+
+  // Run global heading text reveal animations
+  TextReveal();
+
+  // Initialize GSAP ScrollSmoother
+  useEffect(() => {
+    smootherRef.current = ScrollSmoother.create({
+      wrapper: "#smooth-wrapper",
+      content: "#smooth-content",
+      smooth: 1.5,
+      effects: true,
+      normalizeScroll: true,
+      smoothTouch: 0.1,
+    });
+
+    return () => {
+      if (smootherRef.current) smootherRef.current.kill();
+    };
+  }, []);
+
+  // Smooth scroll for anchor links
+  useEffect(() => {
+    const links = document.querySelectorAll('a[href^="#"]');
+
+    const handleClick = (e) => {
+      const targetId = e.currentTarget.getAttribute("href");
+      const targetEl = document.querySelector(targetId);
+
+      if (targetEl) {
+        e.preventDefault();
+        gsap.to(window, {
+          duration: 1.2,
+          scrollTo: { y: targetEl, offsetY: 0 },
+          ease: "power2.inOut",
+        });
+      }
+    };
+
+    links.forEach((link) => link.addEventListener("click", handleClick));
+
+    return () => {
+      links.forEach((link) => link.removeEventListener("click", handleClick));
+    };
+  }, []);
+
   return (
-    <>
-      <Navbar2 />
-      <Banner />
-      <Feature />
-      <About />
-      <Service />
-      <Contact />
-      <Counter />
-      <WhyChoose />
-      <Project />
-      <Testimonial />
-      <Newsletter />
-      <Blog />
-      <Appionment />
-      <Footer2 />
-    </>
+    <div id="smooth-wrapper">
+      <div id="smooth-content">
+        <Navbar2 />
+        <Banner />
+        <Feature />
+        <About />
+        <Service />
+        <Contact />
+        <Counter />
+        <WhyChoose />
+        <Project />
+        <Testimonial />
+        <Newsletter />
+        <Blog />
+        <Appionment />
+        <Footer2 />
+        <BackToTop />
+      </div>
+    </div>
   );
 };
 
-export default page;
+export default Page;

@@ -1,5 +1,3 @@
-"use client";
-
 import Link from "next/link";
 import blogListImg from "../../../public/images/blog-1.png";
 import blogListImg2 from "../../../public/images/blog-2.png";
@@ -17,7 +15,6 @@ import {
 import BlogListCard from "./BlogListCard";
 import Image from "next/image";
 import BreadCrumb from "@/app/Shared/BreadCrumb/BreadCrumb";
-import dynamic from "next/dynamic";
 
 const blogListData = [
   {
@@ -64,10 +61,6 @@ const blogListData = [
       "Alternative innovation to ethical network environmental whiteboard pursue compelling results for methods empowerment. Dramatically architect go forward opportunities transition mission top critical supply chains after enterprise",
   },
 ];
-
-const NoSSR = dynamic(() => import("@/app/Shared/NoSSR"), {
-  ssr: false,
-});
 
 const page = () => {
   return (

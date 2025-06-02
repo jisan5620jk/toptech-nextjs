@@ -1,5 +1,3 @@
-"use client";
-
 import { FaArrowRightLong } from "react-icons/fa6";
 import Feature from "./Feature/Feature";
 import Career from "./Career";

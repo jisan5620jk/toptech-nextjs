@@ -1,5 +1,11 @@
 "use client";
 
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import ScrollSmoother from "gsap/ScrollSmoother";
+import ScrollToPlugin from "gsap/ScrollToPlugin";
+
 import About from "../Component1/About/About";
 import Banner from "../Component1/Banner/Banner";
 import Blog from "../Component1/Blog/Blog";
@@ -14,33 +20,92 @@ import Service from "../Component1/Service/Service";
 import TeamMember from "../Component1/TeamMember/TeamMember";
 import Testimonial from "../Component1/Testimonial/Testimonial";
 import Video from "../Component1/Video/Video";
+
 import Footer from "../Shared/Footer/Footer";
 import Navbar from "../Shared/Navbar/Navbar";
-import dynamic from "next/dynamic";
+import TextReveal from "../Shared/TextAnim/TextReveal";
+import ContentReveal from "../Shared/ContentReveal/ContentReveal";
+import ImageReveal from "../Shared/ImageReveal/ImageReveal";
+import BackToTop from "../Shared/BackToTop/BackToTop";
 
-const NoSSR = dynamic(() => import("@/app/Shared/NoSSR"), { ssr: false });
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother, ScrollToPlugin);
 
-const page = () => {
+const Page = () => {
+  const smootherRef = useRef(null);
+
+  // Run global image reveal animations
+  ImageReveal();
+
+  // Run global text reveal animations
+  ContentReveal();
+
+  // Run global heading text reveal animations
+  TextReveal();
+
+  // Initialize GSAP ScrollSmoother
+  useEffect(() => {
+    smootherRef.current = ScrollSmoother.create({
+      wrapper: "#smooth-wrapper",
+      content: "#smooth-content",
+      smooth: 1.5,
+      effects: true,
+      normalizeScroll: true,
+      smoothTouch: 0.1,
+    });
+
+    return () => {
+      if (smootherRef.current) smootherRef.current.kill();
+    };
+  }, []);
+
+  // Smooth scroll for anchor links
+  useEffect(() => {
+    const links = document.querySelectorAll('a[href^="#"]');
+
+    const handleClick = (e) => {
+      const targetId = e.currentTarget.getAttribute("href");
+      const targetEl = document.querySelector(targetId);
+
+      if (targetEl) {
+        e.preventDefault();
+        gsap.to(window, {
+          duration: 1.2,
+          scrollTo: { y: targetEl, offsetY: 0 },
+          ease: "power2.inOut",
+        });
+      }
+    };
+
+    links.forEach((link) => link.addEventListener("click", handleClick));
+
+    return () => {
+      links.forEach((link) => link.removeEventListener("click", handleClick));
+    };
+  }, []);
+
   return (
-    <>
-      <Navbar />
-      <Banner />
-      <Feature />
-      <About />
-      <Service />
-      <TeamMember />
-      <Counter />
-      <Portfolio />
-      <Process />
-      <Testimonial />
-      <Video />
-      <Contact />
-      <Pricing />
-      <Blog />
-      <Brand />
-      <Footer />
-    </>
+    <div id="smooth-wrapper">
+      <div id="smooth-content">
+        <Navbar />
+        <Banner />
+        <Feature />
+        <About />
+        <Service />
+        <TeamMember />
+        <Counter />
+        <Portfolio />
+        <Process />
+        <Testimonial />
+        <Video />
+        <Contact />
+        <Pricing />
+        <Blog />
+        <Brand />
+        <Footer />
+        <BackToTop />
+      </div>
+    </div>
   );
 };
 
-export default page;
+export default Page;

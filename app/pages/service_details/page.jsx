@@ -1,5 +1,3 @@
-"use client";
-
 import Link from "next/link";
 import wedgetIcon from "../../../public/images/widget-icon.png";
 import serviceDetailsIcon from "../../../public/images/services-details-icon-1.png";

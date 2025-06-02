@@ -1,5 +1,3 @@
-"use client";
-
 import teamThumb from "../../../public/images/team-1.png";
 import teamThumb2 from "../../../public/images/team-2.png";
 import teamThumb3 from "../../../public/images/team-4.png";
@@ -16,7 +14,6 @@ import { IoShareSocialOutline } from "react-icons/io5";
 import Link from "next/link";
 import { GoArrowRight } from "react-icons/go";
 import BreadCrumb from "@/app/Shared/BreadCrumb/BreadCrumb";
-import dynamic from "next/dynamic";
 
 const teamData = [
   {
@@ -108,10 +105,6 @@ const teamData = [
     teamShareIcon: <IoShareSocialOutline />,
   },
 ];
-
-const NoSSR = dynamic(() => import("@/app/Shared/NoSSR"), {
-  ssr: false,
-});
 
 const page = () => {
   return (
