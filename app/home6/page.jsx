@@ -6,6 +6,7 @@ import Perform from "../Component6/Perform/Perform";
 import Service from "../Component6/Service/Service";
 import Footer6 from "../Shared/Footer/Footer6";
 import Navbar6 from "../Shared/Navbar/Navbar6";
+import dynamic from "next/dynamic";
 
 const WhyChoose = dynamic(() => import("../Component6/WhyChoose/WhyChoose"), {
   ssr: false,
