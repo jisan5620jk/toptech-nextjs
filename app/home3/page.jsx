@@ -32,4 +32,4 @@ const page = () => {
   );
 };
 
-export default Home3;
+export default page;
