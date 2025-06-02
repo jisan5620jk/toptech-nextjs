@@ -22,12 +22,12 @@ import Image from "next/image";
 import BreadCrumb from "@/app/Shared/BreadCrumb/BreadCrumb";
 import dynamic from "next/dynamic";
 
-const NoSSR = dynamic(() => import("../Shared/NoSSR"), { ssr: false });
+const NoSSR = dynamic(() => import("@/app/Shared/NoSSR"), { ssr: false });
 
 const page = () => {
   return (
     <>
-      <NoSSR />
+      <NoSSR>
       <BreadCrumb
         breadCrumbTitle={"Blog Details"}
         breadCrumbIcon={<FaArrowRightLong />}
@@ -418,6 +418,7 @@ const page = () => {
           </div>
         </div>
       </section>
+      </NoSSR>
     </>
   );
 };

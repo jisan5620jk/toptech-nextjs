@@ -8,21 +8,22 @@ import Counter from "@/app/Component2/Counter/Counter";
 import WhyChoose from "@/app/Component2/WhyChoose/WhyChoose";
 import dynamic from "next/dynamic";
 
-const NoSSR = dynamic(() => import("../Shared/NoSSR"), { ssr: false });
+const NoSSR = dynamic(() => import("@/app/Shared/NoSSR"), { ssr: false });
 
 const page = () => {
   return (
     <>
-      <NoSSR />
-      <BreadCrumb
-        breadCrumbTitle={"About Us 02"}
-        breadCrumbIcon={<FaArrowRightLong />}
-        breadCrumbLink={"About Us 02"}
-      />
-      <About />
-      <Contact />
-      <Counter />
-      <WhyChoose />
+      <NoSSR>
+        <BreadCrumb
+          breadCrumbTitle={"About Us 02"}
+          breadCrumbIcon={<FaArrowRightLong />}
+          breadCrumbLink={"About Us 02"}
+        />
+        <About />
+        <Contact />
+        <Counter />
+        <WhyChoose />
+      </NoSSR>
     </>
   );
 };

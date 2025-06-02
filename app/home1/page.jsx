@@ -7,7 +7,6 @@ import Brand from "../Component1/Brand/Brand";
 import Contact from "../Component1/Contact/Contact";
 import Counter from "../Component1/Counter/Counter";
 import Feature from "../Component1/Feature/Feature";
-import AuthForm from "../Component1/Form/AuthForm";
 import Portfolio from "../Component1/Portfolio/Portfolio";
 import Pricing from "../Component1/Pricing/Pricing";
 import Process from "../Component1/Process/Process";
@@ -19,29 +18,29 @@ import Footer from "../Shared/Footer/Footer";
 import Navbar from "../Shared/Navbar/Navbar";
 import dynamic from "next/dynamic";
 
-const NoSSR = dynamic(() => import("../Shared/NoSSR"), { ssr: false });
+const NoSSR = dynamic(() => import("@/app/Shared/NoSSR"), { ssr: false });
 
 const page = () => {
   return (
     <>
-      <NoSSR />
-      <Navbar />
-      <Banner />
-      <Feature />
-      <About />
-      <Service />
-      <TeamMember />
-      <Counter />
-      <Portfolio />
-      <Process />
-      <Testimonial />
-      <Video />
-      <Contact />
-      <Pricing />
-      <Blog />
-      <Brand />
-      <Footer />
-      <AuthForm />
+      <NoSSR>
+        <Navbar />
+        <Banner />
+        <Feature />
+        <About />
+        <Service />
+        <TeamMember />
+        <Counter />
+        <Portfolio />
+        <Process />
+        <Testimonial />
+        <Video />
+        <Contact />
+        <Pricing />
+        <Blog />
+        <Brand />
+        <Footer />
+      </NoSSR>
     </>
   );
 };

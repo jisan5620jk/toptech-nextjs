@@ -10,23 +10,24 @@ import Testimonial from "@/app/Component1/Testimonial/Testimonial";
 import Brand from "../faq/Brand";
 import dynamic from "next/dynamic";
 
-const NoSSR = dynamic(() => import("../Shared/NoSSR"), { ssr: false });
+const NoSSR = dynamic(() => import("@/app/Shared/NoSSR"), { ssr: false });
 
 const page = () => {
   return (
     <>
-      <NoSSR />
-      <BreadCrumb
-        breadCrumbTitle={"About Us 01"}
-        breadCrumbIcon={<FaArrowRightLong />}
-        breadCrumbLink={"About Us 01"}
-      />
-      <Feature />
-      <About />
-      <TeamMember />
-      <Counter />
-      <Testimonial />
-      <Brand />
+      <NoSSR>
+        <BreadCrumb
+          breadCrumbTitle={"About Us 01"}
+          breadCrumbIcon={<FaArrowRightLong />}
+          breadCrumbLink={"About Us 01"}
+        />
+        <Feature />
+        <About />
+        <TeamMember />
+        <Counter />
+        <Testimonial />
+        <Brand />
+      </NoSSR>
     </>
   );
 };

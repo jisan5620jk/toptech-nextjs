@@ -7,20 +7,21 @@ import Pricing from "./Pricing/Pricing";
 import ContactBox from "../contact/ContactBox/ContactBox";
 import dynamic from "next/dynamic";
 
-const NoSSR = dynamic(() => import("../Shared/NoSSR"), { ssr: false });
+const NoSSR = dynamic(() => import("@/app/Shared/NoSSR"), { ssr: false });
 
 const page = () => {
   return (
     <>
-      <NoSSR />
-      <BreadCrumb
-        breadCrumbTitle={"Affordable Price"}
-        breadCrumbIcon={<FaArrowRightLong />}
-        breadCrumbLink={"Pricing Plan"}
-      />
-      <Pricing />
-      <Video />
-      <ContactBox />
+      <NoSSR>
+        <BreadCrumb
+          breadCrumbTitle={"Affordable Price"}
+          breadCrumbIcon={<FaArrowRightLong />}
+          breadCrumbLink={"Pricing Plan"}
+        />
+        <Pricing />
+        <Video />
+        <ContactBox />
+      </NoSSR>
     </>
   );
 };

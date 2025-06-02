@@ -16,26 +16,27 @@ import Footer2 from "../Shared/Footer/Footer2";
 import Navbar2 from "../Shared/Navbar/Navbar2";
 import dynamic from "next/dynamic";
 
-const NoSSR = dynamic(() => import("../Shared/NoSSR"), { ssr: false });
+const NoSSR = dynamic(() => import("@/app/Shared/NoSSR"), { ssr: false });
 
 const page = () => {
   return (
     <>
-      <NoSSR />
-      <Navbar2 />
-      <Banner />
-      <Feature />
-      <About />
-      <Service />
-      <Contact />
-      <Counter />
-      <WhyChoose />
-      <Project />
-      <Testimonial />
-      <Newsletter />
-      <Blog />
-      <Appionment />
-      <Footer2 />
+      <NoSSR>
+        <Navbar2 />
+        <Banner />
+        <Feature />
+        <About />
+        <Service />
+        <Contact />
+        <Counter />
+        <WhyChoose />
+        <Project />
+        <Testimonial />
+        <Newsletter />
+        <Blog />
+        <Appionment />
+        <Footer2 />
+      </NoSSR>
     </>
   );
 };

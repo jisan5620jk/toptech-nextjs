@@ -6,19 +6,20 @@ import Project from "@/app/Component2/Project/Project";
 import Testimonial from "@/app/Component2/Testimonial/Testimonial";
 import dynamic from "next/dynamic";
 
-const NoSSR = dynamic(() => import("../Shared/NoSSR"), { ssr: false });
+const NoSSR = dynamic(() => import("@/app/Shared/NoSSR"), { ssr: false });
 
 const page = () => {
   return (
     <>
-      <NoSSR />
-      <BreadCrumb
-        breadCrumbTitle={"Our Projects"}
-        breadCrumbIcon={<FaArrowRightLong />}
-        breadCrumbLink={"Our Proejcts"}
-      />
-      <Project />
-      <Testimonial />
+      <NoSSR>
+        <BreadCrumb
+          breadCrumbTitle={"Our Projects"}
+          breadCrumbIcon={<FaArrowRightLong />}
+          breadCrumbLink={"Our Proejcts"}
+        />
+        <Project />
+        <Testimonial />
+      </NoSSR>
     </>
   );
 };

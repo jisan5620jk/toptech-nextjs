@@ -13,23 +13,24 @@ import Footer5 from "../Shared/Footer/Footer5";
 import Navbar5 from "../Shared/Navbar/Navbar5";
 import dynamic from "next/dynamic";
 
-const NoSSR = dynamic(() => import("../Shared/NoSSR"), { ssr: false });
+const NoSSR = dynamic(() => import("@/app/Shared/NoSSR"), { ssr: false });
 
 const page = () => {
   return (
     <>
-      <NoSSR />
-      <Navbar5 />
-      <Banner />
-      <Brand />
-      <About />
-      <Analytics />
-      <Achivement />
-      <Service />
-      <Pricing />
-      <Integration />
-      <Testimonial />
-      <Footer5 />
+      <NoSSR>
+        <Navbar5 />
+        <Banner />
+        <Brand />
+        <About />
+        <Analytics />
+        <Achivement />
+        <Service />
+        <Pricing />
+        <Integration />
+        <Testimonial />
+        <Footer5 />
+      </NoSSR>
     </>
   );
 };
