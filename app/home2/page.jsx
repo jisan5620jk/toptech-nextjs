@@ -11,32 +11,31 @@ import Newsletter from "../Component2/Newsletter/Newsletter";
 import Project from "../Component2/Project/Project";
 import Service from "../Component2/Service/Service";
 import Testimonial from "../Component2/Testimonial/Testimonial";
-import WhyChoose from "../Component2/WhyChoose/WhyChoose";
 import Footer2 from "../Shared/Footer/Footer2";
 import Navbar2 from "../Shared/Navbar/Navbar2";
 import dynamic from "next/dynamic";
 
-const NoSSR = dynamic(() => import("@/app/Shared/NoSSR"), { ssr: false });
+const WhyChoose = dynamic(() => import("../Component2/WhyChoose/WhyChoose"), {
+  ssr: false,
+});
 
 const page = () => {
   return (
     <>
-      <NoSSR>
-        <Navbar2 />
-        <Banner />
-        <Feature />
-        <About />
-        <Service />
-        <Contact />
-        <Counter />
-        <WhyChoose />
-        <Project />
-        <Testimonial />
-        <Newsletter />
-        <Blog />
-        <Appionment />
-        <Footer2 />
-      </NoSSR>
+      <Navbar2 />
+      <Banner />
+      <Feature />
+      <About />
+      <Service />
+      <Contact />
+      <Counter />
+      <WhyChoose />
+      <Project />
+      <Testimonial />
+      <Newsletter />
+      <Blog />
+      <Appionment />
+      <Footer2 />
     </>
   );
 };

@@ -23,24 +23,22 @@ const NoSSR = dynamic(() => import("@/app/Shared/NoSSR"), { ssr: false });
 const page = () => {
   return (
     <>
-      <NoSSR>
-        <Navbar />
-        <Banner />
-        <Feature />
-        <About />
-        <Service />
-        <TeamMember />
-        <Counter />
-        <Portfolio />
-        <Process />
-        <Testimonial />
-        <Video />
-        <Contact />
-        <Pricing />
-        <Blog />
-        <Brand />
-        <Footer />
-      </NoSSR>
+      <Navbar />
+      <Banner />
+      <Feature />
+      <About />
+      <Service />
+      <TeamMember />
+      <Counter />
+      <Portfolio />
+      <Process />
+      <Testimonial />
+      <Video />
+      <Contact />
+      <Pricing />
+      <Blog />
+      <Brand />
+      <Footer />
     </>
   );
 };

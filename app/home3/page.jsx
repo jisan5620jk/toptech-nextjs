@@ -11,28 +11,23 @@ import Service from "../Component3/Service/Service";
 import TeamMember from "../Component3/TeamMember/TeamMember";
 import Testimonial from "../Component3/Testimonial/Testimonial";
 import Footer3 from "../Shared/Footer/Footer3";
-import Navbar3 from "../Shared/Navbar/Navbar3";
-import dynamic from "next/dynamic";
-
-const NoSSR = dynamic(() => import("@/app/Shared/NoSSR"), { ssr: false });
+import Navbar3 from "../Shared/Navbar/Navbar3"
 
 const page = () => {
   return (
     <>
-      <NoSSR>
-        <Navbar3 />
-        <Banner />
-        <Feature />
-        <About />
-        <Service />
-        <Process />
-        <Faq />
-        <Portfolio />
-        <TeamMember />
-        <Testimonial />
-        <Blog />
-        <Footer3 />
-      </NoSSR>
+      <Navbar3 />
+      <Banner />
+      <Feature />
+      <About />
+      <Service />
+      <Process />
+      <Faq />
+      <Portfolio />
+      <TeamMember />
+      <Testimonial />
+      <Blog />
+      <Footer3 />
     </>
   );
 };

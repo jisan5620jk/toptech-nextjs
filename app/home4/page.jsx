@@ -14,29 +14,24 @@ import Testimonial from "../Component4/Testimonial/Testimonial";
 import Work from "../Component4/Work/Work";
 import Footer4 from "../Shared/Footer/Footer4";
 import Navbar4 from "../Shared/Navbar/Navbar4";
-import dynamic from "next/dynamic";
-
-const NoSSR = dynamic(() => import("@/app/Shared/NoSSR"), { ssr: false });
 
 const page = () => {
   return (
     <>
-      <NoSSR>
-        <Navbar4 />
-        <Banner />
-        <Brand />
-        <Feature />
-        <About />
-        <Counter />
-        <Service />
-        <Work />
-        <Process />
-        <ProcessBox />
-        <TeamMember />
-        <Testimonial />
-        <Blog />
-        <Footer4 />
-      </NoSSR>
+      <Navbar4 />
+      <Banner />
+      <Brand />
+      <Feature />
+      <About />
+      <Counter />
+      <Service />
+      <Work />
+      <Process />
+      <ProcessBox />
+      <TeamMember />
+      <Testimonial />
+      <Blog />
+      <Footer4 />
     </>
   );
 };

@@ -17,32 +17,27 @@ import Blog from "../Component7/Blog/Blog";
 import Support from "../Component7/Support/Support";
 import Navbar7 from "../Shared/Navbar/Navbar7";
 import Footer7 from "../Shared/Footer/Footer7";
-import dynamic from "next/dynamic";
-
-const NoSSR = dynamic(() => import("@/app/Shared/NoSSR"), { ssr: false });
 
 const page = () => {
   return (
     <>
-      <NoSSR>
-        <Navbar7 />
-        <Banner />
-        <Feature />
-        <Collaboration />
-        <Benifits />
-        <Brand />
-        <Process />
-        <ContentSlider />
-        <AppScreen />
-        <Pricing />
-        <Testimonial />
-        <TeamMember />
-        <Faqs />
-        <Download />
-        <Blog />
-        <Support />
-        <Footer7 />
-      </NoSSR>
+      <Navbar7 />
+      <Banner />
+      <Feature />
+      <Collaboration />
+      <Benifits />
+      <Brand />
+      <Process />
+      <ContentSlider />
+      <AppScreen />
+      <Pricing />
+      <Testimonial />
+      <TeamMember />
+      <Faqs />
+      <Download />
+      <Blog />
+      <Support />
+      <Footer7 />
     </>
   );
 };

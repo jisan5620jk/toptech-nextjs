@@ -96,66 +96,66 @@ const serviceData = [
   },
 ];
 
-const NoSSR = dynamic(() => import("@/app/Shared/NoSSR"), { ssr: false });
+const NoSSR = dynamic(() => import("@/app/Shared/NoSSR"), {
+  ssr: false,
+});
 
 const page = () => {
   return (
     <>
-      <NoSSR>
-        <BreadCrumb
-          breadCrumbTitle={"Our Services"}
-          breadCrumbIcon={<FaArrowRightLong />}
-          breadCrumbLink={"Our Services"}
-        />
-        <section className="pt-28 pb-[120px] p relative z-10 bg-BodyBg-0">
-          <div className="Container">
-            <div className="text-center">
-              <h5 className="font-Rajdhani text-lg font-semibold text-PrimaryColor-0">
-                IT Support For Business
-              </h5>
-              <h1 className="font-Rajdhani font-bold text-[20px] text-HeadingColor-0 leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] mt-[18px]">
-                Ensuring Your Success Trusted <br />
-                IT Services Source
-              </h1>
-            </div>
-            <div className="mt-[88px]">
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-7 gap-y-[68px]">
-                {serviceData.map(
-                  ({
-                    id,
-                    serviceImg,
-                    serviceIcon,
-                    serviceUrl,
-                    serviceButton,
-                    serviceButton2,
-                    serviceTitle,
-                    serviceDesc,
-                    serviceShape,
-                  }) => {
-                    return (
-                      <>
-                        <div key={id}>
-                          <ServiceCard
-                            serviceImg={serviceImg}
-                            serviceIcon={serviceIcon}
-                            serviceUrl={serviceUrl}
-                            serviceButton={serviceButton}
-                            serviceButton2={serviceButton2}
-                            serviceTitle={serviceTitle}
-                            serviceDesc={serviceDesc}
-                            serviceShape={serviceShape}
-                          />
-                        </div>
-                      </>
-                    );
-                  }
-                )}
-              </div>
+      <BreadCrumb
+        breadCrumbTitle={"Our Services"}
+        breadCrumbIcon={<FaArrowRightLong />}
+        breadCrumbLink={"Our Services"}
+      />
+      <section className="pt-28 pb-[120px] p relative z-10 bg-BodyBg-0">
+        <div className="Container">
+          <div className="text-center">
+            <h5 className="font-Rajdhani text-lg font-semibold text-PrimaryColor-0">
+              IT Support For Business
+            </h5>
+            <h1 className="font-Rajdhani font-bold text-[20px] text-HeadingColor-0 leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] mt-[18px]">
+              Ensuring Your Success Trusted <br />
+              IT Services Source
+            </h1>
+          </div>
+          <div className="mt-[88px]">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-7 gap-y-[68px]">
+              {serviceData.map(
+                ({
+                  id,
+                  serviceImg,
+                  serviceIcon,
+                  serviceUrl,
+                  serviceButton,
+                  serviceButton2,
+                  serviceTitle,
+                  serviceDesc,
+                  serviceShape,
+                }) => {
+                  return (
+                    <>
+                      <div key={id}>
+                        <ServiceCard
+                          serviceImg={serviceImg}
+                          serviceIcon={serviceIcon}
+                          serviceUrl={serviceUrl}
+                          serviceButton={serviceButton}
+                          serviceButton2={serviceButton2}
+                          serviceTitle={serviceTitle}
+                          serviceDesc={serviceDesc}
+                          serviceShape={serviceShape}
+                        />
+                      </div>
+                    </>
+                  );
+                }
+              )}
             </div>
           </div>
-        </section>
-        <Newsletter />
-      </NoSSR>
+        </div>
+      </section>
+      <Newsletter />
     </>
   );
 };
