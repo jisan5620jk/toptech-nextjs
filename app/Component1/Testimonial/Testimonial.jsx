@@ -1,9 +1,10 @@
-"use client"
+"use client";
 
+import { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination } from "swiper/modules";
+import { Autoplay, Pagination } from "swiper/modules";
 import { MdOutlineStarPurple500 } from "react-icons/md";
 import TestimonialCard from "./TestimonialCard";
 import TestimonialNavigation from "./TestimonialNavigation";
@@ -52,31 +53,33 @@ const testiData = [
 ];
 
 const Testimonial = () => {
-  const settings = {
-    loop: true,
-    spaceBetween: 30,
-    speed: 1500,
-    autoplay: true,
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-      },
-      768: {
-        slidesPerView: 1,
-      },
-      992: {
-        slidesPerView: 1,
-      },
-      1400: {
-        slidesPerView: 1,
-      },
-    },
+  const swiperRef = useRef(null);
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const handleBulletClick = (index) => {
+    if (swiperRef.current) {
+      swiperRef.current.slideToLoop(index);
+    }
   };
-  const pagination = {
-    clickable: true,
-    renderBullet: function (index, className) {
-      return '<span class="' + className + ' pagination-bullet"></span>';
+
+  const paginationImages = [
+    "/images/testi-5.png",
+    "/images/testi-1.png",
+    "/images/testi-2.png",
+    "/images/testi-3.png",
+    "/images/testi-4.png",
+  ];
+
+  const settings = {
+    modules: [Autoplay, Pagination],
+    loop: true,
+    speed: 3000,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
     },
+    onSwiper: (swiper) => (swiperRef.current = swiper),
+    onSlideChange: (swiper) => setActiveIndex(swiper.realIndex),
   };
   return (
     <section className="testimonial py-28 bg-[url(/images/testi-bg.jpg)] bg-no-repeat bg-cover bg-center relative z-10 overflow-hidden">
@@ -90,32 +93,32 @@ const Testimonial = () => {
             About Our Services
           </h1>
         </div>
-        <div className="mt-[46px]">
-          <Swiper {...settings} pagination={pagination} modules={[Pagination]}>
-            <div>
-              {testiData.map(
-                ({
-                  id,
-                  testiRatingIcon,
-                  testiName,
-                  testiDesignation,
-                  testiDesc,
-                }) => {
-                  return (
-                    <SwiperSlide key={id}>
-                      <div className="pt-[80px] md:pt-[150px]">
-                        <TestimonialCard
-                          testiRatingIcon={testiRatingIcon}
-                          testiName={testiName}
-                          testiDesignation={testiDesignation}
-                          testiDesc={testiDesc}
-                        />
-                      </div>
-                    </SwiperSlide>
-                  );
-                }
-              )}
-            </div>
+        <div className="mt-[46px] relative z-10">
+          <div className="flex items-center justify-center gap-5 z-10 mb-10">
+            {paginationImages.map((img, i) => (
+              <button
+                key={i}
+                onClick={() => handleBulletClick(i)}
+                className={`relative size-[92px] transition-all duration-500 ${
+                  activeIndex === i ? "!size-[110px]" : ""
+                } ${i === 1 ? "" : ""}`}
+              >
+                <span
+                  className="absolute top-0 left-0 w-full h-full bg-cover bg-no-repeat rounded-full transition-all duration-500"
+                  style={{ backgroundImage: `url(${img})` }}
+                ></span>
+                {activeIndex === i && (
+                  <span className="absolute -top-[4px] -left-[4px] size-[118px] border-4 border-white rounded-full"></span>
+                )}
+              </button>
+            ))}
+          </div>
+          <Swiper {...settings}>
+            {testiData.map((testimonial) => (
+              <SwiperSlide key={testimonial.id}>
+                <TestimonialCard {...testimonial} />
+              </SwiperSlide>
+            ))}
             <TestimonialNavigation />
           </Swiper>
         </div>

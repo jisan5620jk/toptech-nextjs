@@ -27,12 +27,10 @@ const ContentReveal = () => {
           el,
           {
             y: 30,
-            opacity: 0,
             scale: 0.9,
           },
           {
             y: 0,
-            opacity: 1,
             scale: 1,
             duration: 1,
             ease: "power3.out",
