@@ -1,5 +1,3 @@
-
-
 import Link from "next/link";
 import {
   FaApple,
@@ -19,7 +17,8 @@ const Footer6 = () => {
           <div className="col-span-12 md:col-span-6 lg:col-span-5">
             <h1 className="font-Rajdhani font-bold text-[22px] leading-7 sm:text-[34px] sm:leading-[43px] md:text-[40px] md:leading-[49px] lg:text-[34px] lg:leading-[40px] xl:text-[40px] xl:leading-[49px] 2xl:text-[40px] 2xl:leading-[49px] text-white mb-3">
               Find the Ultimate App
-              <br /> with Top Features
+              <br />
+              with Top Features
             </h1>
             <p className="font-Nunito text-white mt-6 mb-8 w-10/12">
               Metus faucibus branding metus futures phaselss{" "}
@@ -120,7 +119,7 @@ const Footer6 = () => {
         <div className="Container flex flex-col md:flex-row gap-y-7 md: md:col-span-6 justify-between md:items-center">
           <div>
             <p className="font-Nunito text-white" data-no-animate>
-              TopTech © 2024 All Rights Reserved.
+              TopTech © 2025 All Rights Reserved.
             </p>
           </div>
           <div>

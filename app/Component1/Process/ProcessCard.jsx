@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/image";
 
 const ProcessCard = ({
   processImg,
@@ -8,27 +8,27 @@ const ProcessCard = ({
   processDesc,
 }) => {
   return (
-    <div className='text-center group relative'>
-      <div className='inline-block m-auto relative z-10 before:absolute before:-top-[13px] before:-left-[13px] before:w-[242px] before:h-[242px] before:border-[2px] before:border-dashed before:border-PrimaryColor-0 before:rounded-full before:animate-rotate'>
-        <Image
-          src={processImg}
-          alt='Process Image'
-          draggable='false'
-        />
-        <Image
-          src={boxShape}
-          draggable='false'
-          alt='Process Shape'
-          className='absolute top-1/2 -translate-y-1/2 -right-[150px] 2xl:-right-[180px] hidden xl:block'
-        />
-        <h6 className='w-[48px] h-[48px] rounded-full bg-PrimaryColor-0 text-white font-Rajdhani font-medium text-[22px] flex justify-center items-center absolute top-0 left-0'>
+    <div className="text-center group relative">
+      <div className="inline-block m-auto relative z-10 before:absolute before:-top-[13px] before:-left-[13px] before:w-[242px] before:h-[242px] before:border-[2px] before:border-dashed before:border-PrimaryColor-0 before:rounded-full before:animate-rotate">
+        <Image src={processImg} alt="Process Image" draggable="false" />
+
+        {/* Conditional shape box */}
+        {boxShape && (
+          <Image
+            src={boxShape}
+            draggable="false"
+            alt="Process Shape"
+            className="absolute top-1/2 -translate-y-1/2 -right-[150px] 2xl:-right-[180px] hidden xl:block"
+          />
+        )}
+        <h6 className="w-[48px] h-[48px] rounded-full bg-PrimaryColor-0 text-white font-Rajdhani font-medium text-[22px] flex justify-center items-center absolute top-0 left-0">
           {boxNumber1}
         </h6>
       </div>
-      <h5 className='font-Rajdhani font-semibold text-white text-2xl mt-9 mb-4'>
+      <h5 className="font-Rajdhani font-semibold text-white text-2xl mt-9 mb-4">
         {processTitle}
       </h5>
-      <p className='font-Nunito text-TextColor-0 sm:w-2/3 md:w-full 2xl:w-3/4 mx-auto'>
+      <p className="font-Nunito text-TextColor-0 sm:w-2/3 md:w-full 2xl:w-3/4 mx-auto">
         {processDesc}
       </p>
     </div>

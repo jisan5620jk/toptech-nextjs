@@ -179,7 +179,7 @@ const Footer5 = () => {
         <div className="flex flex-col md:flex-row gap-y-7 md: md:col-span-6 justify-between md:items-center py-6 mt-[108px] border-t border-BorderColor-0">
           <div>
             <p className="font-Nunito text-TextColor-0" data-no-animate>
-              Copyright © 2024. Designed By Dream IT Solution
+              Copyright © 2025. Designed By Dream IT Solution
             </p>
           </div>
           <div>

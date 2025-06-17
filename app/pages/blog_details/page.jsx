@@ -315,7 +315,7 @@ const page = () => {
                         Digital Marketing Strategy Action P…
                       </h6>
                       <p className="font-Nunito text-PrimaryColor-0 text-sm mt-1">
-                        01 Jan, 2024
+                        01 Jan, 2025
                       </p>
                     </div>
                   </button>
@@ -334,7 +334,7 @@ const page = () => {
                         6 Things You Must Know Before Hirin…
                       </h6>
                       <p className="font-Nunito text-PrimaryColor-0 text-sm mt-1">
-                        16 Jan, 2024
+                        16 Jan, 2025
                       </p>
                     </div>
                   </button>
@@ -353,7 +353,7 @@ const page = () => {
                         IT Solution And IT Related Services
                       </h6>
                       <p className="font-Nunito text-PrimaryColor-0 text-sm mt-1">
-                        27 Jan, 2024
+                        27 Jan, 2025
                       </p>
                     </div>
                   </button>

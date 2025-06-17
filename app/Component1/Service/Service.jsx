@@ -15,7 +15,7 @@ const ServiceData = [
     serviceTitle: "Graphic Design",
     serviceDesc:
       "Monotonectally synergize grants to business visualize strategic infomediaries",
-    serviceUrl: "/service_details",
+    serviceUrl: "/pages/service_details",
     serviceButton: "Read More",
     serviceBtnIcon: <HiMiniArrowLongRight />,
   },
@@ -26,7 +26,7 @@ const ServiceData = [
     serviceTitle: "Cloud Solutions",
     serviceDesc:
       "Monotonectally synergize grants to business visualize strategic infomediaries",
-    serviceUrl: "/service_details",
+    serviceUrl: "/pages/service_details",
     serviceButton: "Read More",
     serviceBtnIcon: <HiMiniArrowLongRight />,
   },
@@ -37,7 +37,7 @@ const ServiceData = [
     serviceTitle: "WP Development",
     serviceDesc:
       "Monotonectally synergize grants to business visualize strategic infomediaries",
-    serviceUrl: "/service_details",
+    serviceUrl: "/pages/service_details",
     serviceButton: "Read More",
     serviceBtnIcon: <HiMiniArrowLongRight />,
   },
@@ -48,7 +48,7 @@ const ServiceData = [
     serviceTitle: "Digital Marketing",
     serviceDesc:
       "Monotonectally synergize grants to business visualize strategic infomediaries",
-    serviceUrl: "/service_details",
+    serviceUrl: "/pages/service_details",
     serviceButton: "Read More",
     serviceBtnIcon: <HiMiniArrowLongRight />,
   },
@@ -59,7 +59,7 @@ const ServiceData = [
     serviceTitle: "3D Vector Illustration",
     serviceDesc:
       "Monotonectally synergize grants to business visualize strategic infomediaries",
-    serviceUrl: "/service_details",
+    serviceUrl: "/pages/service_details",
     serviceButton: "Read More",
     serviceBtnIcon: <HiMiniArrowLongRight />,
   },
@@ -70,7 +70,7 @@ const ServiceData = [
     serviceTitle: "Hosting Services",
     serviceDesc:
       "Monotonectally synergize grants to business visualize strategic infomediaries",
-    serviceUrl: "/service_details",
+    serviceUrl: "/pages/service_details",
     serviceButton: "Read More",
     serviceBtnIcon: <HiMiniArrowLongRight />,
   },

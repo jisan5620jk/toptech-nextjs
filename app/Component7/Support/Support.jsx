@@ -24,7 +24,8 @@ const Support = () => {
             </h5>
             <h1 className="font-Rajdhani font-bold text-[22px] leading-7 sm:text-[38px] sm:leading-[46px] md:text-[42px] md:leading-[50px] lg:text-[34px] lg:leading-[40px] xl:text-[38px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[50px] text-white mb-9">
               Let’s get connected with our
-              <br /> agency for any help
+              <br />
+              agency for any help
             </h1>
             <form action="#" method="post" className="flex flex-col gap-y-5">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">

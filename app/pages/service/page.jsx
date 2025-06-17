@@ -17,7 +17,7 @@ const serviceData = [
     serviceTitle: "Cloud Services",
     serviceDesc:
       "Monotonectal grants to business visualize provid solution services business provid done",
-    serviceUrl: "/service_details",
+    serviceUrl: "/pages/service_details",
     serviceButton2: "Learn More",
     serviceButton: <HiOutlineArrowNarrowRight />,
   },
@@ -27,7 +27,7 @@ const serviceData = [
     serviceTitle: "IT Management",
     serviceDesc:
       "Monotonectal grants to business visualize provid solution services business provid done",
-    serviceUrl: "/service_details",
+    serviceUrl: "/pages/service_details",
     serviceButton2: "Learn More",
     serviceButton: <HiOutlineArrowNarrowRight />,
   },
@@ -37,7 +37,7 @@ const serviceData = [
     serviceTitle: "Software Renew",
     serviceDesc:
       "Monotonectal grants to business visualize provid solution services business provid done",
-    serviceUrl: "/service_details",
+    serviceUrl: "/pages/service_details",
     serviceButton2: "Learn More",
     serviceButton: <HiOutlineArrowNarrowRight />,
   },
@@ -47,7 +47,7 @@ const serviceData = [
     serviceTitle: "Machine Learning",
     serviceDesc:
       "Monotonectal grants to business visualize provid solution services business provid done",
-    serviceUrl: "/service_details",
+    serviceUrl: "/pages/service_details",
     serviceButton2: "Learn More",
     serviceButton: <HiOutlineArrowNarrowRight />,
   },
@@ -57,7 +57,7 @@ const serviceData = [
     serviceTitle: "Digital Marketing",
     serviceDesc:
       "Monotonectal grants to business visualize provid solution services business provid done",
-    serviceUrl: "/service_details",
+    serviceUrl: "/pages/service_details",
     serviceButton2: "Learn More",
     serviceButton: <HiOutlineArrowNarrowRight />,
   },
@@ -67,7 +67,7 @@ const serviceData = [
     serviceTitle: "Web Development",
     serviceDesc:
       "Monotonectal grants to business visualize provid solution services business provid done",
-    serviceUrl: "/service_details",
+    serviceUrl: "/pages/service_details",
     serviceButton2: "Learn More",
     serviceButton: <HiOutlineArrowNarrowRight />,
   },
@@ -77,7 +77,7 @@ const serviceData = [
     serviceTitle: "Cyber Security",
     serviceDesc:
       "Monotonectal grants to business visualize provid solution services business provid done",
-    serviceUrl: "/service_details",
+    serviceUrl: "/pages/service_details",
     serviceButton2: "Learn More",
     serviceButton: <HiOutlineArrowNarrowRight />,
   },
@@ -87,7 +87,7 @@ const serviceData = [
     serviceTitle: "Data Analytic",
     serviceDesc:
       "Monotonectal grants to business visualize provid solution services business provid done",
-    serviceUrl: "/service_details",
+    serviceUrl: "/pages/service_details",
     serviceButton2: "Learn More",
     serviceButton: <HiOutlineArrowNarrowRight />,
   },

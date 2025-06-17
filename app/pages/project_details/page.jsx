@@ -135,13 +135,13 @@ const page = () => {
                     Starting Date :
                   </p>
                   <h5 className="font-Rajdhani text-xl font-semibold text-HeadingColor-0 pt-1">
-                    02 January, 2024
+                    02 January, 2025
                   </h5>
                 </div>
                 <div className="mx-9 pt-3 border-b border-dashed border-[#D9DDEC] pb-4">
                   <p className="font-Nunito text-TextColor2-0">Ending Date :</p>
                   <h5 className="font-Rajdhani text-xl font-semibold text-HeadingColor-0 pt-1">
-                    05 June, 2024
+                    05 June, 2025
                   </h5>
                 </div>
                 <div className="mx-9 pt-3">

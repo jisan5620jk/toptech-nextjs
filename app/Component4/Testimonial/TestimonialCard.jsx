@@ -41,7 +41,7 @@ const TestimonialCard = ({
           </li>
         </ul>
         <p className="font-Nunito text-[15px] text-TextColor2-0 transition-all duration-500 group-hover:text-white">
-          20 July, 2024
+          20 July, 2025
         </p>
       </div>
       <p className="font-Nunito text-[17px] text-TextColor2-0 transition-all duration-500 group-hover:text-white pt-8">

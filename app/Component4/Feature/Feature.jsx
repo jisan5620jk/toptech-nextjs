@@ -15,7 +15,7 @@ const FeatureData = [
     featureTitle: `Strategic marketing`,
     featureDesc:
       "Profesionaly optimize team developer infomediaries main issue don.",
-    featureUrl: "/service_details",
+    featureUrl: "/pages/service_details",
     featureBtnIcon: <FaArrowRightLong />,
   },
   {
@@ -24,7 +24,7 @@ const FeatureData = [
     featureTitle: `Investment Planning`,
     featureDesc:
       "Profesionaly optimize team developer infomediaries main issue don.",
-    featureUrl: "/service_details",
+    featureUrl: "/pages/service_details",
     featureBtnIcon: <FaArrowRightLong />,
   },
   {
@@ -33,7 +33,7 @@ const FeatureData = [
     featureTitle: `Insights & analytics`,
     featureDesc:
       "Profesionaly optimize team developer infomediaries main issue don.",
-    featureUrl: "/service_details",
+    featureUrl: "/pages/service_details",
     featureBtnIcon: <FaArrowRightLong />,
   },
   {
@@ -42,7 +42,7 @@ const FeatureData = [
     featureTitle: `Business consulting`,
     featureDesc:
       "Profesionaly optimize team developer infomediaries main issue don.",
-    featureUrl: "/service_details",
+    featureUrl: "/pages/service_details",
     featureBtnIcon: <FaArrowRightLong />,
   },
   {
@@ -51,7 +51,7 @@ const FeatureData = [
     featureTitle: `Finance & Restructuring`,
     featureDesc:
       "Profesionaly optimize team developer infomediaries main issue don.",
-    featureUrl: "/service_details",
+    featureUrl: "/pages/service_details",
     featureBtnIcon: <FaArrowRightLong />,
   },
   {
@@ -60,7 +60,7 @@ const FeatureData = [
     featureTitle: `Audit and Evaluation`,
     featureDesc:
       "Profesionaly optimize team developer infomediaries main issue don.",
-    featureUrl: "/service_details",
+    featureUrl: "/pages/service_details",
     featureBtnIcon: <FaArrowRightLong />,
   },
 ];
@@ -77,7 +77,8 @@ const Feature = () => {
             </h5>
             <h1 className="font-Rajdhani font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[46px] xl:leading-[55px] text-HeadingColor-0 mt-4 mb-6">
               Let’s Discover Our Service
-              <br /> Features Charter.
+              <br />
+              Features Charter.
             </h1>
           </div>
         </div>

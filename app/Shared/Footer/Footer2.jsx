@@ -1,17 +1,17 @@
-import footerLogo from '../../../public/images/logo-2.png';
+import footerLogo from "../../../public/images/logo-2.png";
 import {
   FaFacebookF,
   FaLinkedinIn,
   FaPinterestP,
   FaXTwitter,
-} from 'react-icons/fa6';
-import { LuArrowRightCircle } from 'react-icons/lu';
-import { HiOutlineMail } from 'react-icons/hi';
-import { RiPhoneFill } from 'react-icons/ri';
-import { MdOutlineMail } from 'react-icons/md';
-import { IoLocationSharp } from 'react-icons/io5';
-import Image from 'next/image';
-import Link from 'next/link';
+} from "react-icons/fa6";
+import { LuArrowRightCircle } from "react-icons/lu";
+import { HiOutlineMail } from "react-icons/hi";
+import { RiPhoneFill } from "react-icons/ri";
+import { MdOutlineMail } from "react-icons/md";
+import { IoLocationSharp } from "react-icons/io5";
+import Image from "next/image";
+import Link from "next/link";
 
 const Footer2 = () => {
   return (
@@ -151,7 +151,7 @@ const Footer2 = () => {
         <div className="flex flex-col md:flex-row gap-y-7 md: md:col-span-6 justify-center md:items-center py-6 mt-[108px] border-t border-BorderColor-0">
           <div>
             <p className="font-Nunito text-white" data-no-animate>
-              © 2024 All Right Reserved. Design & Developed By Dream IT
+              © 2025 All Right Reserved. Design & Developed By Dream IT
             </p>
           </div>
         </div>

@@ -14,7 +14,7 @@ const ServiceData = [
     serviceTitle: "Web Design",
     serviceDesc:
       "Proin Pulvinar Eu Sem Eu Vehicula and, Integer Urna Libero, Semper mes.",
-    serviceUrl: "/service_details",
+    serviceUrl: "/pages/service_details",
     serviceBtn: "Read More",
     serviceBtnIcon: <FaAnglesRight />,
   },
@@ -24,7 +24,7 @@ const ServiceData = [
     serviceTitle: "Motion Design",
     serviceDesc:
       "Proin Pulvinar Eu Sem Eu Vehicula and, Integer Urna Libero, Semper mes.",
-    serviceUrl: "/service_details",
+    serviceUrl: "/pages/service_details",
     serviceBtn: "Read More",
     serviceBtnIcon: <FaAnglesRight />,
   },
@@ -34,7 +34,7 @@ const ServiceData = [
     serviceTitle: "Digital Marketing",
     serviceDesc:
       "Proin Pulvinar Eu Sem Eu Vehicula and, Integer Urna Libero, Semper mes.",
-    serviceUrl: "/service_details",
+    serviceUrl: "/pages/service_details",
     serviceBtn: "Read More",
     serviceBtnIcon: <FaAnglesRight />,
   },
@@ -44,7 +44,7 @@ const ServiceData = [
     serviceTitle: "Web Development",
     serviceDesc:
       "Proin Pulvinar Eu Sem Eu Vehicula and, Integer Urna Libero, Semper mes.",
-    serviceUrl: "/service_details",
+    serviceUrl: "/pages/service_details",
     serviceBtn: "Read More",
     serviceBtnIcon: <FaAnglesRight />,
   },
@@ -54,7 +54,7 @@ const ServiceData = [
     serviceTitle: "App Development",
     serviceDesc:
       "Proin Pulvinar Eu Sem Eu Vehicula and, Integer Urna Libero, Semper mes.",
-    serviceUrl: "/service_details",
+    serviceUrl: "/pages/service_details",
     serviceBtn: "Read More",
     serviceBtnIcon: <FaAnglesRight />,
   },
@@ -64,7 +64,7 @@ const ServiceData = [
     serviceTitle: "Creative Solution",
     serviceDesc:
       "Proin Pulvinar Eu Sem Eu Vehicula and, Integer Urna Libero, Semper mes.",
-    serviceUrl: "/service_details",
+    serviceUrl: "/pages/service_details",
     serviceBtn: "Read More",
     serviceBtnIcon: <FaAnglesRight />,
   },

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import Image from "next/image";
 import whyChooseShape from "../../../public/images/choose-shape.png";
@@ -31,7 +31,8 @@ const WhyChoose = () => {
             </h5>
             <h1 className="font-Rajdhani font-bold text-xl leading-6 sm:text-[34px] sm:leading-[43px] md:text-[40px] md:leading-[49px] lg:text-[32px] lg:leading-[39px] xl:text-[40px] xl:leading-[49px] 2xl:text-[40px] 2xl:leading-[49px] text-HeadingColor-0 mb-3">
               Smart and Clean UI Solutions for
-              <br /> Our Engaged Clients
+              <br />
+              Our Engaged Clients
             </h1>
             <p className="font-Nunito text-TextColor2-0 pb-5">
               Nulla eleifend, lectus eu gravida facilisis, ipsum metus faucibus

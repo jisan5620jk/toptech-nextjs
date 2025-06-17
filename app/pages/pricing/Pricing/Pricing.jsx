@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import PricingCard from "./PricingCard";
@@ -17,7 +17,7 @@ const pricingData = [
     pricingContent3: "Standard Security Measuresimg",
     pricingContent4: "Network and security management",
     pricingContent5: "Helps understand past performance.",
-    pricingUrl: "/pricing_inner",
+    pricingUrl: "/pages/pricing",
     pricingBtn: "Get Started",
   },
   {
@@ -33,7 +33,7 @@ const pricingData = [
     pricingContent3: "Standard Security Measuresimg",
     pricingContent4: "Network and security management",
     pricingContent5: "Helps understand past performance.",
-    pricingUrl: "/pricing_inner",
+    pricingUrl: "/pages/pricing",
     pricingBtn: "Get Started",
   },
   {
@@ -49,7 +49,7 @@ const pricingData = [
     pricingContent3: "Standard Security Measuresimg",
     pricingContent4: "Network and security management",
     pricingContent5: "Helps understand past performance.",
-    pricingUrl: "/pricing_inner",
+    pricingUrl: "/pages/pricing",
     pricingBtn: "Get Started",
   },
 ];
@@ -68,7 +68,7 @@ const pricingData2 = [
     pricingContent3: "Standard Security Measuresimg",
     pricingContent4: "Network and security management",
     pricingContent5: "Helps understand past performance.",
-    pricingUrl: "/pricing_inner",
+    pricingUrl: "/pages/pricing",
     pricingBtn: "Get Started",
   },
   {
@@ -84,7 +84,7 @@ const pricingData2 = [
     pricingContent3: "Standard Security Measuresimg",
     pricingContent4: "Network and security management",
     pricingContent5: "Helps understand past performance.",
-    pricingUrl: "/pricing_inner",
+    pricingUrl: "/pages/pricing",
     pricingBtn: "Get Started",
   },
   {
@@ -100,7 +100,7 @@ const pricingData2 = [
     pricingContent3: "Standard Security Measuresimg",
     pricingContent4: "Network and security management",
     pricingContent5: "Helps understand past performance.",
-    pricingUrl: "/pricing_inner",
+    pricingUrl: "/pages/pricing",
     pricingBtn: "Get Started",
   },
 ];

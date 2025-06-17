@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import testiImg from "../../../public/images/testi1.png";
 import testiImg2 from "../../../public/images/testi2.png";
@@ -101,10 +101,17 @@ const Testimonial = () => {
             </h5>
             <h1 className="font-Rajdhani font-bold text-[22px] leading-7 sm:text-[38px] sm:leading-[46px] md:text-[42px] md:leading-[50px] lg:text-[34px] lg:leading-[40px] xl:text-[42px] xl:leading-[50px] 2xl:text-[42px] 2xl:leading-[50px] text-HeadingColor-0">
               Trusted by Industry Leaders
-              <br /> Customer Tesmonials
+              <br />
+              Customer Tesmonials
             </h1>
           </div>
-          <div className="flex lg:justify-end"><Image alt="Testimonial Logo" src={testimonialLogo} draggable="false" /></div>
+          <div className="flex lg:justify-end">
+            <Image
+              alt="Testimonial Logo"
+              src={testimonialLogo}
+              draggable="false"
+            />
+          </div>
         </div>
         <div className="mt-[26px]">
           <Swiper {...settings} pagination={pagination} modules={[Pagination]}>

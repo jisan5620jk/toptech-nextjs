@@ -17,7 +17,6 @@ const WhyChoose = dynamic(() => import("../Component6/WhyChoose/WhyChoose"), {
   ssr: false,
 });
 
-
 import TextReveal from "../Shared/TextAnim/TextReveal";
 import ContentReveal from "../Shared/ContentReveal/ContentReveal";
 import ImageReveal from "../Shared/ImageReveal/ImageReveal";

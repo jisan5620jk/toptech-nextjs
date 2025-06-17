@@ -21,7 +21,7 @@ const blogListData = [
     id: 1,
     blogListImg: blogListImg,
     thumbContent: "IT Solution",
-    blogListTilte: "Newest Comments (04) Equipment for House 2024",
+    blogListTilte: "Newest Comments (04) Equipment for House 2025",
     postBy: "Admin : Mera",
     comments: "Comments (04)",
     blogListUrl: "/pages/blog_details",
@@ -32,7 +32,7 @@ const blogListData = [
     id: 2,
     blogListImg: blogListImg2,
     thumbContent: "IT Solution",
-    blogListTilte: "Newest Comments (04) Equipment for House 2024",
+    blogListTilte: "Newest Comments (04) Equipment for House 2025",
     postBy: "Admin : Mera",
     comments: "Comments (04)",
     blogListUrl: "/pages/blog_details",
@@ -43,7 +43,7 @@ const blogListData = [
     id: 3,
     blogListImg: blogListImg3,
     thumbContent: "IT Solution",
-    blogListTilte: "Newest Comments (04) Equipment for House 2024",
+    blogListTilte: "Newest Comments (04) Equipment for House 2025",
     postBy: "Admin : Mera",
     comments: "Comments (04)",
     blogListDesc:
@@ -53,7 +53,7 @@ const blogListData = [
     id: 4,
     blogListImg: blogListImg4,
     thumbContent: "IT Solution",
-    blogListTilte: "Newest Comments (04) Equipment for House 2024",
+    blogListTilte: "Newest Comments (04) Equipment for House 2025",
     postBy: "Admin : Mera",
     comments: "Comments (04)",
     blogListUrl: "/pages/blog_details",
@@ -212,7 +212,7 @@ const page = () => {
                         Digital Marketing Strategy Action P…
                       </h6>
                       <p className="font-Nunito text-PrimaryColor-0 text-sm mt-1">
-                        01 Jan, 2024
+                        01 Jan, 2025
                       </p>
                     </div>
                   </button>
@@ -231,7 +231,7 @@ const page = () => {
                         6 Things You Must Know Before Hirin…
                       </h6>
                       <p className="font-Nunito text-PrimaryColor-0 text-sm mt-1">
-                        16 Jan, 2024
+                        16 Jan, 2025
                       </p>
                     </div>
                   </button>
@@ -250,7 +250,7 @@ const page = () => {
                         IT Solution And IT Related Services
                       </h6>
                       <p className="font-Nunito text-PrimaryColor-0 text-sm mt-1">
-                        27 Jan, 2024
+                        27 Jan, 2025
                       </p>
                     </div>
                   </button>

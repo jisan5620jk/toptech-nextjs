@@ -325,10 +325,7 @@ const Navbar7 = () => {
                     </div>
                     <div className="px-5 group hover:bg-PrimaryColor-0">
                       <li className="hover:ml-3 duration-300">
-                        <Link
-                          href="/pages/pricing_inner"
-                          className="py-2 block"
-                        >
+                        <Link href="/pages/pricing" className="py-2 block">
                           Pricing Plan
                         </Link>
                       </li>

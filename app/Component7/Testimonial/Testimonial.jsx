@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import testiImg from "../../../public/images/mobile-app-testi-img1.png";
 import testiImg2 from "../../../public/images/mobile-app-testi-img2.png";
@@ -86,7 +86,8 @@ const Testimonial = () => {
           </h5>
           <h1 className="font-Rajdhani font-bold text-[22px] leading-7 sm:text-[38px] sm:leading-[46px] md:text-[42px] md:leading-[50px] lg:text-[34px] lg:leading-[40px] xl:text-[42px] xl:leading-[50px] 2xl:text-[42px] 2xl:leading-[50px] text-white">
             Important customer’s feedback
-            <br /> 3k+ trusted app users
+            <br />
+            3k+ trusted app users
           </h1>
         </div>
         <div className="mt-2">

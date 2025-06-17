@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import PricingAccordion from "./Accordion/PricingAccordion";
 import { FaCheck } from "react-icons/fa6";
@@ -10,7 +10,7 @@ const Pricing = () => {
   //  All Faqs and  answers.
   const Faqs = [
     {
-      title: "How to increase products sales 2024?",
+      title: "How to increase products sales 2025?",
       text: "Credibly conceptualize multifunctional human capital after that awesome revenue superior scenarios. Collaboratively myocardinate flexible social marketing working technologies and robust services available",
       active: true,
     },

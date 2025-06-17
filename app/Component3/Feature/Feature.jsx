@@ -1,6 +1,6 @@
-import featureIcon from '../../../public/images/feature3-icon.png';
-import featureIcon2 from '../../../public/images/feature3-icon-2.png';
-import featureIcon3 from '../../../public/images/feature3-icon-3.png';
+import featureIcon from "../../../public/images/feature3-icon.png";
+import featureIcon2 from "../../../public/images/feature3-icon-2.png";
+import featureIcon3 from "../../../public/images/feature3-icon-3.png";
 import featureIcon4 from "../../../public/images/feature3-icon-4.png";
 import FeatureCard from "./FeatureCard";
 import { FaAnglesRight } from "react-icons/fa6";
@@ -10,8 +10,9 @@ const processData = [
     id: 1,
     featureIcon: featureIcon,
     featureTitle: "Managed IT Services",
-    featureDesc: "Proin Pulvinar Eu Sem Endro thes Vehicula. Integer Urna Libero and, Semper emper business.",
-    featureBtnLink: "/service",
+    featureDesc:
+      "Proin Pulvinar Eu Sem Endro thes Vehicula. Integer Urna Libero and, Semper emper business.",
+    featureBtnLink: "/pages/service",
     featureBtnContent: "Read More",
     featureBtnIcon: <FaAnglesRight />,
   },
@@ -19,8 +20,9 @@ const processData = [
     id: 2,
     featureIcon: featureIcon2,
     featureTitle: "Cloud Services",
-    featureDesc: "Proin Pulvinar Eu Sem Endro thes Vehicula. Integer Urna Libero and, Semper emper business.",
-    featureBtnLink: "/service",
+    featureDesc:
+      "Proin Pulvinar Eu Sem Endro thes Vehicula. Integer Urna Libero and, Semper emper business.",
+    featureBtnLink: "/pages/service",
     featureBtnContent: "Read More",
     featureBtnIcon: <FaAnglesRight />,
   },
@@ -28,8 +30,9 @@ const processData = [
     id: 3,
     featureIcon: featureIcon3,
     featureTitle: "Machine Learning",
-    featureDesc: "Proin Pulvinar Eu Sem Endro thes Vehicula. Integer Urna Libero and, Semper emper business.",
-    featureBtnLink: "/service",
+    featureDesc:
+      "Proin Pulvinar Eu Sem Endro thes Vehicula. Integer Urna Libero and, Semper emper business.",
+    featureBtnLink: "/pages/service",
     featureBtnContent: "Read More",
     featureBtnIcon: <FaAnglesRight />,
   },
@@ -37,8 +40,9 @@ const processData = [
     id: 4,
     featureIcon: featureIcon4,
     featureTitle: "Data Security",
-    featureDesc: "Proin Pulvinar Eu Sem Endro thes Vehicula. Integer Urna Libero and, Semper emper business.",
-    featureBtnLink: "/service",
+    featureDesc:
+      "Proin Pulvinar Eu Sem Endro thes Vehicula. Integer Urna Libero and, Semper emper business.",
+    featureBtnLink: "/pages/service",
     featureBtnContent: "Read More",
     featureBtnIcon: <FaAnglesRight />,
   },

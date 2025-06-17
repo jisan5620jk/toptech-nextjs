@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import analyticsIcon from "../../../public/images/analytics-icon.png";
 import analyticsIcon2 from "../../../public/images/analytics-icon2.png";
@@ -11,102 +11,103 @@ import Image from "next/image";
 
 const Analytics = () => {
   return (
-    <section className='relative z-10 pt-8'>
+    <section className="relative z-10 pt-8">
       <Image
         src={analyticsShape}
-        draggable='false'
-        alt='Analytics shade'
-        className='absolute -top-14 right-0 2xl:right-44 -z-10 animate-wiggle hidden lg:block'
+        draggable="false"
+        alt="Analytics shade"
+        className="absolute -top-14 right-0 2xl:right-44 -z-10 animate-wiggle hidden lg:block"
       />
-      <div className='Container'>
-        <div className='grid lg:grid-cols-2 gap-14 lg:gap-0'>
+      <div className="Container">
+        <div className="grid lg:grid-cols-2 gap-14 lg:gap-0">
           <div>
-            <h5 className='font-Rajdhani font-semibold bg-white bg-opacity-20 inline-block px-7 py-[6px] rounded-full border text-PrimaryColor-0 text-lg mb-5'>
+            <h5 className="font-Rajdhani font-semibold bg-white bg-opacity-20 inline-block px-7 py-[6px] rounded-full border text-PrimaryColor-0 text-lg mb-5">
               Tracking
             </h5>
-            <h1 className='font-Rajdhani font-bold text-[22px] leading-7 sm:text-[38px] sm:leading-[46px] md:text-[42px] md:leading-[50px] lg:text-[34px] lg:leading-[40px] xl:text-[42px] xl:leading-[50px] 2xl:text-[42px] 2xl:leading-[50px] text-HeadingColor-0 mb-4'>
+            <h1 className="font-Rajdhani font-bold text-[22px] leading-7 sm:text-[38px] sm:leading-[46px] md:text-[42px] md:leading-[50px] lg:text-[34px] lg:leading-[40px] xl:text-[42px] xl:leading-[50px] 2xl:text-[42px] 2xl:leading-[50px] text-HeadingColor-0 mb-4">
               Managed Digital Marketing
-              <br /> Audience Analytics
+              <br />
+              Audience Analytics
             </h1>
-            <div className='flex gap-5 mt-7 mb-6'>
-              <div className='size-[58px] rounded bg-BodyBg-0 flex items-center justify-center mt-2'>
+            <div className="flex gap-5 mt-7 mb-6">
+              <div className="size-[58px] rounded bg-BodyBg-0 flex items-center justify-center mt-2">
                 <Image
-                  alt='Analytics Icon'
+                  alt="Analytics Icon"
                   src={analyticsIcon}
-                  draggable='false'
+                  draggable="false"
                 />
               </div>
-              <div className='flex-1'>
-                <h5 className='font-Rajdhani font-semibold text-HeadingColor-0 text-2xl'>
+              <div className="flex-1">
+                <h5 className="font-Rajdhani font-semibold text-HeadingColor-0 text-2xl">
                   Super Fast Speed
                 </h5>
-                <p className='font-Nunito text-TextColor2-0 pt-2'>
-                  Conveniently provide access to leading-edge{' '}
-                  <br className='hidden md:block' /> interfaces. Uniquely
+                <p className="font-Nunito text-TextColor2-0 pt-2">
+                  Conveniently provide access to leading-edge{" "}
+                  <br className="hidden md:block" /> interfaces. Uniquely
                   network
                 </p>
               </div>
             </div>
-            <div className='flex gap-5 mb-8'>
-              <div className='size-[58px] rounded bg-BodyBg-0 flex items-center justify-center mt-2'>
+            <div className="flex gap-5 mb-8">
+              <div className="size-[58px] rounded bg-BodyBg-0 flex items-center justify-center mt-2">
                 <Image
-                  alt='Analytics Icon'
+                  alt="Analytics Icon"
                   src={analyticsIcon2}
-                  draggable='false'
+                  draggable="false"
                 />
               </div>
-              <div className='flex-1'>
-                <h5 className='font-Rajdhani font-semibold text-HeadingColor-0 text-2xl'>
+              <div className="flex-1">
+                <h5 className="font-Rajdhani font-semibold text-HeadingColor-0 text-2xl">
                   Admin Dashboard
                 </h5>
-                <p className='font-Nunito text-TextColor2-0 pt-2'>
-                  Conveniently provide access to leading-edge{' '}
-                  <br className='hidden md:block' /> interfaces. Uniquely
+                <p className="font-Nunito text-TextColor2-0 pt-2">
+                  Conveniently provide access to leading-edge{" "}
+                  <br className="hidden md:block" /> interfaces. Uniquely
                   network
                 </p>
               </div>
             </div>
-            <div className='pt-8 border-t flex items-center gap-5 md:w-8/12 lg:w-10/12 xl:w-8/12'>
-              <div className='border-r pr-5'>
+            <div className="pt-8 border-t flex items-center gap-5 md:w-8/12 lg:w-10/12 xl:w-8/12">
+              <div className="border-r pr-5">
                 <CountUp
                   start={-9}
                   end={98}
-                  suffix='%'
-                  className='text-3xl sm:text-[60px] sm:leading-[40px] font-Rajdhani font-semibold text-PrimaryColor-0'
+                  suffix="%"
+                  className="text-3xl sm:text-[60px] sm:leading-[40px] font-Rajdhani font-semibold text-PrimaryColor-0"
                 />
               </div>
               <div>
-                <p className='font-Nunito text-TextColor2-0 -mt-1'>
-                  Conveniently provide access <br className='hidden sm:block' />{' '}
+                <p className="font-Nunito text-TextColor2-0 -mt-1">
+                  Conveniently provide access <br className="hidden sm:block" />{" "}
                   interfaces network
                 </p>
               </div>
             </div>
           </div>
           <div>
-            <div className='grid md:grid-cols-2 gap-8'>
-              <div className='md:col-span-2'>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="md:col-span-2">
                 <Image
                   src={analyticsThumb}
-                  draggable='false'
-                  alt='Analytics Image'
-                  className='rounded-3xl shadow-shade'
+                  draggable="false"
+                  alt="Analytics Image"
+                  className="rounded-3xl shadow-shade"
                 />
               </div>
-              <div className='md:col-span-1'>
+              <div className="md:col-span-1">
                 <Image
                   src={analyticsThumb2}
-                  draggable='false'
-                  alt='Analytics Image'
-                  className='rounded-3xl'
+                  draggable="false"
+                  alt="Analytics Image"
+                  className="rounded-3xl"
                 />
               </div>
-              <div className='md:col-span-1'>
+              <div className="md:col-span-1">
                 <Image
                   src={analyticsThumb3}
-                  draggable='false'
-                  alt='Analytics Image'
-                  className='rounded-3xl'
+                  draggable="false"
+                  alt="Analytics Image"
+                  className="rounded-3xl"
                 />
               </div>
             </div>

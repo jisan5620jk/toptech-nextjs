@@ -1,5 +1,11 @@
-import { FaFacebookF, FaLinkedinIn, FaPinterestP, FaRegEnvelope, FaXTwitter } from "react-icons/fa6";
-import logo from "../../../public/images/logo.png"
+import {
+  FaFacebookF,
+  FaLinkedinIn,
+  FaPinterestP,
+  FaRegEnvelope,
+  FaXTwitter,
+} from "react-icons/fa6";
+import logo from "../../../public/images/logo.png";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -174,7 +180,7 @@ const Footer7 = () => {
         <div className="bg-white border px-4 sm:px-7 py-4 mt-[102px] mb-10 flex flex-col md:flex-row gap-y-7 md: md:col-span-6 justify-between md:items-center">
           <div>
             <p className="font-Nunito text-HeadingColor-0" data-no-animate>
-              TopTech © 2024 All Rights Reserved.
+              TopTech © 2025 All Rights Reserved.
             </p>
           </div>
           <div>

@@ -13,7 +13,7 @@ const processData = [
     featureDesc:
       "Nulla elefend lectus ipsum metus faucibus eros vitae metus toptech magna erat concept.",
     featureStar: featureStar,
-    featureBtnLink: "/service",
+    featureBtnLink: "/pages/service",
     featureBtnContent: "Read More",
   },
   {
@@ -23,7 +23,7 @@ const processData = [
     featureDesc:
       "Nulla elefend lectus ipsum metus faucibus eros vitae metus toptech magna erat concept.",
     featureStar: featureStar,
-    featureBtnLink: "/service",
+    featureBtnLink: "/pages/service",
     featureBtnContent: "Read More",
   },
   {
@@ -33,7 +33,7 @@ const processData = [
     featureDesc:
       "Nulla elefend lectus ipsum metus faucibus eros vitae metus toptech magna erat concept.",
     featureStar: featureStar,
-    featureBtnLink: "/service",
+    featureBtnLink: "/pages/service",
     featureBtnContent: "Read More",
   },
   {
@@ -43,7 +43,7 @@ const processData = [
     featureDesc:
       "Nulla elefend lectus ipsum metus faucibus eros vitae metus toptech magna erat concept.",
     featureStar: featureStar,
-    featureBtnLink: "/service",
+    featureBtnLink: "/pages/service",
     featureBtnContent: "Read More",
   },
 ];

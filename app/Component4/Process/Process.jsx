@@ -34,7 +34,8 @@ const Process = () => {
             </h5>
             <h1 className="font-Rajdhani font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[42px] xl:leading-[52px] 2xl:text-[46px] 2xl:leading-[56px] text-HeadingColor-0 mt-4 mb-4">
               Expert Consulting for Diverse
-              <br /> Financial Services.
+              <br />
+              Financial Services.
             </h1>
             <p className="font-Nunito text-TextColor2-0 text-lg pb-7">
               Professionaly optimize interdependent intelectual services visuali

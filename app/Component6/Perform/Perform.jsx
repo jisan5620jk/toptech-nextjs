@@ -14,7 +14,8 @@ const Perform = () => {
             </h5>
             <h1 className="font-Rajdhani font-bold text-[22px] leading-7 sm:text-[34px] sm:leading-[43px] md:text-[40px] md:leading-[49px] lg:text-[34px] lg:leading-[40px] xl:text-[40px] xl:leading-[49px] 2xl:text-[40px] 2xl:leading-[49px] text-HeadingColor-0 mb-3">
               Watch Our Apps Shine in Action
-              <br /> Post-Development!
+              <br />
+              Post-Development!
             </h1>
             <p className="font-Nunito text-TextColor2-0 pb-5">
               Nulla eleifend, lectus eu gravida facilisis, ipsum metus faucibus
