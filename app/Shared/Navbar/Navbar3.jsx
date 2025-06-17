@@ -135,9 +135,6 @@ const Navbar3 = () => {
                         <li className="hover:ml-3 duration-300">
                           <Link href="/home5" className="py-2 block relative">
                             Home Page 05
-                            <span className="absolute top-1/2 -translate-y-1/2 right-0 font-Rajdhani text-sm bg-PrimaryColor-0 text-white px-2 py-[2px] rounded border border-SecondaryColor-0">
-                              NEW
-                            </span>
                           </Link>
                         </li>
                       </div>
@@ -145,9 +142,6 @@ const Navbar3 = () => {
                         <li className="hover:ml-3 duration-300">
                           <Link href="/home6" className="py-2 block relative">
                             Home Page 06
-                            <span className="absolute top-1/2 -translate-y-1/2 right-0 font-Rajdhani text-sm bg-PrimaryColor-0 text-white px-2 py-[2px] rounded border border-SecondaryColor-0">
-                              NEW
-                            </span>
                           </Link>
                         </li>
                       </div>
@@ -155,18 +149,7 @@ const Navbar3 = () => {
                         <li className="hover:ml-3 duration-300">
                           <Link href="/home7" className="py-2 block relative">
                             Home Page 07
-                            <span className="absolute top-1/2 -translate-y-1/2 right-0 font-Rajdhani text-sm bg-PrimaryColor-0 text-white px-2 py-[2px] rounded border border-SecondaryColor-0">
-                              NEW
-                            </span>
                           </Link>
-                        </li>
-                      </div>
-                      <div className="px-5 group hover:bg-PrimaryColor-0 group2 cursor-not-allowed">
-                        <li className="py-2 block relative">
-                          {`Other's Home`}
-                          <span className="absolute top-1/2 -translate-y-1/2 right-0 font-Rajdhani text-sm bg-PrimaryColor-0 text-white px-2 py-[2px] rounded border border-SecondaryColor-0">
-                            Coming Soon
-                          </span>
                         </li>
                       </div>
                     </ul>

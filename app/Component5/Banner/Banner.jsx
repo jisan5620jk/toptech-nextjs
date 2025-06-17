@@ -9,12 +9,13 @@ import bannerShape from "../../../public/images/banner-shape2.png";
 import bannerShape3 from "../../../public/images/banner-shape3.png";
 import { HiOutlineArrowRight } from "react-icons/hi";
 import { useState } from "react";
-import FsLightbox from "fslightbox-react";
 import { PiPlay } from "react-icons/pi";
 import Image from "next/image";
+import { FaTimes } from "react-icons/fa";
 
 const Banner = () => {
-  const [toggler, setToggler] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const togglePopup = () => setIsOpen(!isOpen);
   return (
     <div className="bg-[url(/images/banner5-bg.jpg)] bg-no-repeat bg-cover bg-center relative z-10">
       <section className="bg-transparent pt-[190px] pb-[82px] relative z-10 overflow-hidden">
@@ -56,10 +57,7 @@ const Banner = () => {
                 <div>
                   <button className="flex items-center gap-4 font-Rajdhani text-lg text-HeadingColor-0 font-semibold uppercase">
                     <span className="size-[56px] rounded-full bg-transparent border border-HeadingColor-0 flex justify-center items-center relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:opacity-50 before:-z-10 before:rounded-full before:animate-ping">
-                      <PiPlay
-                        size={"24"}
-                        onClick={() => setToggler(!toggler)}
-                      />
+                      <PiPlay size={"24"} onClick={togglePopup} />
                     </span>
                     How it works
                   </button>
@@ -68,11 +66,38 @@ const Banner = () => {
             </div>
           </div>
         </div>
-        <FsLightbox
-          toggler={toggler}
-          sources={["https://www.youtube.com/embed/NKJ-6zCSk2E"]}
-        />
       </section>
+      {/* Video Popup — placed OUTSIDE the section */}
+      {isOpen && (
+        <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center z-30">
+          <div className="relative z-50 w-full max-w-3xl p-4">
+            {/* Close Button */}
+            <button
+              onClick={togglePopup}
+              className="absolute z-10 top-0 right-0 size-10 flex items-center justify-center text-HeadingColor-0 text-2xl rounded-full bg-white hover:text-red-500"
+            >
+              <FaTimes />
+            </button>
+
+            {/* Embedded YouTube Video */}
+            <div className="relative pt-[56.25%]">
+              {/* 16:9 Aspect Ratio */}
+              <iframe
+                className="absolute top-0 left-0 w-full h-full rounded"
+                src="https://www.youtube.com/embed/NKJ-6zCSk2E"
+                title="YouTube Video"
+                frameBorder="0"
+                allow="autoplay; encrypted-media"
+                allowFullScreen
+              />
+            </div>
+          </div>
+          <div
+            onClick={togglePopup}
+            className="absolute top-0 left-0 inline-block w-full h-full bg-SecondaryColor-0 bg-opacity-60 z-40"
+          ></div>
+        </div>
+      )}
       <section className="pb-[120px]">
         <div className="Container relative z-10">
           <Image

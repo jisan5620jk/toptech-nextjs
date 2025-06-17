@@ -16,7 +16,6 @@ const processData = [
     processDesc: "Conveniently provide access to interfaces network",
     boxDot: <RxDotsHorizontal />,
   },
-
   {
     id: 2,
     processImg: processImg2,

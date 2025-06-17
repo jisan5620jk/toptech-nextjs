@@ -12,7 +12,7 @@ const Video = () => {
     <div className="relative">
       {/* Section with background and play button */}
       <section className="bg-[url('/images/video-bg.jpg')] bg-no-repeat bg-cover bg-center pt-[144px] pb-[150px] relative z-10">
-        <div className="container mx-auto text-center">
+        <div className="Container text-center">
           <h5 className="text-lg font-semibold text-PrimaryColor-0">
             Watch Now
           </h5>
@@ -33,26 +33,33 @@ const Video = () => {
 
       {/* Video Popup — placed OUTSIDE the section */}
       {isOpen && (
-        <div className="absolute inset-0 bg-black/80 flex items-center justify-center z-50">
-          <div className="relative w-full max-w-3xl px-4">
+        <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center z-30">
+          <div className="relative z-50 w-full max-w-3xl p-4">
             {/* Close Button */}
             <button
               onClick={togglePopup}
-              className="absolute -top-6 -right-6 bg-white text-black rounded-full p-2 hover:bg-gray-200 z-50"
+              className="absolute z-10 top-0 right-0 size-10 flex items-center justify-center text-HeadingColor-0 text-2xl rounded-full bg-white hover:text-red-500"
             >
               <FaTimes />
             </button>
 
-            {/* YouTube Video */}
-            <div className="w-full rounded-lg overflow-hidden shadow-lg">
+            {/* Embedded YouTube Video */}
+            <div className="relative pt-[56.25%]">
+              {/* 16:9 Aspect Ratio */}
               <iframe
-                className="w-full h-full"
-                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-                title="YouTube video"
+                className="absolute top-0 left-0 w-full h-full rounded"
+                src="https://www.youtube.com/embed/NKJ-6zCSk2E"
+                title="YouTube Video"
+                frameBorder="0"
+                allow="autoplay; encrypted-media"
                 allowFullScreen
-              ></iframe>
+              />
             </div>
           </div>
+          <div
+            onClick={togglePopup}
+            className="absolute top-0 left-0 inline-block w-full h-full bg-SecondaryColor-0 bg-opacity-60 z-40"
+          ></div>
         </div>
       )}
     </div>
