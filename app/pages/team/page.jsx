@@ -116,7 +116,7 @@ import ScrollToPlugin from "gsap/ScrollToPlugin";
 import TextReveal from "@/app/Shared/TextAnim/TextReveal";
 import ContentReveal from "@/app/Shared/ContentReveal/ContentReveal";
 import ImageReveal from "@/app/Shared/ImageReveal/ImageReveal";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother, ScrollToPlugin);
 
