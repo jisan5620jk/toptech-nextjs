@@ -8,10 +8,9 @@ const TeamDetailsMain = dynamic(() => import("./TeamDetailsMain"), {
   ssr: false,
 });
 
-
-import TextReveal from "../Shared/TextAnim/TextReveal";
-import ContentReveal from "../Shared/ContentReveal/ContentReveal";
-import ImageReveal from "../Shared/ImageReveal/ImageReveal";
+import TextReveal from "@/app/Shared/TextAnim/TextReveal";
+import ContentReveal from "@/app/Shared/ContentReveal/ContentReveal";
+import ImageReveal from "@/app/Shared/ImageReveal/ImageReveal";
 import { useEffect } from "react";
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother, ScrollToPlugin);
@@ -72,13 +71,13 @@ const Page = () => {
   return (
     <div id="smooth-wrapper">
       <div id="smooth-content">
-      <BreadCrumb
-        breadCrumbTitle={"Team Details"}
-        breadCrumbIcon={<FaArrowRightLong />}
-        breadCrumbLink={"Team Details"}
-      />
-      <TeamDetailsMain />
-    </div>
+        <BreadCrumb
+          breadCrumbTitle={"Team Details"}
+          breadCrumbIcon={<FaArrowRightLong />}
+          breadCrumbLink={"Team Details"}
+        />
+        <TeamDetailsMain />
+      </div>
     </div>
   );
 };

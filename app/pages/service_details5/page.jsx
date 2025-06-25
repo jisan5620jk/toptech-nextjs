@@ -20,9 +20,9 @@ import { AiOutlineSolution } from "react-icons/ai";
 import Image from "next/image";
 import BreadCrumb from "@/app/Shared/BreadCrumb/BreadCrumb";
 
-import TextReveal from "../Shared/TextAnim/TextReveal";
-import ContentReveal from "../Shared/ContentReveal/ContentReveal";
-import ImageReveal from "../Shared/ImageReveal/ImageReveal";
+import TextReveal from "@/app/Shared/TextAnim/TextReveal";
+import ContentReveal from "@/app/Shared/ContentReveal/ContentReveal";
+import ImageReveal from "@/app/Shared/ImageReveal/ImageReveal";
 import { useEffect } from "react";
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother, ScrollToPlugin);

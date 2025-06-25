@@ -9,10 +9,9 @@ import Counter from "@/app/Component1/Counter/Counter";
 import Testimonial from "@/app/Component1/Testimonial/Testimonial";
 import Brand from "../faq/Brand";
 
-
-import TextReveal from "../Shared/TextAnim/TextReveal";
-import ContentReveal from "../Shared/ContentReveal/ContentReveal";
-import ImageReveal from "../Shared/ImageReveal/ImageReveal";
+import TextReveal from "@/app/Shared/TextAnim/TextReveal";
+import ContentReveal from "@/app/Shared/ContentReveal/ContentReveal";
+import ImageReveal from "@/app/Shared/ImageReveal/ImageReveal";
 import { useEffect } from "react";
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother, ScrollToPlugin);
@@ -73,18 +72,18 @@ const Page = () => {
   return (
     <div id="smooth-wrapper">
       <div id="smooth-content">
-      <BreadCrumb
-        breadCrumbTitle={"About Us 01"}
-        breadCrumbIcon={<FaArrowRightLong />}
-        breadCrumbLink={"About Us 01"}
-      />
-      <Feature />
-      <About />
-      <TeamMember />
-      <Counter />
-      <Testimonial />
-      <Brand />
-    </div>
+        <BreadCrumb
+          breadCrumbTitle={"About Us 01"}
+          breadCrumbIcon={<FaArrowRightLong />}
+          breadCrumbLink={"About Us 01"}
+        />
+        <Feature />
+        <About />
+        <TeamMember />
+        <Counter />
+        <Testimonial />
+        <Brand />
+      </div>
     </div>
   );
 };

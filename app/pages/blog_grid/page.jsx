@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import { FaAngleRight, FaArrowRightLong } from "react-icons/fa6";
 import blogGridImg from "../../../public/images/blog-1.png";
@@ -86,9 +86,9 @@ const blogData = [
   },
 ];
 
-import TextReveal from "../Shared/TextAnim/TextReveal";
-import ContentReveal from "../Shared/ContentReveal/ContentReveal";
-import ImageReveal from "../Shared/ImageReveal/ImageReveal";
+import TextReveal from "@/app/Shared/TextAnim/TextReveal";
+import ContentReveal from "@/app/Shared/ContentReveal/ContentReveal";
+import ImageReveal from "@/app/Shared/ImageReveal/ImageReveal";
 import { useEffect } from "react";
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother, ScrollToPlugin);
@@ -149,69 +149,69 @@ const Page = () => {
   return (
     <div id="smooth-wrapper">
       <div id="smooth-content">
-      <BreadCrumb
-        breadCrumbTitle={"Blog Grid"}
-        breadCrumbIcon={<FaArrowRightLong />}
-        breadCrumbLink={"Blog Grid"}
-      />
-      <section className="pt-28">
-        <div className="Container">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
-            {blogData.map(
-              ({
-                id,
-                blogGridImg,
-                thumbContent,
-                thumbBtn,
-                blogGridTitle,
-                postBy,
-                comments,
-                blogGridDesc,
-              }) => {
-                return (
-                  <div key={id}>
-                    <BlogGridCard
-                      blogGridImg={blogGridImg}
-                      thumbContent={thumbContent}
-                      thumbBtn={thumbBtn}
-                      blogGridTitle={blogGridTitle}
-                      postBy={postBy}
-                      comments={comments}
-                      blogGridDesc={blogGridDesc}
-                    />
-                  </div>
-                );
-              }
-            )}
+        <BreadCrumb
+          breadCrumbTitle={"Blog Grid"}
+          breadCrumbIcon={<FaArrowRightLong />}
+          breadCrumbLink={"Blog Grid"}
+        />
+        <section className="pt-28">
+          <div className="Container">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+              {blogData.map(
+                ({
+                  id,
+                  blogGridImg,
+                  thumbContent,
+                  thumbBtn,
+                  blogGridTitle,
+                  postBy,
+                  comments,
+                  blogGridDesc,
+                }) => {
+                  return (
+                    <div key={id}>
+                      <BlogGridCard
+                        blogGridImg={blogGridImg}
+                        thumbContent={thumbContent}
+                        thumbBtn={thumbBtn}
+                        blogGridTitle={blogGridTitle}
+                        postBy={postBy}
+                        comments={comments}
+                        blogGridDesc={blogGridDesc}
+                      />
+                    </div>
+                  );
+                }
+              )}
+            </div>
           </div>
+        </section>
+        <div>
+          <ul className="flex items-center gap-2 justify-center pb-[120px] pt-[80px]">
+            <li>
+              <button className="h-[50px] w-[50px] font-Nunito rounded-full border-BorderColor2-0 border bg-white flex justify-center items-center text-HeadingColor-0 transition-all duration-500 hover:text-white overflow-hidden relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
+                01
+              </button>
+            </li>
+            <li>
+              <button className="h-[50px] w-[50px] font-Nunito rounded-full border-BorderColor2-0 border bg-white flex justify-center items-center text-HeadingColor-0 transition-all duration-500 hover:text-white overflow-hidden relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
+                02
+              </button>
+            </li>
+            <li>
+              <button className="h-[50px] w-[50px] font-Nunito rounded-full border-BorderColor2-0 border bg-white flex justify-center items-center text-HeadingColor-0 transition-all duration-500 hover:text-white overflow-hidden relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
+                03
+              </button>
+            </li>
+            <li>
+              <button className="h-[50px] w-[50px] font-Nunito rounded-full border-BorderColor2-0 border bg-white flex justify-center items-center text-HeadingColor-0 transition-all duration-500 hover:text-white overflow-hidden relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
+                <FaAngleRight />
+              </button>
+            </li>
+          </ul>
         </div>
-      </section>
-      <div>
-        <ul className="flex items-center gap-2 justify-center pb-[120px] pt-[80px]">
-          <li>
-            <button className="h-[50px] w-[50px] font-Nunito rounded-full border-BorderColor2-0 border bg-white flex justify-center items-center text-HeadingColor-0 transition-all duration-500 hover:text-white overflow-hidden relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
-              01
-            </button>
-          </li>
-          <li>
-            <button className="h-[50px] w-[50px] font-Nunito rounded-full border-BorderColor2-0 border bg-white flex justify-center items-center text-HeadingColor-0 transition-all duration-500 hover:text-white overflow-hidden relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
-              02
-            </button>
-          </li>
-          <li>
-            <button className="h-[50px] w-[50px] font-Nunito rounded-full border-BorderColor2-0 border bg-white flex justify-center items-center text-HeadingColor-0 transition-all duration-500 hover:text-white overflow-hidden relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
-              03
-            </button>
-          </li>
-          <li>
-            <button className="h-[50px] w-[50px] font-Nunito rounded-full border-BorderColor2-0 border bg-white flex justify-center items-center text-HeadingColor-0 transition-all duration-500 hover:text-white overflow-hidden relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
-              <FaAngleRight />
-            </button>
-          </li>
-        </ul>
       </div>
-      </div>
-      </div>
+    </div>
   );
 };
 
