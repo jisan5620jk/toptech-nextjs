@@ -61,6 +61,8 @@ const blogListData = [
   },
 ];
 
+import Footer from "@/app/Shared/Footer/Footer";
+
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ScrollSmoother from "gsap/ScrollSmoother";
@@ -395,6 +397,7 @@ const Page = () => {
             </li>
           </ul>
         </div>
+        <Footer />
       </div>
     </div>
   );

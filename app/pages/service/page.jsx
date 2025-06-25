@@ -95,6 +95,8 @@ const serviceData = [
   },
 ];
 
+import Footer from "@/app/Shared/Footer/Footer";
+
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ScrollSmoother from "gsap/ScrollSmoother";
@@ -216,6 +218,7 @@ const Page = () => {
           </div>
         </section>
         <Newsletter />
+        <Footer />
       </div>
     </div>
   );

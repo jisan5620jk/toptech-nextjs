@@ -10,6 +10,8 @@ import Image from "next/image";
 import Feature from "@/app/Component2/Feature/Feature";
 import Brand from "@/app/Component1/Brand/Brand";
 
+import Footer from "@/app/Shared/Footer/Footer";
+
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ScrollSmoother from "gsap/ScrollSmoother";
@@ -213,6 +215,7 @@ const Page = () => {
         </section>
         <Feature />
         <Brand />
+        <Footer />
       </div>
     </div>
   );

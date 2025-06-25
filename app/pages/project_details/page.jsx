@@ -10,6 +10,8 @@ import Project from "./Project/Project";
 import Image from "next/image";
 import BreadCrumb from "@/app/Shared/BreadCrumb/BreadCrumb";
 
+import Footer from "@/app/Shared/Footer/Footer";
+
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ScrollSmoother from "gsap/ScrollSmoother";
@@ -250,6 +252,7 @@ const Page = () => {
           </div>
         </section>
         <Project />
+        <Footer />
       </div>
     </div>
   );

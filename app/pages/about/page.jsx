@@ -9,6 +9,8 @@ import Counter from "@/app/Component1/Counter/Counter";
 import Testimonial from "@/app/Component1/Testimonial/Testimonial";
 import Brand from "../faq/Brand";
 
+import Footer from "@/app/Shared/Footer/Footer";
+
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ScrollSmoother from "gsap/ScrollSmoother";
@@ -88,6 +90,7 @@ const Page = () => {
         <Counter />
         <Testimonial />
         <Brand />
+        <Footer />
       </div>
     </div>
   );

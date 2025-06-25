@@ -21,6 +21,8 @@ import { BiSolidQuoteAltRight } from "react-icons/bi";
 import Image from "next/image";
 import BreadCrumb from "@/app/Shared/BreadCrumb/BreadCrumb";
 
+import Footer from "@/app/Shared/Footer/Footer";
+
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ScrollSmoother from "gsap/ScrollSmoother";
@@ -479,6 +481,7 @@ const Page = () => {
             </div>
           </div>
         </section>
+        <Footer />
       </div>
     </div>
   );

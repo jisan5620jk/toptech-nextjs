@@ -6,6 +6,8 @@ import HelpCenter from "./HelpCenter";
 import Map from "../contact/Map";
 import ContactBox from "../contact/ContactBox/ContactBox";
 
+import Footer from "@/app/Shared/Footer/Footer";
+
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ScrollSmoother from "gsap/ScrollSmoother";
@@ -82,6 +84,7 @@ const Page = () => {
         <HelpCenter />
         <Map />
         <ContactBox />
+        <Footer />
       </div>
     </div>
   );

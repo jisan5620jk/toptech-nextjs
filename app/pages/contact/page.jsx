@@ -6,6 +6,8 @@ import Map from "./Map";
 import ContactForm from "./ContactForm";
 import BreadCrumb from "@/app/Shared/BreadCrumb/BreadCrumb";
 
+import Footer from "@/app/Shared/Footer/Footer";
+
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ScrollSmoother from "gsap/ScrollSmoother";
@@ -82,6 +84,7 @@ const Page = () => {
         <ContactBox />
         <ContactForm />
         <Map />
+        <Footer />
       </div>
     </div>
   );

@@ -5,6 +5,8 @@ import Newsletter from "./Newsletter/Newsletter";
 import WhyChooseUs from "./WhyChooseUs";
 import BreadCrumb from "@/app/Shared/BreadCrumb/BreadCrumb";
 
+import Footer from "@/app/Shared/Footer/Footer";
+
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ScrollSmoother from "gsap/ScrollSmoother";
@@ -80,6 +82,7 @@ const Page = () => {
         />
         <WhyChooseUs />
         <Newsletter />
+        <Footer />
       </div>
     </div>
   );

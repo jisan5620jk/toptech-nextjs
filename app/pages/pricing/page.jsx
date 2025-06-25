@@ -6,6 +6,8 @@ import Video from "@/app/Component1/Video/Video";
 import Pricing from "./Pricing/Pricing";
 import ContactBox from "../contact/ContactBox/ContactBox";
 
+import Footer from "@/app/Shared/Footer/Footer";
+
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ScrollSmoother from "gsap/ScrollSmoother";
@@ -82,6 +84,7 @@ const Page = () => {
         <Pricing />
         <Video />
         <ContactBox />
+        <Footer />
       </div>
     </div>
   );

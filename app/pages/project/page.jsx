@@ -5,6 +5,8 @@ import BreadCrumb from "@/app/Shared/BreadCrumb/BreadCrumb";
 import Project from "@/app/Component2/Project/Project";
 import Testimonial from "@/app/Component2/Testimonial/Testimonial";
 
+import Footer from "@/app/Shared/Footer/Footer";
+
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ScrollSmoother from "gsap/ScrollSmoother";
@@ -80,6 +82,7 @@ const Page = () => {
         />
         <Project />
         <Testimonial />
+        <Footer />
       </div>
     </div>
   );

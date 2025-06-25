@@ -1,4 +1,3 @@
-import Footer from "../Shared/Footer/Footer";
 import Navbar3 from "../Shared/Navbar/Navbar3";
 
 export const metadata = {
@@ -13,7 +12,6 @@ export default function RootLayout({ children }) {
       <body>
         <Navbar3 />
         {children}
-        <Footer />
       </body>
     </html>
   );
