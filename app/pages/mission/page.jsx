@@ -10,6 +10,11 @@ import Image from "next/image";
 import Feature from "@/app/Component2/Feature/Feature";
 import Brand from "@/app/Component1/Brand/Brand";
 
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import ScrollSmoother from "gsap/ScrollSmoother";
+import ScrollToPlugin from "gsap/ScrollToPlugin";
+
 import TextReveal from "@/app/Shared/TextAnim/TextReveal";
 import ContentReveal from "@/app/Shared/ContentReveal/ContentReveal";
 import ImageReveal from "@/app/Shared/ImageReveal/ImageReveal";

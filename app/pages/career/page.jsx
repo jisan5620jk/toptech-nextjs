@@ -1,10 +1,14 @@
-'use client'
+"use client";
 
 import { FaArrowRightLong } from "react-icons/fa6";
 import Feature from "./Feature/Feature";
 import Career from "./Career";
 import BreadCrumb from "@/app/Shared/BreadCrumb/BreadCrumb";
 
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import ScrollSmoother from "gsap/ScrollSmoother";
+import ScrollToPlugin from "gsap/ScrollToPlugin";
 
 import TextReveal from "@/app/Shared/TextAnim/TextReveal";
 import ContentReveal from "@/app/Shared/ContentReveal/ContentReveal";
@@ -69,14 +73,14 @@ const Page = () => {
   return (
     <div id="smooth-wrapper">
       <div id="smooth-content">
-      <BreadCrumb
-        breadCrumbTitle={"Careers"}
-        breadCrumbIcon={<FaArrowRightLong />}
-        breadCrumbLink={"Careers"}
-      />
-      <Career />
-      <Feature />
-    </div>
+        <BreadCrumb
+          breadCrumbTitle={"Careers"}
+          breadCrumbIcon={<FaArrowRightLong />}
+          breadCrumbLink={"Careers"}
+        />
+        <Career />
+        <Feature />
+      </div>
     </div>
   );
 };

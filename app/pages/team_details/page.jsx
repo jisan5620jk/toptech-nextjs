@@ -8,6 +8,11 @@ const TeamDetailsMain = dynamic(() => import("./TeamDetailsMain"), {
   ssr: false,
 });
 
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import ScrollSmoother from "gsap/ScrollSmoother";
+import ScrollToPlugin from "gsap/ScrollToPlugin";
+
 import TextReveal from "@/app/Shared/TextAnim/TextReveal";
 import ContentReveal from "@/app/Shared/ContentReveal/ContentReveal";
 import ImageReveal from "@/app/Shared/ImageReveal/ImageReveal";
