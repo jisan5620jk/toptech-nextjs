@@ -1,3 +1,5 @@
+"use client";
+
 import FaqAccordion from "./FaqAccordion";
 import faqIcon from "../../../public/images/faqs-icon-s.png";
 import faqIcon2 from "../../../public/images/faqs-icon1.png";
@@ -43,69 +45,131 @@ const faqs = [
   },
 ];
 
-const page = () => {
+import TextReveal from "../Shared/TextAnim/TextReveal";
+import ContentReveal from "../Shared/ContentReveal/ContentReveal";
+import ImageReveal from "../Shared/ImageReveal/ImageReveal";
+import { useEffect } from "react";
+
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother, ScrollToPlugin);
+
+const Page = () => {
+  const smootherRef = useRef(null);
+
+  // Run global image reveal animations
+  ImageReveal();
+
+  // Run global text reveal animations
+  ContentReveal();
+
+  // Run global heading text reveal animations
+  TextReveal();
+
+  // Initialize GSAP ScrollSmoother
+  useEffect(() => {
+    smootherRef.current = ScrollSmoother.create({
+      wrapper: "#smooth-wrapper",
+      content: "#smooth-content",
+      smooth: 1.5,
+      effects: true,
+      normalizeScroll: true,
+      smoothTouch: 0.1,
+    });
+
+    return () => {
+      if (smootherRef.current) smootherRef.current.kill();
+    };
+  }, []);
+
+  // Smooth scroll for anchor links
+  useEffect(() => {
+    const links = document.querySelectorAll('a[href^="#"]');
+
+    const handleClick = (e) => {
+      const targetId = e.currentTarget.getAttribute("href");
+      const targetEl = document.querySelector(targetId);
+
+      if (targetEl) {
+        e.preventDefault();
+        gsap.to(window, {
+          duration: 1.2,
+          scrollTo: { y: targetEl, offsetY: 0 },
+          ease: "power2.inOut",
+        });
+      }
+    };
+
+    links.forEach((link) => link.addEventListener("click", handleClick));
+
+    return () => {
+      links.forEach((link) => link.removeEventListener("click", handleClick));
+    };
+  }, []);
+
   return (
-    <>
-      <BreadCrumb
-        breadCrumbTitle={"FAQ"}
-        breadCrumbIcon={<FaArrowRightLong />}
-        breadCrumbLink={"FAQ"}
-      />
-      <section className="relative overflow-hidden py-28 bg-BodyBg-0">
-        <div className="Container">
-          <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 items-center">
-            <div className="relative">
-              <h5 className="font-Rajdhani text-lg font-semibold text-PrimaryColor-0">
-                IT Support For Business
-              </h5>
-              <h1 className="font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[18px] mb-4">
-                Ensuring Your Success Trusted <br />
-                IT Services Source
-              </h1>
-              <p className="font-Nunito text-TextColor2-0 pt-1 pb-10">
-                Business tailored it design, management & support services needs
-                to be business agency elit, sed do eiusmod tempor proved.
-              </p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 sm:items-center gap-3 mb-10">
-                <div>
-                  <Image alt="Faq Image" src={faqImg} draggable="false" />
-                </div>
-                <div>
-                  <Image alt="Faq Image" src={faqImg2} draggable="false" />
-                </div>
-              </div>
-              <div className="flex gap-5">
-                <div>
-                  <Image src={faqIcon} draggable="false" alt="Faq Icon" />
-                </div>
-                <p className="font-Nunito text-TextColor2-0 flex-1">
+    <div id="smooth-wrapper">
+      <div id="smooth-content">
+        <BreadCrumb
+          breadCrumbTitle={"FAQ"}
+          breadCrumbIcon={<FaArrowRightLong />}
+          breadCrumbLink={"FAQ"}
+        />
+        <section className="relative overflow-hidden py-28 bg-BodyBg-0">
+          <div className="Container">
+            <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 items-center">
+              <div className="relative">
+                <h5 className="font-Rajdhani text-lg font-semibold text-PrimaryColor-0">
+                  IT Support For Business
+                </h5>
+                <h1 className="font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[18px] mb-4">
+                  Ensuring Your Success Trusted <br />
+                  IT Services Source
+                </h1>
+                <p className="font-Nunito text-TextColor2-0 pt-1 pb-10">
                   Business tailored it design, management & support services
-                  busines agency elit sed do eiusmod tempor proved business task
-                  state of the art infrastructures for you.
+                  needs to be business agency elit, sed do eiusmod tempor
+                  proved.
                 </p>
+                <div className="grid grid-cols-1 sm:grid-cols-2 sm:items-center gap-3 mb-10">
+                  <div>
+                    <Image alt="Faq Image" src={faqImg} draggable="false" />
+                  </div>
+                  <div>
+                    <Image alt="Faq Image" src={faqImg2} draggable="false" />
+                  </div>
+                </div>
+                <div className="flex gap-5">
+                  <div>
+                    <Image src={faqIcon} draggable="false" alt="Faq Icon" />
+                  </div>
+                  <p className="font-Nunito text-TextColor2-0 flex-1">
+                    Business tailored it design, management & support services
+                    busines agency elit sed do eiusmod tempor proved business
+                    task state of the art infrastructures for you.
+                  </p>
+                </div>
               </div>
-            </div>
-            <div className="w-full mx-auto">
-              <div>
-                {faqs.map((faq, index) => (
-                  <FaqAccordion
-                    key={index}
-                    faqIcon={faq.faqIcon2}
-                    title={faq.title}
-                    id={`faqs-${index}`}
-                    active={faq.active}
-                  >
-                    {faq.text}
-                  </FaqAccordion>
-                ))}
+              <div className="w-full mx-auto">
+                <div>
+                  {faqs.map((faq, index) => (
+                    <FaqAccordion
+                      key={index}
+                      faqIcon={faq.faqIcon2}
+                      title={faq.title}
+                      id={`faqs-${index}`}
+                      active={faq.active}
+                    >
+                      {faq.text}
+                    </FaqAccordion>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <Newsletter />
-      <Brand />
-    </>
+        </section>
+        <Newsletter />
+        <Brand />
+      </div>
+    </div>
   );
 };
 
